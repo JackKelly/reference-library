@@ -1,122 +1,6 @@
 % This file was created with JabRef 2.10.
-% Encoding: UTF8
+% Encoding: ISO8859_1
 
-
-@Inproceedings{goroshin2014unsupervised-feature-learning-from-temporal-data,
-  Title                    = {Unsupervised Feature Learning from Temporal Data},
-  Author                   = {Goroshin, Ross and Bruna, Joan and Szlam, Arthur and Tompson, Jonathan and Eigen, David and LeCun, Yann},
-  Booktitle                = {Deep Learning and Representation Learning Workshop, NIPS},
-  Year                     = {2014},
-
-  Crossref                 = {goroshin2015unsupervised-feature-learning-from-temporal-data},
-  File                     = {goroshin2014unsupervised-feature-learning-from-temporal-data.pdf:goroshin2014unsupervised-feature-learning-from-temporal-data.pdf:PDF},
-  Keywords                 = {unsupervised learning, CNNs, timeseries, video},
-  Owner                    = {Jack},
-  Timestamp                = {2015.04.15}
-}
-
-@Article{goroshin2015unsupervised-feature-learning-from-temporal-data,
-  Title                    = {Unsupervised Feature Learning from Temporal Data},
-  Author                   = {Goroshin, Ross and Bruna, Joan and Tompson, Jonathan and Eigen, David and LeCun, Yann},
-  Year                     = {2015},
-  Eprint                   = {1504.02518},
-  Eprinttype               = {arXiv},
-
-  Crossref                 = {goroshin2015unsupervised-feature-learning-from-temporal-data},
-  File                     = {goroshin2015unsupervised-feature-learning-from-temporal-data.pdf:goroshin2015unsupervised-feature-learning-from-temporal-data.pdf:PDF},
-  Keywords                 = {unsupervised learning, CNNs, timeseries, video, machine learning},
-  Owner                    = {Jack},
-  Timestamp                = {2015.04.15}
-}
-
-@Article{jaderberg2015STN,
-  Title                    = {Spatial Transformer Networks},
-  Author                   = {Jaderberg, Max and Simonyan, Karen and Zisserman, Andrew and Kavukcuoglu, Koray},
-  Year                     = {2015},
-  Eprint                   = {1506.02025},
-  Eprinttype               = {arXiv},
-
-  Abstract                 = {Convolutional Neural Networks define an exceptionally powerful class of models, but are still limited by the lack of ability to be spatially invariant to the input data in a computationally and parameter efficient manner. In this work we introduce a new learnable module, the Spatial Transformer, which explicitly allows the spatial manipulation of data within the network. This differentiable module can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process. We show that the use of spatial transformers results in models which learn invariance to translation, scale, rotation and more generic warping, resulting in state-of-the-art performance on several benchmarks, and for a number of classes of transformations.},
-  Crossref                 = {sonderby2015RNN-SPN},
-  File                     = {jaderberg2015STN.pdf:home/jack/Dropbox/MyWork/imperial/PhD/writing/jabref_bibliography/jaderberg2015STN.pdf:PDF},
-  Journal                  = {arXiv preprint arXiv:1506.02025},
-  Keywords                 = {deep learning, spatial transformer networks},
-  Owner                    = {jack},
-  Timestamp                = {2015.09.23}
-}
-
-@Inproceedings{maas2012RNN-noise-reduction-in-ASR,
-  Title                    = {Recurrent Neural Networks for Noise Reduction in Robust ASR},
-  Author                   = {Maas, Andrew L and Le, Quoc V and O'Neil, Tyler M and Vinyals, Oriol and Nguyen, Patrick and Ng, Andrew Y},
-  Booktitle                = {INTERSPEECH},
-  Year                     = {2012},
-  Organization             = {Citeseer},
-  Url                      = {http://www1.icsi.berkeley.edu/~vinyals/Files/rnn_denoise_2012.pdf},
-
-  Abstract                 = {Recent work on deep neural networks as acoustic mod-
-els for automatic speech recognition (ASR) have demon-
-strated substantial performance improvements. We intro-
-duce a model which uses a deep recurrent auto encoder
-neural network to denoise input features for robust ASR.
-The model is trained on stereo (noisy and clean) audio
-features to predict clean features given noisy input. The
-model makes no assumptions about how noise affects the
-signal, nor the existence of distinct noise environments.
-Instead, the model can learn to model any type of distor-
-tion or additive noise given sufficient training data. We
-demonstrate the model is competitive with existing fea-
-ture denoising approaches on the Aurora2 task, and out-
-performs a tandem approach where deep networks are
-used to predict phoneme posteriors directly},
-  Crossref                 = {maas2013RNN-feature-enhancement},
-  File                     = {maas2012RNN-noise-reduction-in-ASR.pdf:maas2012RNN-noise-reduction-in-ASR.pdf:PDF},
-  Keywords                 = {RNN, recurrent, speech, ASR, autoencoder, DRDAE},
-  Owner                    = {Jack},
-  Timestamp                = {2015.04.21}
-}
-
-@Inproceedings{maas2013RNN-feature-enhancement,
-  Title                    = {Recurrent neural network feature enhancement: The 2nd CHiME challenge},
-  Author                   = {Maas, Andrew L and O'Neil, Tyler M and Hannun, Awni Y and Ng, Andrew Y},
-  Booktitle                = {Proceedings The 2nd CHiME Workshop on Machine Listening in Multisource Environments held in conjunction with ICASSP},
-  Year                     = {2013},
-  Pages                    = {79--80},
-  Url                      = {http://web.stanford.edu/~awni/papers/drdae_chime2013_final.pdf},
-
-  Abstract                 = {We apply a machine learning approach to improve noisy
-acoustic features for robust speech recognition. Specifically,
-we train a deep, recurrent neural network to map noise-
-corrupted input features to their corresponding clean ver-
-sions. We introduce several improvements to previously pro-
-posed neural network feature enhancement architectures. The
-model does not include assumptions about the specific noise
-and distortions present in CHiME data, but does assume noisy
-and clean stereo pairs are available for training. When used
-with the standard recognizer on the small vocabulary task
-(track 1), our approach demonstrates substantial improve-
-ments over the challenge baseline.},
-  Crossref                 = {maas2012RNN-noise-reduction-in-ASR},
-  File                     = {maas2013RNN-feature-enhancement.pdf:maas2013RNN-feature-enhancement.pdf:PDF},
-  Keywords                 = {RNN, recurrent, speech, ASR, autoencoder, DRDAE},
-  Owner                    = {Jack},
-  Timestamp                = {2015.04.21}
-}
-
-@Article{sonderby2015RNN-SPN,
-  Title                    = {Recurrent Spatial Transformer Networks},
-  Author                   = {S{\o}nderby, S{\o}ren Kaae and S{\o}nderby, Casper Kaae and Maal{\o}e, Lars and Winther, Ole},
-  Year                     = {2015},
-  Eprint                   = {1509.05329},
-  Eprinttype               = {arXiv},
-
-  Abstract                 = {We integrate the recently proposed spatial transformer network (SPN) [Jaderberg et. al 2015] into a recurrent neural network (RNN) to form an RNN-SPN model. We use the RNN-SPN to classify digits in cluttered MNIST sequences. The proposed model achieves a single digit error of 1.5% compared to 2.9% for a convolutional networks and 2.0% for convolutional networks with SPN layers. The SPN outputs a zoomed, rotated and skewed version of the input image. We investigate different down-sampling factors (ratio of pixel in input and output) for the SPN and show that the RNN-SPN model is able to down-sample the input images without deteriorating performance. The down-sampling in RNN-SPN can be thought of as adaptive down-sampling that minimizes the information loss in the regions of interest. We attribute the superior performance of the RNN-SPN to the fact that it can attend to a sequence of regions of interest.},
-  Crossref                 = {jaderberg2015STN},
-  File                     = {sonderby2015RNN-SPN.pdf:home/jack/Dropbox/MyWork/imperial/PhD/writing/jabref_bibliography/sonderby2015RNN-SPN.pdf:PDF},
-  Journal                  = {arXiv preprint arXiv:1509.05329},
-  Keywords                 = {deep learning, spatial transformer networks},
-  Owner                    = {jack},
-  Timestamp                = {2015.09.23}
-}
 
 @Article{abbott2000synaptic-plasticity,
   Title                    = {Synaptic plasticity: taming the beast},
@@ -220,7 +104,7 @@ ments over the challenge baseline.},
 }
 
 @Inproceedings{arjunan2012sensoract,
-  Title                    = {{SensorAct: A Privacy and Security Aware Federated Middleware for Building Management}},
+  Title                    = {SensorAct: A Privacy and Security Aware Federated Middleware for Building Management},
   Author                   = {Arjunan, Pandarasamy and Batra, Nipun and Choi, Haksoo and Singh, Amarjeet and Singh, Pushpendra and Srivastava, Mani B.},
   Booktitle                = {Proceedings of the Fourth ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings (BuildSys)},
   Year                     = {2012},
@@ -466,7 +350,7 @@ recurrent neural networks.},
 }
 
 @Inproceedings{batra2013indic,
-  Title                    = {{INDiC: Improved Non-Intrusive load monitoring using load Division and Calibration}},
+  Title                    = {INDiC: Improved Non-Intrusive load monitoring using load Division and Calibration},
   Author                   = {Batra, Nipun and Dutta, Haimonti and Singh, Amarjeet},
   Booktitle                = {12th International Conference on Machine Learning and Applications (ICMLA)},
   Year                     = {2013},
@@ -494,7 +378,7 @@ recurrent neural networks.},
 }
 
 @Inproceedings{Batra:2013:DIH:2528282.2528293,
-  Title                    = {{It's Different: Insights into Home Energy Consumption in India}},
+  Title                    = {It's Different: Insights into Home Energy Consumption in India},
   Author                   = {Batra, Nipun and Gulati, Manoj and Singh, Amarjeet and Srivastava, Mani B.},
   Booktitle                = {Proceedings of the 5th ACM Workshop on Embedded Systems For Energy-Efficient Buildings (BuildSys)},
   Year                     = {2013},
@@ -515,7 +399,7 @@ recurrent neural networks.},
 }
 
 @Inproceedings{NILMTK,
-  Title                    = {{NILMTK: An Open Source Toolkit for Non-intrusive Load Monitoring}},
+  Title                    = {NILMTK: An Open Source Toolkit for Non-intrusive Load Monitoring},
   Author                   = {Batra, Nipun and Kelly, Jack and Parson, Oliver and Dutta, Haimonti and Knottenbelt, William and Rogers, Alex and Singh, Amarjeet and Srivastava, Mani},
   Booktitle                = {Fifth International Conference on Future Energy Systems (ACM e-Energy)},
   Year                     = {2014},
@@ -543,7 +427,7 @@ recurrent neural networks.},
 }
 
 @Thesis{batra2014qualifier-report,
-  Title                    = {{Data Driven Energy Efficiency in Buildings}},
+  Title                    = {Data Driven Energy Efficiency in Buildings},
   Author                   = {Batra, Nipun and Singh, Amarjeet and Singh, Pushpendra and Dutta, Haimonti and Sarangan, Venkatesh and Srivastava Srivastava, Mani},
   Institution              = {IIIT Delhi},
   Type                     = {PhD qualifier report},
@@ -899,6 +783,33 @@ Findings from an analysis of a focus group and a set of semi-structured intervie
   Publisher                = {Nature Publishing Group}
 }
 
+@Inproceedings{goroshin2014unsupervised-feature-learning-from-temporal-data,
+  Title                    = {Unsupervised Feature Learning from Temporal Data},
+  Author                   = {Goroshin, Ross and Bruna, Joan and Szlam, Arthur and Tompson, Jonathan and Eigen, David and LeCun, Yann},
+  Booktitle                = {Deep Learning and Representation Learning Workshop, NIPS},
+  Year                     = {2014},
+
+  Comment                  = {Related: goroshin2015unsupervised-feature-learning-from-temporal-data},
+  File                     = {goroshin2014unsupervised-feature-learning-from-temporal-data.pdf:goroshin2014unsupervised-feature-learning-from-temporal-data.pdf:PDF},
+  Keywords                 = {unsupervised learning, CNNs, timeseries, video},
+  Owner                    = {Jack},
+  Timestamp                = {2015.04.15}
+}
+
+@Article{goroshin2015unsupervised-feature-learning-from-temporal-data,
+  Title                    = {Unsupervised Feature Learning from Temporal Data},
+  Author                   = {Goroshin, Ross and Bruna, Joan and Tompson, Jonathan and Eigen, David and LeCun, Yann},
+  Year                     = {2015},
+  Eprint                   = {1504.02518},
+  Eprinttype               = {arXiv},
+
+  Comment                  = {Related: goroshin2015unsupervised-feature-learning-from-temporal-data},
+  File                     = {goroshin2015unsupervised-feature-learning-from-temporal-data.pdf:goroshin2015unsupervised-feature-learning-from-temporal-data.pdf:PDF},
+  Keywords                 = {unsupervised learning, CNNs, timeseries, video, machine learning},
+  Owner                    = {Jack},
+  Timestamp                = {2015.04.15}
+}
+
 @Article{graves2013generating-sequences,
   Title                    = {Generating sequences with recurrent neural networks},
   Author                   = {Alex Graves},
@@ -1038,7 +949,7 @@ Findings from an analysis of a focus group and a set of semi-structured intervie
   Doi                      = {10.1109/5.192069},
   ISSN                     = {00189219},
   Language                 = {English},
-  Month                    = dec,
+  Month                    = {dec},
   Number                   = {12},
   Pages                    = {1870--1891},
   Volume                   = {80},
@@ -1060,7 +971,7 @@ Findings from an analysis of a focus group and a set of semi-structured intervie
   Doi                      = {10.1109/44.31557},
   ISSN                     = {0278-0097},
   Language                 = {English},
-  Month                    = jun,
+  Month                    = {jun},
   Number                   = {2},
   Pages                    = {12--16},
   Url                      = {http://ieeexplore.ieee.org/ielx5/44/1367/00031557.pdf?tp=\&arnumber=31557\&isnumber=1367},
@@ -1079,7 +990,7 @@ Findings from an analysis of a focus group and a set of semi-structured intervie
   Author                   = {George William Hart},
   Institution              = {MIT Energy Laboratory and Electric Power Research Institute},
   Year                     = {1985},
-  Month                    = sep,
+  Month                    = {sep},
 
   File                     = {hart1985.pdf:hart1985.pdf:PDF},
   Keywords                 = {NILM, energy},
@@ -1198,6 +1109,22 @@ Findings from an analysis of a focus group and a set of semi-structured intervie
   Timestamp                = {2015.04.23}
 }
 
+@Article{jaderberg2015STN,
+  Title                    = {Spatial Transformer Networks},
+  Author                   = {Jaderberg, Max and Simonyan, Karen and Zisserman, Andrew and Kavukcuoglu, Koray},
+  Year                     = {2015},
+  Eprint                   = {1506.02025},
+  Eprinttype               = {arXiv},
+
+  Abstract                 = {Convolutional Neural Networks define an exceptionally powerful class of models, but are still limited by the lack of ability to be spatially invariant to the input data in a computationally and parameter efficient manner. In this work we introduce a new learnable module, the Spatial Transformer, which explicitly allows the spatial manipulation of data within the network. This differentiable module can be inserted into existing convolutional architectures, giving neural networks the ability to actively spatially transform feature maps, conditional on the feature map itself, without any extra training supervision or modification to the optimisation process. We show that the use of spatial transformers results in models which learn invariance to translation, scale, rotation and more generic warping, resulting in state-of-the-art performance on several benchmarks, and for a number of classes of transformations.},
+  Comment                  = {Related: sonderby2015RNN-SPN},
+  File                     = {jaderberg2015STN.pdf:home/jack/Dropbox/MyWork/imperial/PhD/writing/jabref_bibliography/jaderberg2015STN.pdf:PDF},
+  Journal                  = {arXiv preprint arXiv:1506.02025},
+  Keywords                 = {deep learning, spatial transformer networks},
+  Owner                    = {jack},
+  Timestamp                = {2015.09.23}
+}
+
 @Phdthesis{jaitly2014thesis,
   Title                    = {Exploring Deep Learning Methods for discovering features in speech signals.},
   Author                   = {Jaitly, Navdeep},
@@ -1242,8 +1169,7 @@ Aside from the insufficient ambition of the aggregate INDCs, there is a signific
 between current policies and the INDCs: global emissions under currently implemented
 policies are projected to be higher than the already inadequate INDC levels. Some countries
 propose INDCs close to the current trajectory giving confidence that they are met (e.g. EU
-and China). Others have put forward a target that would be a significant change in trend,
-but these are not yet supported by any significant existing legislation, e.g. Australia and
+and China). Others have put forward a target that would be a significant change in trend, but these are not yet supported by any significant existing legislation, e.g. Australia and
 Canada, raising questions about the likely implementation. Yet others are showing progress
 in policy implementation, continuously moving their future trajectories downwards, but
 policies are not yet sufficient to meet their (still inadequate) INDCs (e.g. USA).
@@ -1551,6 +1477,62 @@ governments this is not yet the case.},
   Timestamp                = {2015.07.22}
 }
 
+@Inproceedings{maas2012RNN-noise-reduction-in-ASR,
+  Title                    = {Recurrent Neural Networks for Noise Reduction in Robust ASR},
+  Author                   = {Maas, Andrew L and Le, Quoc V and O'Neil, Tyler M and Vinyals, Oriol and Nguyen, Patrick and Ng, Andrew Y},
+  Booktitle                = {INTERSPEECH},
+  Year                     = {2012},
+  Organization             = {Citeseer},
+  Url                      = {http://www1.icsi.berkeley.edu/~vinyals/Files/rnn_denoise_2012.pdf},
+
+  Abstract                 = {Recent work on deep neural networks as acoustic mod-
+els for automatic speech recognition (ASR) have demon-
+strated substantial performance improvements. We intro-
+duce a model which uses a deep recurrent auto encoder
+neural network to denoise input features for robust ASR.
+The model is trained on stereo (noisy and clean) audio
+features to predict clean features given noisy input. The
+model makes no assumptions about how noise affects the
+signal, nor the existence of distinct noise environments.
+Instead, the model can learn to model any type of distor-
+tion or additive noise given sufficient training data. We
+demonstrate the model is competitive with existing fea-
+ture denoising approaches on the Aurora2 task, and out-
+performs a tandem approach where deep networks are
+used to predict phoneme posteriors directly},
+  Comment                  = {Related: maas2013RNN-feature-enhancement},
+  File                     = {maas2012RNN-noise-reduction-in-ASR.pdf:maas2012RNN-noise-reduction-in-ASR.pdf:PDF},
+  Keywords                 = {RNN, recurrent, speech, ASR, autoencoder, DRDAE},
+  Owner                    = {Jack},
+  Timestamp                = {2015.04.21}
+}
+
+@Inproceedings{maas2013RNN-feature-enhancement,
+  Title                    = {Recurrent neural network feature enhancement: The 2nd CHiME challenge},
+  Author                   = {Maas, Andrew L and O'Neil, Tyler M and Hannun, Awni Y and Ng, Andrew Y},
+  Booktitle                = {Proceedings The 2nd CHiME Workshop on Machine Listening in Multisource Environments held in conjunction with ICASSP},
+  Year                     = {2013},
+  Pages                    = {79--80},
+  Url                      = {http://web.stanford.edu/~awni/papers/drdae_chime2013_final.pdf},
+
+  Abstract                 = {We apply a machine learning approach to improve noisy
+acoustic features for robust speech recognition. Specifically, we train a deep, recurrent neural network to map noise-
+corrupted input features to their corresponding clean ver-
+sions. We introduce several improvements to previously pro-
+posed neural network feature enhancement architectures. The
+model does not include assumptions about the specific noise
+and distortions present in CHiME data, but does assume noisy
+and clean stereo pairs are available for training. When used
+with the standard recognizer on the small vocabulary task
+(track 1), our approach demonstrates substantial improve-
+ments over the challenge baseline.},
+  Comment                  = {Related: maas2012RNN-noise-reduction-in-ASR},
+  File                     = {maas2013RNN-feature-enhancement.pdf:maas2013RNN-feature-enhancement.pdf:PDF},
+  Keywords                 = {RNN, recurrent, speech, ASR, autoencoder, DRDAE},
+  Owner                    = {Jack},
+  Timestamp                = {2015.04.21}
+}
+
 @Inproceedings{makriyiannis2014argumentation,
   Title                    = {Smarter Electricity through Argumentation},
   Author                   = {Makriyiannis, Menelaos and Lung, Tudor and Craven, Robert and Toni, Francesca and Kelly, Jack},
@@ -1655,6 +1637,21 @@ an object recognition (CIFAR10) benchmark.},
   Timestamp                = {2015.07.18}
 }
 
+@Article{oleary2015thermal-efficiency,
+  Title                    = {Review and evaluation of using household metered energy data for rating of building thermal efficiency of existing buildings},
+  Author                   = {Timothy O’Leary and M. Belusko and D. Whaley and F. Bruno},
+  Year                     = {2015},
+  Doi                      = {10.1016/j.enbuild.2015.09.018},
+  ISSN                     = {0378-7788},
+  Pages                    = {433 - 440},
+  Volume                   = {108},
+
+  Abstract                 = {Abstract This paper investigates the use of actual monitored household energy as an indicator of the thermal efficiency of a dwelling and subsequently rating of the building thermal performance. The paper reviews evaluation methods used internationally for both building thermal efficiency and building energy labelling and presents results from two discrete studies in South Australia on monitoring actual household energy consumption. In order to investigate the occupancy effect on household energy, monitored energy data collected from two different housing developments in South Australia were examined. The energy ratings for these homes are compliant with the national agreed protocols for thermal performance modelling of dwellings, where one set of homes is a group occupied by higher socio-economic groups and the other is low income public housing in a colder climate region with much poorer home energy ratings. The wide variation of actual household energy for the homes that have relatively similar thermal envelopes indicates a lack of meaningful use for actual household energy in disclosure of house energy performance. Therefore, it is argued that thermal modelling software used to rate homes appears a more useful application of a system of disclosure of energy performance than the use of energy bills.},
+  File                     = {oleary2015thermal-efficiency.pdf:oleary2015thermal-efficiency.pdf:PDF},
+  Journal                  = {Energy and Buildings},
+  Keywords                 = {Monitored energy use, energy, thermal, efficiency, comfort, behaviour}
+}
+
 @Article{olazaran1996perceptrons-controversy,
   Title                    = {A sociological study of the official history of the perceptrons controversy},
   Author                   = {Olazaran, Mikel},
@@ -1670,21 +1667,6 @@ an object recognition (CIFAR10) benchmark.},
   Owner                    = {Jack},
   Publisher                = {Sage Publications},
   Timestamp                = {2015.04.01}
-}
-
-@Article{oleary2015thermal-efficiency,
-  Title                    = {Review and evaluation of using household metered energy data for rating of building thermal efficiency of existing buildings },
-  Author                   = {Timothy O’Leary and M. Belusko and D. Whaley and F. Bruno},
-  Year                     = {2015},
-  Doi                      = {10.1016/j.enbuild.2015.09.018},
-  ISSN                     = {0378-7788},
-  Pages                    = {433 - 440},
-  Volume                   = {108},
-
-  Abstract                 = {Abstract This paper investigates the use of actual monitored household energy as an indicator of the thermal efficiency of a dwelling and subsequently rating of the building thermal performance. The paper reviews evaluation methods used internationally for both building thermal efficiency and building energy labelling and presents results from two discrete studies in South Australia on monitoring actual household energy consumption. In order to investigate the occupancy effect on household energy, monitored energy data collected from two different housing developments in South Australia were examined. The energy ratings for these homes are compliant with the national agreed protocols for thermal performance modelling of dwellings, where one set of homes is a group occupied by higher socio-economic groups and the other is low income public housing in a colder climate region with much poorer home energy ratings. The wide variation of actual household energy for the homes that have relatively similar thermal envelopes indicates a lack of meaningful use for actual household energy in disclosure of house energy performance. Therefore, it is argued that thermal modelling software used to rate homes appears a more useful application of a system of disclosure of energy performance than the use of energy bills. },
-  File                     = {oleary2015thermal-efficiency.pdf:oleary2015thermal-efficiency.pdf:PDF},
-  Journal                  = {Energy and Buildings },
-  Keywords                 = {Monitored energy use, energy, thermal, efficiency, comfort, behaviour}
 }
 
 @Inproceedings{parson2015dataport,
@@ -1740,29 +1722,27 @@ an object recognition (CIFAR10) benchmark.},
   Abstract                 = {We present in this paper a novel approach
 for training deterministic auto-encoders. We
 show that by adding a well chosen penalty
-term to the classical reconstruction cost function,
-we can achieve results that equal or surpass those 
-attained by other regularized auto-encoders 
+term to the classical reconstruction cost function, we can achieve results that equal or surpass those
+attained by other regularized auto-encoders
 as well as denoising auto-encoders
 on a range of datasets. This penalty term
 corresponds to the Frobenius norm of the
 Jacobian matrix of the encoder activations
 with respect to the input. We show that
 this penalty term results in a localized space
-contraction which in turn yields robust features 
-on the activation layer. Furthermore,
-we show how this penalty term is related to
+contraction which in turn yields robust features
+on the activation layer. Furthermore, we show how this penalty term is related to
 both regularized auto-encoders and denoising
 auto-encoders and how it can be seen as a link
 between deterministic and non-deterministic
 auto-encoders. We nd empirically that this
 penalty helps to carve a representation that
-better captures the local directions of variation 
+better captures the local directions of variation
 dictated by the data, corresponding to a
 lower-dimensional non-linear manifold, while
 being more invariant to the vast majority of
-directions orthogonal to the manifold. 
-Finally, we show that by using the learned 
+directions orthogonal to the manifold.
+Finally, we show that by using the learned
 features to initialize a MLP, we achieve state
 of the art classication error on a range of
 datasets, surpassing other methods of pre-training.},
@@ -1844,6 +1824,22 @@ From an initially unstructured network the hidden units differentiate into categ
   Timestamp                = {2015.07.22}
 }
 
+@Article{sonderby2015RNN-SPN,
+  Title                    = {Recurrent Spatial Transformer Networks},
+  Author                   = {S{\o}nderby, S{\o}ren Kaae and S{\o}nderby, Casper Kaae and Maal{\o}e, Lars and Winther, Ole},
+  Year                     = {2015},
+  Eprint                   = {1509.05329},
+  Eprinttype               = {arXiv},
+
+  Abstract                 = {We integrate the recently proposed spatial transformer network (SPN) [Jaderberg et. al 2015] into a recurrent neural network (RNN) to form an RNN-SPN model. We use the RNN-SPN to classify digits in cluttered MNIST sequences. The proposed model achieves a single digit error of 1.5% compared to 2.9% for a convolutional networks and 2.0% for convolutional networks with SPN layers. The SPN outputs a zoomed, rotated and skewed version of the input image. We investigate different down-sampling factors (ratio of pixel in input and output) for the SPN and show that the RNN-SPN model is able to down-sample the input images without deteriorating performance. The down-sampling in RNN-SPN can be thought of as adaptive down-sampling that minimizes the information loss in the regions of interest. We attribute the superior performance of the RNN-SPN to the fact that it can attend to a sequence of regions of interest.},
+  Comment                  = {Related: jaderberg2015STN},
+  File                     = {sonderby2015RNN-SPN.pdf:home/jack/Dropbox/MyWork/imperial/PhD/writing/jabref_bibliography/sonderby2015RNN-SPN.pdf:PDF},
+  Journal                  = {arXiv preprint arXiv:1509.05329},
+  Keywords                 = {deep learning, spatial transformer networks},
+  Owner                    = {jack},
+  Timestamp                = {2015.09.23}
+}
+
 @Article{pybrain2010jmlr,
   Title                    = {PyBrain},
   Author                   = {Schaul, Tom and Bayer, Justin and Wierstra, Daan and Sun, Yi and Felder, Martin and Sehnke, Frank and R{\"u}ckstie{\ss}, Thomas and Schmidhuber, J{\"u}rgen},
@@ -1861,7 +1857,7 @@ From an initially unstructured network the hidden units differentiate into categ
   Year                     = {2014},
   Doi                      = {10.1016/j.neunet.2014.09.003},
   Eprint                   = {1404.7828},
-  Month                    = apr,
+  Month                    = {apr},
   Url                      = {http://people.idsia.ch/~juergen/deep-learning-overview.html},
 
   Abstract                 = {In recent years, deep artificial neural networks (including recurrent ones) have won numerous contests in pattern recognition and machine learning. This historical survey compactly summarises relevant work, much of it from the previous millennium. Shallow and deep learners are distinguished by the depth of their credit assignment paths, which are chains of possibly learnable, causal links between actions and effects. I review deep supervised learning (also recapitulating the history of backpropagation), unsupervised learning, reinforcement learning & evolutionary computation, and indirect search for short programs encoding deep and large networks.},
@@ -1876,7 +1872,7 @@ From an initially unstructured network the hidden units differentiate into categ
 }
 
 @Article{sorrell2015reducing,
-  Title                    = {Reducing energy demand: A review of issues, challenges and approaches },
+  Title                    = {Reducing energy demand: A review of issues, challenges and approaches},
   Author                   = {Steve Sorrell},
   Journaltitle             = {Renewable and Sustainable Energy Reviews},
   Year                     = {2015},
@@ -1885,7 +1881,7 @@ From an initially unstructured network the hidden units differentiate into categ
   Pages                    = {74 - 82},
   Volume                   = {47},
 
-  Abstract                 = {Abstract Most commentators expect improved energy efficiency and reduced energy demand to provide the dominant contribution to tackling global climate change. But at the global level, the correlation between increased wealth and increased energy consumption is very strong and the impact of policies to reduce energy demand is both limited and contested. Different academic disciplines approach energy demand reduction in different ways: emphasising some mechanisms and neglecting others, being more or less optimistic about the potential for reducing energy demand and providing insights that are more or less useful for policymakers. This article provides an overview of the main issues and challenges associated with energy demand reduction, summarises how this challenge is ‘framed’ by key academic disciplines, indicates how these can provide complementary insights for policymakers and argues that a ‘sociotechnical’ perspective can provide a deeper understanding of the nature of this challenge and the processes through which it can be achieved. The article integrates ideas from the natural sciences, economics, psychology, innovation studies and sociology but does not give equal weight to each. It argues that reducing energy demand will prove more difficult than is commonly assumed and current approaches will be insufficient to deliver the transformation required. },
+  Abstract                 = {Abstract Most commentators expect improved energy efficiency and reduced energy demand to provide the dominant contribution to tackling global climate change. But at the global level, the correlation between increased wealth and increased energy consumption is very strong and the impact of policies to reduce energy demand is both limited and contested. Different academic disciplines approach energy demand reduction in different ways: emphasising some mechanisms and neglecting others, being more or less optimistic about the potential for reducing energy demand and providing insights that are more or less useful for policymakers. This article provides an overview of the main issues and challenges associated with energy demand reduction, summarises how this challenge is ‘framed’ by key academic disciplines, indicates how these can provide complementary insights for policymakers and argues that a ‘sociotechnical’ perspective can provide a deeper understanding of the nature of this challenge and the processes through which it can be achieved. The article integrates ideas from the natural sciences, economics, psychology, innovation studies and sociology but does not give equal weight to each. It argues that reducing energy demand will prove more difficult than is commonly assumed and current approaches will be insufficient to deliver the transformation required.},
   File                     = {sorrell2015reducing.pdf:sorrell2015reducing.pdf:PDF},
   Keywords                 = {energy, psychology, energy demand reduction},
   Owner                    = {Jack},
