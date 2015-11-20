@@ -1,0 +1,16 @@
+NILM:
+Always also include 'energy'
+'simulation' : for things useful for coding better simulator
+
+Sample rate keywords
+--------------------
+very low freq (15 minutes or slower)
+low freq (1 min >= x < 15 mins)
+medium freq (1Hz >= x < 1min)
+high freq (faster than 1Hz)
+
+machine learning
+----------------
+changepoint detection
+dynamic programming
+genetic algorithm
