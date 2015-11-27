@@ -1,16 +1,73 @@
 NILM:
 Always also include 'energy'
 'simulation' : for things useful for coding better simulator
+commercial
 
 Sample rate keywords
 --------------------
-very low freq (15 minutes or slower)
-low freq (1 min >= x < 15 mins)
-medium freq (1Hz >= x < 1min)
-high freq (faster than 1Hz)
+'very low freq' (15 minutes or slower).  Specific words = hourly, 
+'low freq' (1 min >= x < 15 mins)
+'medium freq' (1Hz >= x < 1min)
+'high freq' (faster than 1Hz)
 
 machine learning
 ----------------
 changepoint detection
 dynamic programming
-genetic algorithm
+dynamical systems
+genetic algorithms
+speech
+HMMs
+vision
+character recognition
+graphical models
+Bayesian
+artificial neural networks
+RNN-RBM
+RNNs
+generative
+RBMs
+deep neural networks
+variational
+autoencoder
+recurrent
+CNNs
+timeseries
+video
+unsupervised learning
+semi-supervised
+LSTM
+handwriting
+compressing neural networks
+density estimation
+deconvolutional
+
+climate science
+---------------
+palaeontology
+climate change
+ocean acidification
+sea-level
+ice
+
+legislation
+smart meters
+government
+
+software
+open-source
+visualisation
+data
+semantic web
+metadata
+wikis
+heating control
+methane
+carbon dioxide
+wireless sensor network
+ZigBee
+web service
+network protocol
+building management
+
+review
