@@ -41,6 +41,7 @@ handwriting
 compressing neural networks
 density estimation
 deconvolutional
+regularisation
 
 climate science
 ---------------
