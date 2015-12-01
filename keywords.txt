@@ -1,8 +1,10 @@
 NILM:
 Always also include 'energy'
 'simulation' : for things useful for coding better simulator
-commercial
+commercial (NILM articles are assumed to refer to domestic dwellings
+unless 'commercial' keyword is present)
 circuit-level
+harmonics
 
 Sample rate keywords
 --------------------
@@ -15,6 +17,7 @@ machine learning
 ----------------
 changepoint detection
 dynamic programming
+integer programming
 dynamical systems
 genetic algorithms
 speech
@@ -34,6 +37,7 @@ autoencoder
 recurrent
 CNNs
 timeseries
+pattern mining
 video
 unsupervised learning
 semi-supervised
@@ -45,6 +49,13 @@ deconvolutional
 regularisation
 sparse coding
 SVM
+music
+transcription
+decision tree
+feature extraction
+finite state machines
+ensemble
+motif mining
 
 climate science
 ---------------
@@ -63,6 +74,11 @@ energy
 wind turbines
 appliances
 signatures
+reducing peak load
+coal
+natural gas
+fracking
+generation
 
 misc
 ----
@@ -73,6 +89,7 @@ data
 semantic web
 metadata
 wikis
+thermal efficiency
 heating control
 methane
 carbon dioxide
@@ -82,5 +99,8 @@ web service
 network protocol
 building management
 privacy
+shipping
+tutorial
+occupancy
 
 review

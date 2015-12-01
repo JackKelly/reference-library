@@ -2,990 +2,6 @@
 % Encoding: UTF8
 
 
-@InProceedings{mcGregor2005,
-  title                    = {Scheduling Algorithms for Effective Thread Pairing on Hybrid Multiprocessors},
-  author                   = {McGregor, Robert L. and Antonopoulos, Christos D. and Nikolopoulos, Dimitrios S.},
-  date                     = {2005},
-  doi                      = {http://doi.ieeecomputersociety.org/10.1109/IPDPS.2005.390},
-  pages                    = {28a},
-  publisher                = {IEEE Computer Society},
-  url                      = {http://www.computer.org/portal/web/csdl/doi/10.1109/IPDPS.2005.390},
-  volume                   = {1},
-  abstract                 = {With the latest high-end computing nodes combining shared-memory multiprocessing with hardware multithreading, new scheduling policies are necessary for workloads consisting of multithreaded applications. The use of hybrid multiprocessors presents schedulers with the problem of job pairing, i.e. deciding which specific jobs can share each processor with minimum performance penalty, by running on different execution contexts. Therefore, scheduling policies are expected to decide not only which job mix will execute simultaneously across the processors, but also which jobs can be combined within each processor.This paper addresses the problem by introducing new scheduling policies that use run-time performance information to identify the best mix of threads to run across processors and within each processor. Scheduling of threads across processors is driven by the memory bandwidth utilization of the threads, whereas scheduling of threads within processors is driven by one of three metrics: bus transaction rate per thread, stall cycle rate per thread, or outermost level cache miss rate per thread. We have implemented and experimentally evaluated these policies on a real multiprocessor server with Intel Hyperthreaded processors.The policy using bus transaction rate for thread pairing achieves an average 13.4{\%} and a maximum 28.7{\%} performance improvement over the Linux scheduler. The policy using stall cycle rate for thread pairing achieves an average 9.5{\%} and a maximum 18.8{\%} performance improvement. The average and maximum performance gains of the policy using cache miss rate for thread pairing are 7.2{\%} and 23.6{\%} respectively.},
-  address                  = {Los Alamitos, CA, USA}
-}
-
-@InProceedings{miller2010b,
-  title                    = {Householder Experiences With Resource Monitoring Technology in Sustainable Homes},
-  author                   = {Miller, Wendy and Buys, Laurie},
-  date                     = {2010},
-  doi                      = {10.1145/1952222.1952271},
-  pages                    = {228},
-  url                      = {http://dl.acm.org/citation.cfm?id=1952222.1952271&coll=DL&dl=ACM&CFID=39668157&CFTOKEN=54253083},
-  address                  = {Brisbane, Australia}
-}
-
-@Article{mnih2013,
-  title                    = {Playing Atari With Deep Reinforcement Learning},
-  author                   = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Graves, Alex and Antonoglou, Ioannis and Wierstra, Daan and Riedmiller, Martin},
-  date                     = {2013-12},
-  eprint                   = {1312.5602},
-  url                      = {http://arxiv.org/abs/1312.5602},
-  abstract                 = {We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.},
-  archiveprefix            = {arXiv},
-  arxivid                  = {1312.5602}
-}
-
-@Article{mohammad-Djafari2006,
-  title                    = {Bayesian Approach to Change Points Detection in Time Series},
-  author                   = {Mohammad-Djafari, Ali and F\'eron, Olivier},
-  date                     = {2006},
-  journaltitle             = {International Journal of Imaging Systems and Technology},
-  doi                      = {10.1002/ima.20080},
-  issn                     = {08999457},
-  number                   = {5},
-  pages                    = {215--221},
-  url                      = {http://doi.wiley.com/10.1002/ima.20080},
-  volume                   = {16}
-}
-
-@InCollection{murata2001,
-  title                    = {Applying Kernel Based Subspace Classification to a Non-Intrusive Monitoring for Household Electric Appliances},
-  author                   = {Murata, Hiroshi and Onoda, Takashi},
-  date                     = {2001},
-  editor                   = {Dorffner, Georg and Bischof, Horst and Hornik, Kurt},
-  isbn                     = {978-3-540-42486-4},
-  pages                    = {692--698},
-  publisher                = {Springer Berlin Heidelberg},
-  url                      = {http://www.springerlink.com/content/n4p62njte60ma865/},
-  volume                   = {2130},
-  address                  = {Berlin, Heidelberg}
-}
-
-@Article{murray2012,
-  title                    = {Climate Policy: Oil's Tipping Point Has Passed},
-  author                   = {Murray, James and King, David},
-  date                     = {2012-01},
-  journaltitle             = {Nature},
-  doi                      = {10.1038/481433a},
-  issn                     = {0028-0836},
-  number                   = {7382},
-  pages                    = {433--435},
-  url                      = {http://dx.doi.org/10.1038/481433a http://www.nature.com/nature/journal/v481/n7382/full/481433a.html http://www.nature.com/nature/journal/v481/n7382/pdf/481433a.pdf},
-  volume                   = {481}
-}
-
-@InProceedings{newcombe2011,
-  title                    = {DTAM: Dense Tracking and Mapping in Real-Time},
-  author                   = {Newcombe, R.A. and Lovegrove, S.J. and Davison, A.J.},
-  date                     = {2011-11},
-  doi                      = {10.1109/ICCV.2011.6126513},
-  pages                    = {2320 --2327},
-  url                      = {http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6126513&url=http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6126513},
-  abstract                 = {DTAM is a system for real-time camera tracking and reconstruction which relies not on feature extraction but dense, every pixel methods. As a single hand-held RGB camera flies over a static scene, we estimate detailed textured depth maps at selected keyframes to produce a surface patchwork with millions of vertices. We use the hundreds of images available in a video stream to improve the quality of a simple photometric data term, and minimise a global spatially regularised energy functional in a novel non-convex optimisation framework. Interleaved, we track the camera's 6DOF motion precisely by frame-rate whole image alignment against the entire dense model. Our algorithms are highly parallelisable throughout and DTAM achieves real-time performance using current commodity GPU hardware. We demonstrate that a dense model permits superior tracking performance under rapid motion compared to a state of the art method using features; and also show the additional usefulness of the dense model for real-time scene interaction in a physics-enhanced augmented reality application.}
-}
-
-@InProceedings{ng2009,
-  title                    = {Automatic Appliance Load Signature Identification by Statistical Clustering},
-  author                   = {Ng, Simon K. K and Jian Liang and Cheng, John W. M},
-  date                     = {2009-11},
-  doi                      = {10.1049/cp.2009.1749},
-  language                 = {English},
-  pages                    = {1--6},
-  publisher                = {IET},
-  abstract                 = {By disaggregating load signatures at metering level, we aim to develop new knowledge on load behavior and subsequently devise new applications for customers as well as utilities. The pre-requisite of a meaningful load disaggregation is to have a reliable appliance-based load signature database. This paper presents an automated and statistical approach for load signature identification using clustering methods. One of the key advantages of the clustering method is its capability to identify the major loads accurately. We also investigate the effectiveness on accuracy improvement by pre-filtering the signals prior to cluster-creation and also performing consolidation after using automatic clustering. Actual trial data and results are presented in the paper to demonstrate the performance of the automated identification mechanism.}
-}
-
-@Article{nishi2013,
-  title                    = {Effective Periodic Pattern Mining in Time Series Databases},
-  author                   = {Nishi, Manziba Akanda and Ahmed, Chowdhury Farhan and Samiullah, Md. and Jeong, Byeong-Soo},
-  date                     = {2013},
-  journaltitle             = {Expert Systems with Applications},
-  number                   = {8},
-  pages                    = {3015--3027},
-  url                      = {http://www.sciencedirect.com/science/article/pii/S0957417412012584},
-  volume                   = {40},
-  abstract                 = {The goal of analyzing a time series database is to find whether and how frequent a periodic pattern is repeated within the series. Periodic pattern mining is the problem that regards temporal regularity. However, most of the existing algorithms have a major limitation in mining interesting patterns of users interest, that is, they can mine patterns of specific length with all the events sequentially one after another in exact positions within this pattern. Though there are certain scenarios where a pattern can be flexible, that is, it may be interesting and can be mined by neglecting any number of unimportant events in between important events with variable length of the pattern. Moreover, existing algorithms can detect only specific type of periodicity in various time series databases and require the interaction from user to determine periodicity. In this paper, we have proposed an algorithm for the periodic pattern mining in time series databases which does not rely on the user for the period value or period type of the pattern and can detect all types of periodic patterns at the same time, indeed these flexibilities are missing in existing algorithms. The proposed algorithm facilitates the user to generate different kinds of patterns by skipping intermediate events in a time series database and find out the periodicity of the patterns within the database. It is an improvement over the generating pattern using suffix tree, because suffix tree based algorithms have weakness in this particular area of pattern generation. Comparing with the existing algorithms, the proposed algorithm improves generating different kinds of interesting patterns and detects whether the generated pattern is periodic or not. We have tested the performance of our algorithm on both synthetic and real life data from different domains and found a large number of interesting event sequences which were missing in existing algorithms and the proposed algorithm was efficient enough in generating and detecting periodicity of flexible patterns on both types of data.}
-}
-
-@Article{norford1996,
-  title                    = {Non-Intrusive Electrical Load Monitoring in Commercial Buildings Based on Steady-State and Transient Load-Detection Algorithms},
-  author                   = {Norford, Leslie K. and Leeb, Steven B.},
-  date                     = {1996},
-  journaltitle             = {Energy and Buildings},
-  doi                      = {10.1016/0378-7788(95)00958-2},
-  issn                     = {0378-7788},
-  number                   = {1},
-  pages                    = {51--64},
-  url                      = {http://www.sciencedirect.com/science/article/pii/0378778895009582 http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6V2V-3WCT00V-6-1&_cdi=5712&_user=217827&_pii=0378778895009582&_origin=&_coverDate=12/31/1996&_sk=999759998&view=c&wchp=dGLzVlz-zSkzS&md5=6ccaf8be02bc1fd8eca6854fb9794163&ie=/sdarticle.pdf http://www.sciencedirect.com/science?_ob=MiamiImageURL&_cid=271089&_user=217827&_pii=0378778895009582&_check=y&_origin=&_coverDate=31-Dec-1996&view=c&wchp=dGLbVBA-zSkWz&md5=226bedad75c4},
-  volume                   = {24},
-  abstract                 = {Increased interest in energy scorekeeping, load forecasting and improved control of electricity-consuming equipment has focused attention on the instrumentation required to obtain the desired data. Work performed by the authors and other researchers has shown that individual loads can be detected and separated from rapid sampling of power at a single point serving a number of pieces of equipment, for example the electrical service entrance for an entire house or all of the central space-conditioning equipment in a commercial building. This technique has worked well in tests in houses but faces more difficult challenges in commercial buildings. We present our results for this centralized or non-intrusive load monitoring technique, applied to the space-conditioning equipment in an office/laboratory building in which equipment start-up and shut-down was centrally observed and analyzed on the basis of changes in steady-state power. We further describe our enhanced technique for distinguishing loads by matching start-up transients to known patterns, and present laboratory tests of fully automated detection hardware and software.}
-}
-
-@TechReport{L.K.Norford1999,
-  title                    = {Advanced Electrical Load Monitoring: A Wealth of Information at Low Cost},
-  author                   = {L. K. Norford and S. B. Leeb and D. Luo and S. R. Shaw},
-  date                     = {1999},
-  institution              = {Massachusetts Institute of Technology},
-  url                      = {poet.lbl.gov/diagworkshop/proceedings/norford.pdf},
-  abstract                 = {This paper describes a low-cost approach to obtain and analyze electrical power data that
-are very useful for performance monitoring and fault detection.
-Goals:
-â¢
-â¢
-Reduce the energy consumption and associated environmental degradation of
-commercial buildings in California, the U.S. and throughout the world;
-Reduce energy costs.}
-}
-
-@Article{oâLeary2015433,
-  title                    = {Review and Evaluation of Using Household Metered Energy Data for Rating of Building Thermal Efficiency of Existing Buildings},
-  author                   = {OâLeary, Timothy and Belusko, M and Whaley, D and Bruno, F},
-  date                     = {2015},
-  doi                      = {http://dx.doi.org/10.1016/j.enbuild.2015.09.018},
-  issn                     = {0378-7788},
-  pages                    = {433--440},
-  url                      = {http://www.sciencedirect.com/science/article/pii/S0378778815302590},
-  volume                   = {108},
-  abstract                 = {Abstract This paper investigates the use of actual monitored household energy as an indicator of the thermal efficiency of a dwelling and subsequently rating of the building thermal performance. The paper reviews evaluation methods used internationally for both building thermal efficiency and building energy labelling and presents results from two discrete studies in South Australia on monitoring actual household energy consumption. In order to investigate the occupancy effect on household energy, monitored energy data collected from two different housing developments in South Australia were examined. The energy ratings for these homes are compliant with the national agreed protocols for thermal performance modelling of dwellings, where one set of homes is a group occupied by higher socio-economic groups and the other is low income public housing in a colder climate region with much poorer home energy ratings. The wide variation of actual household energy for the homes that have relatively similar thermal envelopes indicates a lack of meaningful use for actual household energy in disclosure of house energy performance. Therefore, it is argued that thermal modelling software used to rate homes appears a more useful application of a system of disclosure of energy performance than the use of energy bills.}
-}
-
-@Article{obst2013,
-  title                    = {Guided Self-Organization of Input-Driven Recurrent Neural Networks},
-  author                   = {Obst, Oliver and Boedecker, Joschka},
-  date                     = {2013-09},
-  eprint                   = {1309.1524},
-  url                      = {http://arxiv.org/abs/1309.1524},
-  archiveprefix            = {arXiv},
-  arxivid                  = {1309.1524}
-}
-
-@Article{orr2005,
-  title                    = {Anthropogenic Ocean Acidification Over the Twenty-First Century and Its Impact on Calcifying Organisms},
-  author                   = {Orr, James C. and Fabry, Victoria J. and Aumont, Olivier and Bopp, Laurent and Doney, Scott C. and Feely, Richard A. and Gnanadesikan, Anand and Gruber, Nicolas and Ishida, Akio and Joos, Fortunat and Key, Robert M. and Lindsay, Keith and Maier-Reimer, Ernst and Matear, Richard and Monfray, Patrick and Mouchet, Anne and Najjar, Raymond G. and Plattner, Gian-Kasper and Rodgers, Keith B. and Sabine, Christopher L. and Sarmiento, Jorge L. and Schlitzer, Reiner and Slater, Richard D. and Totterdell, Ian J. and Weirig, Marie-France and Yamanaka, Yasuhiro and Yool, Andrew},
-  date                     = {2005},
-  journaltitle             = {Nature},
-  doi                      = {10.1038/nature04095},
-  issn                     = {0028-0836},
-  number                   = {7059},
-  pages                    = {681--686},
-  url                      = {http://www.nature.com/nature/journal/v437/n7059/full/nature04095.html},
-  volume                   = {437}
-}
-
-@TechReport{paulaOwen2012,
-  title                    = {Powering the Nation - Household Electricity-Using Habits Revealed},
-  author                   = {Paula Owen and Rosalyn Foreman and Penny Dunbabin and Maggie Charnley and Nicola King and Wendy Brown and Chris Evans and Jean-Paul Zimmerman},
-  date                     = {2012-06},
-  institution              = {Energy Saving Trust},
-  url                      = {http://www.energysavingtrust.org.uk/Publications2/Corporate/Research-and-insights/Powering-the-nation-household-electricity-using-habits-revealed},
-  abstract                 = {A report by the Energy Saving Trust, the Department of Energy and Climate Change (DECC), and the Department for Environment, Food and Rural Affairs (Defra)
-
-The in-depth Household Electricity Use Study aimed to cover the electricity usage of a representative sample of English owner-occupier homes. The results, summarised in the report Powering the nation, provide us with the richest insights ever produced in the UK into how we use the electrical products that power our lives.}
-}
-
-@TechReport{paragon1998,
-  title                    = {Low-Cost NIALMS Technology: Technical Assessment},
-  author                   = {Paragon},
-  date                     = {1998-09},
-  institution              = {Electric Power Research Institute},
-  url                      = {http://my.epri.com/portal/server.pt?Abstract_id=TR-108918-V2},
-  abstract                 = {A Non-Intrusive Appliance Load Monitoring System (NIALMS) provides the ability to submeter residential loads from the meter panel without intruding into the home. Though NIALMS is already a commercially available product, issues of cost and functionality stand in the way of broader market penetration. This report evaluates the available technical options that could allow NIALMS to attain a lower price point and improved load identification.}
-}
-
-@InProceedings{pardo2005,
-  title                    = {Modeling Form for On-Line Following of Musical Performances},
-  author                   = {Pardo, Bryan and Birmingham, William},
-  date                     = {2005},
-  isbn                     = {1-57735-236-x},
-  pages                    = {1018--1023},
-  publisher                = {AAAI Press},
-  series                   = {AAAI'05},
-  url                      = {http://dl.acm.org/citation.cfm?id=1619410.1619496}
-}
-
-@Misc{parson2011a,
-  title                    = {PhD Progress: The Reference Energy Disaggregation Data Set},
-  author                   = {Parson, Oliver},
-  date                     = {2011-09},
-  url                      = {http://op106phd.blogspot.com/2011/09/reference-energy-disaggregation-data.html}
-}
-
-@Article{patel2007b,
-  title                    = {At the Flick of a Switch: Detecting and Classifying Unique Electrical Events on the Residential Power Line},
-  author                   = {Patel, Shwetak N. and Robertson, Thomas and Kientz, Julie A. and Reynolds, Matthew S. and Abowd, Gregory D.},
-  date                     = {2007-09},
-  pages                    = {271--288},
-  url                      = {http://dl.acm.org/citation.cfm?id=1771592.1771608},
-  isbn                     = {978-3-540-74852-6},
-  publisher                = {Springer-Verlag}
-}
-
-@Article{pearson2000,
-  title                    = {Atmospheric Carbon Dioxide Concentrations Over the Past 60 Million Years},
-  author                   = {Pearson, Paul N. and Palmer, Martin R.},
-  date                     = {2000},
-  journaltitle             = {Nature},
-  doi                      = {10.1038/35021000},
-  issn                     = {0028-0836},
-  number                   = {6797},
-  pages                    = {695--699},
-  url                      = {http://www.nature.com/nature/journal/v406/n6797/abs/406695a0.html},
-  volume                   = {406}
-}
-
-@Article{petit1999,
-  title                    = {Climate and Atmospheric History of the Past 420,000 Years From the Vostok Ice Core, Antarctica},
-  author                   = {Petit, J. R. and Jouzel, J. and Raynaud, D. and Barkov, N. I. and Barnola, J.-M. and Basile, I. and Bender, M. and Chappellaz, J. and Davis, M. and Delaygue, G. and Delmotte, M. and Kotlyakov, V. M. and Legrand, M. and Lipenkov, V. Y. and Lorius, C. and PEpin, L. and Ritz, C. and Saltzman, E. and Stievenard, M.},
-  date                     = {1999-06},
-  journaltitle             = {Nature},
-  doi                      = {10.1038/20859},
-  issn                     = {0028-0836},
-  number                   = {6735},
-  pages                    = {429--436},
-  url                      = {http://www.nature.com/nature/journal/v399/n6735/full/399429a0.html},
-  volume                   = {399}
-}
-
-@Misc{pikeResearch2012,
-  title                    = {Smart Grid Deployment Tracker 4Q11 Pike Research},
-  author                   = {PikeResearch},
-  date                     = {2012},
-  url                      = {http://www.pikeresearch.com/research/smart-grid-deployment-tracker-4q11}
-}
-
-@Article{poess2011,
-  title                    = {Power Based Performance and Capacity Estimation Models for Enterprise Information Systems},
-  author                   = {Poess, Meikel and Nambiar, Raghunath},
-  date                     = {2011-03},
-  journaltitle             = {Bulletin of the IEEE Computer Society Technical Committee on Data Engineering},
-  number                   = {1},
-  pages                    = {34},
-  url                      = {http://sites.computer.org/debull/A11mar/poess2.pdf http://sites.computer.org/debull/A11mar/issue1.htm},
-  volume                   = {34},
-  abstract                 = {Historically, the performance and purchase price of enterprise information systems have been the key
-arguments in purchasing decisions. With rising energy costs and increasing power use due to the ever-
-growing demand for compute capacity (servers, storage, networks etc.), electricity bills have become
-a significant expense for todays data centers. In the very near future, energy efficiency is expected
-to be one of the key purchasing arguments. Having realized this trend, the Transaction Processing
-Performance Council has developed the TPC-Energy specification. It defines a standard methodology
-for measuring, reporting and fairly comparing power consumption of enterprise information systems.
-Wide industry adaption of TPC-Energy requires a large body of benchmark publications across multiple
-software and hardware platforms, which could take several years. Meanwhile, we believe that analytical
-power estimates based on nameplate power is a useful tool for estimating power consumption of TPC
-benchmark configurations as well as enterprise information systems. This paper presents enhancements
-to previously published energy estimation models based on the TPC-C and TPC-H benchmarks from the
-same authors and a new model, based on the TPC-E benchmark. The models can be applied to estimate
-power consumption of enterprise OLTP and Decision Support systems.}
-}
-
-@Article{polyak2010,
-  title                    = {History of Sea Ice in the Arctic},
-  author                   = {Polyak, Leonid and Alley, Richard B. and Andrews, John T. and Brigham-Grette, Julie and Cronin, Thomas M. and Darby, Dennis A. and Dyke, Arthur S. and Fitzpatrick, Joan J. and Funder, Svend and Holland, Marika and Jennings, Anne E. and Miller, Gifford H. and O'Regan, Matt and Savelle, James and Serreze, Mark and St. John, Kristen and White, James W.C. and Wolff, Eric},
-  date                     = {2010-07},
-  journaltitle             = {Quaternary Science Reviews},
-  issn                     = {0277-3791},
-  number                   = {15-16},
-  pages                    = {1757--1778},
-  url                      = {http://www.sciencedirect.com/science/article/pii/S0277379110000429 http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6VBC-4YKFMY0-2-1&_cdi=5923&_user=217827&_pii=S0277379110000429&_origin=&_coverDate=07/31/2010&_sk=999709984&view=c&wchp=dGLbVlW-zSkWb&md5=077448e218cf49cf8083578e5765db02&ie=/sdarticle.pdf},
-  volume                   = {29},
-  abstract                 = {<p><br/>Arctic sea-ice extent and volume are declining rapidly. Several studies project that the Arctic Ocean may become seasonally ice-free by the year 2040 or even earlier. Putting this into perspective requires information on the history of Arctic sea-ice conditions through the geologic past. This information can be provided by proxy records from the Arctic Ocean floor and from the surrounding coasts. Although existing records are far from complete, they indicate that sea ice became a feature of the Arctic by 47Â Ma, following a pronounced decline in atmospheric pCO2 after the Paleocene-Eocene Thermal Optimum, and consistently covered at least part of the Arctic Ocean for no less than the last 13-14 million years. Ice was apparently most widespread during the last 2-3 million years, in accordance with Earth's overall cooler climate. Nevertheless, episodes of considerably reduced sea ice or even seasonally ice-free conditions occurred during warmer periods linked to orbital variations. The last low-ice event related to orbital forcing (high insolation) was in the early Holocene, after which the northern high latitudes cooled overall, with some superimposed shorter-term (multidecadal to millennial-scale) and lower-magnitude variability. The current reduction in Arctic ice cover started in the late 19th century, consistent with the rapidly warming climate, and became very pronounced over the last three decades. This ice loss appears to be unmatched over at least the last few thousand years and unexplainable by any of the known natural variabilities.</p>}
-}
-
-@PhdThesis{proper2008,
-  title                    = {Automated Classification of Power Signals},
-  author                   = {Proper, Ethan R. (Ethan Richard)},
-  date                     = {2008},
-  language                 = {eng},
-  url                      = {http://dspace.mit.edu/handle/1721.1/44842},
-  abstract                 = {The Non-Intrusive Load Monitor (NILM) is a device that utilizes voltage and current measurements to monitor an entire system from a single reference point. The NILM and associated software convert the V/I signal to spectral power envelopes that can be searched to determine when a transient occurs. The identification of this signal can then be determined by an expert classifier and a series of these classifications can be used to diagnose system failures or improper operation. Current NILM research conducted at Massachusetts Institute of Technology's Laboratory for Electromagnetic and Electronic Systems (LEES) is exploring the application and expansion of NILM technology for the use of monitoring shipboard systems. This thesis presents the ginzu application that implements a detect-classify-verify loop that locates the indexes of transients, identifies them using a decision-tree based expert classifier, and then generates a summary event file containing relevant information. The ginzu application provides a command-line interface between streaming preprocessed power data (PREP) and an included graphical user interface. This software was developed using thousands of hours of archived data from the Coast Guard Cutters ESCANABA (WMEC-907) and SENECA (WMEC-906). A validation of software effectiveness was conducted as the software was installed onboard ESCANABA.}
-}
-
-@InProceedings{prudenzi2002,
-  title                    = {A Neuron Nets Based Procedure for Identifying Domestic Appliances Pattern-Of-Use From Energy Recordings at Meter Panel},
-  author                   = {Prudenzi, A.},
-  date                     = {2002},
-  doi                      = {10.1109/PESW.2002.985144},
-  isbn                     = {0-7803-7322-7},
-  language                 = {English},
-  pages                    = {941-- 946 vol.2},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/ielx5/7733/21229/00985144.pdf?tp=&arnumber=985144&isnumber=21229},
-  volume                   = {2},
-  abstract                 = {The paper illustrates an artificial neural network (ANN) based procedure for the identification of pattern-of-use of some main domestic electric appliances from daily profiles of energy recordings taken at household's meter panel at 15 minute steps. The paper describes the architecture used which is structured into multiple subsequent stages based on ANNs. The application of the procedure to some real daily load diagrams as recorded at few household meters demonstrates the efficiency of the proposed approach. The utility of ANNs for extracting further useful information concerning energy usage from data bases typically available for electric companies is finally discussed.}
-}
-
-@Article{rabiner1989,
-  title                    = {A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition},
-  author                   = {Rabiner, L.R.},
-  date                     = {1989-02},
-  journaltitle             = {Proceedings of the IEEE},
-  doi                      = {10.1109/5.18626},
-  issn                     = {0018-9219},
-  number                   = {2},
-  pages                    = {257 --286},
-  url                      = {http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=18626&url=http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=18626},
-  volume                   = {77},
-  abstract                 = {This tutorial provides an overview of the basic theory of hidden Markov models (HMMs) as originated by L.E. Baum and T. Petrie (1966) and gives practical details on methods of implementation of the theory along with a description of selected applications of the theory to distinct problems in speech recognition. Results from a number of original sources are combined to provide a single source of acquiring the background required to pursue further this area of research. The author first reviews the theory of discrete Markov chains and shows how the concept of hidden states, where the observation is a probabilistic function of the state, can be used effectively. The theory is illustrated with two simple examples, namely coin-tossing, and the classic balls-in-urns system. Three fundamental problems of HMMs are noted and several practical techniques for solving these problems are given. The various types of HMMs that have been studied, including ergodic as well as left-right models, are described}
-}
-
-@InCollection{rabiner1990,
-  title                    = {Readings in Speech Recognition},
-  author                   = {Rabiner, Lawrence R.},
-  date                     = {1990},
-  editor                   = {Waibel, Alex and Lee, Kai-Fu},
-  isbn                     = {1-55860-124-4},
-  pages                    = {267--296},
-  publisher                = {Morgan Kaufmann Publishers Inc.},
-  url                      = {http://dl.acm.org/citation.cfm?id=108235.108253},
-  address                  = {San Francisco, CA, USA}
-}
-
-@Article{rabiner1989a,
-  title                    = {A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition},
-  author                   = {Rabiner, L. R},
-  date                     = {1989-02},
-  journaltitle             = {Proceedings of the IEEE},
-  doi                      = {10.1109/5.18626},
-  issn                     = {0018-9219},
-  language                 = {English},
-  number                   = {2},
-  pages                    = {257--286},
-  url                      = {http://ieeexplore.ieee.org/ielx5/5/698/00018626.pdf?tp=&arnumber=18626&isnumber=698},
-  volume                   = {77},
-  abstract                 = {This tutorial provides an overview of the basic theory of hidden Markov models (HMMs) as originated by L.E. Baum and T. Petrie (1966) and gives practical details on methods of implementation of the theory along with a description of selected applications of the theory to distinct problems in speech recognition. Results from a number of original sources are combined to provide a single source of acquiring the background required to pursue further this area of research. The author first reviews the theory of discrete Markov chains and shows how the concept of hidden states, where the observation is a probabilistic function of the state, can be used effectively. The theory is illustrated with two simple examples, namely coin-tossing, and the classic balls-in-urns system. Three fundamental problems of HMMs are noted and several practical techniques for solving these problems are given. The various types of HMMs that have been studied, including ergodic as well as left-right models, are described}
-}
-
-@InProceedings{rahayu_2012,
-  title                    = {Learning to Be Energy-Wise: Discriminative Methods for Load Disaggregation},
-  author                   = {Rahayu, Dwi and Narayanaswamy, Balakrishnan and Krishnaswamy, Shonali and Labbe, Cyril and Seetharam, Deva P},
-  booktitle                = {Future Energy Systems: Where Energy, Computing and Communication Meet (e-Energy), 2012 Third International Conference on},
-  date                     = {2012},
-  pages                    = {1--4}
-}
-
-@InProceedings{reeg2010,
-  title                    = {Algorithm Development for Non-Intrusive Load Monitoring for Verification and Diagnostics},
-  author                   = {Reeg, C. E and Overbye, T. J},
-  date                     = {2010-09},
-  doi                      = {10.1109/NAPS.2010.5619600},
-  isbn                     = {978-1-4244-8046-3},
-  language                 = {English},
-  pages                    = {1--5},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/ielx5/5606057/5618939/05619600.pdf?tp=&arnumber=5619600&isnumber=5618939},
-  abstract                 = {Non-intrusive load monitoring (NILM) is a method of detecting the current energy consumption of a building using a single set of sensors on the main building supply. This is in contrast to intrusive monitoring where end use devices are sensed. Building on techniques of previous works, it will be shown that NILM can be implemented on currently available commercial devices and provide meaningful feedback both to the user and supplying utility. Limitations of inexpensive commercial devices such as resolution and measurement accuracy are a challenge. An algorithm currently under development, specifically developed for the low resolution of inexpensive commercial sensor packages, will be discussed and demonstrated. This information can then be used to verify the effectiveness of various smart grid initiatives in addition to other energy saving protocols such as weather proofing and energy efficient appliances. In addition, this information can be used to select devices for distributed control by analyzing not only the type of device but also the real world operating characteristics.}
-}
-
-@InProceedings{tracebase,
-  title                    = {On the Accuracy of Appliance Identification Based on Distributed Load Metering Data},
-  author                   = {Reinhardt, Andreas and Bauman, Paul and Burgstahler, Daniel and Hollick, Matthias and Chonov, Hristo and Werner, Marc and Steinmetz, Ralf},
-  booktitle                = {Proceedings of the 2nd IFIP Conference on Sustainable Internet and ICT for Sustainability},
-  date                     = {2012},
-  pages                    = {1--9},
-  address                  = {Pisa, Italy}
-}
-
-@Book{reiss1993,
-  title                    = {Recognizing Planar Objects Using Invariant Image Features},
-  author                   = {Reiss, Thomas H.},
-  date                     = {1993},
-  isbn                     = {9783540567134},
-  language                 = {en},
-  pages                    = {198},
-  publisher                = {Springer-Verlag},
-  url                      = {http://books.google.co.uk/books?id=MuBRAAAAMAAJ},
-  abstract                 = {Given a familiar object extracted from its surroundings, we humans have little difficulty in recognizing it irrespective of its size, position and orientation in our field of view. Changes in lighting and the effects of perspective also pose no problems. How do we achieve this, and more importantly, how can we get a computer to do this? One very promising approach is to find mathematical functions of an object's image, or of an object's 3D description, that are invariant to the transformations caused by the object's motion. This book is devoted to the theory and practice of such invariant image features, so-called image invariants, for planar objects. It gives a comprehensive summary of the field, discussing methods for recognizing both occluded and partially occluded objects, and also contains a definitive treatmentof moment invariants and a tutorial introduction to algebraic invariants, which are fundamental to affine moment invariants and to many projective invariants. A number of novel invariant functions are presented and the results of numerous experiments investigating the stability of new and old invariants are discussed. The main conclusion is that moment invariants are very effective, both for partially occluded objects and for recognizing objects in grey-level images.}
-}
-
-@Article{rignot2011,
-  title                    = {Acceleration of the Contribution of the Greenland and Antarctic Ice Sheets to Sea Level Rise},
-  author                   = {Rignot, E. and Velicogna, I. and van den Broeke, M. R. and Monaghan, A. and Lenaerts, J.},
-  date                     = {2011-03},
-  journaltitle             = {Geophysical Research Letters},
-  pages                    = {5 PP.},
-  url                      = {http://www.agu.org/pubs/crossref/2011/2011GL046583.shtml},
-  volume                   = {38}
-}
-
-@Article{robertC.Wilson,
-  title                    = {A Neural Implementation of the Kalman Filter},
-  author                   = {Robert C. Wilson, Leif H. Finkel},
-  url                      = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.215.207}
-}
-
-@Article{rockstrom2009,
-  title                    = {A Safe Operating Space for Humanity},
-  author                   = {Rockstrom, Johan and Steffen, Will and Noone, Kevin and Persson, Asa and Chapin, F. Stuart and Lambin, Eric F. and Lenton, Timothy M. and Scheffer, Marten and Folke, Carl and Schellnhuber, Hans Joachim and Nykvist, Bjorn and de Wit, Cynthia A. and Hughes, Terry and van der Leeuw, Sander and Rodhe, Henning and Sorlin, Sverker and Snyder, Peter K. and Costanza, Robert and Svedin, Uno and Falkenmark, Malin and Karlberg, Louise and Corell, Robert W. and Fabry, Victoria J. and Hansen, James and Walker, Brian and Liverman, Diana and Richardson, Katherine and Crutzen, Paul and Foley, Jonathan A.},
-  date                     = {2009},
-  journaltitle             = {Nature},
-  doi                      = {10.1038/461472a},
-  issn                     = {0028-0836},
-  number                   = {7263},
-  pages                    = {472--475},
-  url                      = {http://www.nature.com/nature/journal/v461/n7263/full/461472a.html},
-  volume                   = {461}
-}
-
-@Article{rouvellou1995,
-  title                    = {Inference of a Probabilistic Finite State Machine From Its Output},
-  author                   = {Rouvellou, I. and Hart, G. W},
-  date                     = {1995-03},
-  journaltitle             = {IEEE Transactions on Systems, Man and Cybernetics},
-  doi                      = {10.1109/21.364856},
-  issn                     = {0018-9472},
-  language                 = {English},
-  number                   = {3},
-  pages                    = {424--437},
-  url                      = {http://ieeexplore.ieee.org/ielx1/21/8358/00364856.pdf?tp=&arnumber=364856&isnumber=8358},
-  volume                   = {25},
-  abstract                 = {This paper addresses the problem of identifying a probabilistic FSM from its output. The authors propose a formal description of the FSM and its output, using a regular phrase-structured grammar. This description is associated with a cost measuring its information content. The authors then state the inference problem as a combinatorial optimization problem with an objective function define as the cost of the description of the FSM and its output. A heuristic algorithm is proposed which processes the output âon lineâ and yields a local minimum of the authors' criterion. At each step (i.e. as new data is observed and processed), the procedure searches locally through the space of non-probabilistic FSMs, i.e., the transitions are initially regarded as being only present or absent. When a non-probabilistic model has been generated, the transition probabilities are determined from their relative frequencies given the behavior indicated by the data. This yields maximum likelihood estimates of the probabilities. The costs of the obtained probabilistic FSMs are then computed, and the K minimum cost FSMs are kept as starting points for the next step search. At each step, the generation of the FSMs is done via a local search through the neighborhoods of the K best FSMs obtained at the previous step. This algorithm is compared with similar algorithms proposed previously, and tested on a range of examples. It is found to work for a wider range of FSMs than the previous methods, and it is much more practical for large problems than previously proposed exhaustive search techniques}
-}
-
-@InProceedings{ruzzelli2010,
-  title                    = {Real-Time Recognition and Profiling of Appliances Through a Single Electricity Sensor},
-  author                   = {Ruzzelli, A. G and Nicolas, C. and Schoofs, A. and O'Hare, G. M.P},
-  date                     = {2010-06},
-  doi                      = {10.1109/SECON.2010.5508244},
-  isbn                     = {978-1-4244-7150-8},
-  language                 = {English},
-  pages                    = {1--9},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/ielx5/5508188/5508197/05508244.pdf?tp=&arnumber=5508244&isnumber=5508197},
-  abstract                 = {Sensing, monitoring and actuating systems are expected to play a key role in reducing buildings overall energy consumption. Leveraging sensor systems to support energy efficiency in buildings poses novel research challenges in monitoring space usage, controlling devices, interfacing with smart energy meters and communicating with the energy grid. In the attempt of reducing electricity consumption in buildings, identifying individual sources of energy consumption is key to generate energy awareness and improve efficiency of available energy resources usage. Previous work studied several non-intrusive load monitoring techniques to classify appliances; however, the literature lacks of an comprehensive system that can be easily installed in existing buildings to empower users profiling, benchmarking and recognizing loads in real-time. This has been a major reason holding back the practice adoption of load monitoring techniques. In this paper we present RECAP: RECognition of electrical Appliances and Profiling in real-time. RECAP uses a single wireless energy monitoring sensor easily clipped to the main electrical unit. The energy monitoring unit transmits energy data wirelessly to a local machine for data processing and storage. The RECAP system consists of three parts: (1) Guiding the user for profiling electrical appliances within premises and generating a database of unique appliance signatures; (2) Using those signatures to train an artificial neural network that is then employed to recognize appliance activities (3) Providing a Load descriptor to allow peer appliance benchmarking. RECAP addresses the need of an integrated and intuitive tool to empower building owners with energy awareness. Enabling real-time appliance recognition is a stepping-stone towards reducing energy consumption and allowing a number of major applications including load-shifting techniques, energy expenditure breakdown per appliance, detection of power hungry and faulty appliances, and recogn- - ition of occupant activity. This paper describes the system design and performance evaluation in domestic environment.}
-}
-
-@Book{salas:calculus,
-  title                    = {Calculus: One and Several Variable},
-  author                   = {Salas, S L and Hille, Einar},
-  date                     = {1978},
-  publisher                = {John Wiley and Sons},
-  address                  = {New York}
-}
-
-@InProceedings{sawyer2009,
-  title                    = {Creating Low-Cost Energy-Management Systems for Homes Using Non-Intrusive Energy Monitoring Devices},
-  author                   = {Sawyer, R.L. and Anderson, J.M. and Foulks, E.L. and Troxler, J.O. and Cox, R.W.},
-  date                     = {2009-09},
-  doi                      = {10.1109/ECCE.2009.5316132},
-  pages                    = {3239 --3246},
-  url                      = {http://ieeexplore.ieee.org/ielx5/5305884/5315930/05316132.pdf?tp=&arnumber=5316132&isnumber=5315930 http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5316132&tag=1},
-  abstract                 = {This paper demonstrates how non-intrusive energy monitoring systems can be used to create powerful low-cost energy-management systems for use in homes. The paper describes the basic operation of non-intrusive devices, and it places particular emphasis on their ability to detect equipment degradation using only aggregate current measurements. The method used for detection of loads is described in detail. Also several field tested diagnostics that were developed to detect equipment degradations are presented.}
-}
-
-@InProceedings{schoofs_2010,
-  title                    = {ANNOT: Automated Electricity Data Annotation Using Wireless Sensor Networks},
-  author                   = {Schoofs, A and Guerrieri, A and Delaney, D T and O'Hare, G and Ruzzelli, A G},
-  booktitle                = {Proceedings of the 7th Annual IEEE Communications Society Conference on Sensor Mesh and Ad Hoc Communications and Networks},
-  date                     = {2010},
-  publisher                = {IEEE},
-  address                  = {Boston, MA, USA}
-}
-
-@InProceedings{schoofs2010,
-  title                    = {Demo Abstract: Appliance Load Monitoring by Power Load Disaggregation},
-  author                   = {Schoofs, A. and Sintoni, A. and O'Hare, G. M.P and Ruzzelli, A. G},
-  date                     = {2010-06},
-  doi                      = {10.1109/SECON.2010.5508225},
-  isbn                     = {978-1-4244-7150-8},
-  language                 = {English},
-  pages                    = {1--2},
-  publisher                = {IEEE},
-  abstract                 = {Appliance load monitoring systems are designed to disaggregate the power load of a building in order to estimate the nature of individual loads, providing a real-time fine-grained recognition of active appliances. Monitoring nonintrusively appliances' contributions to a given load enables a wide range of applications, ranging from electricity bill decomposition to accurate electricity user profiling. This work demonstrates a real implementation of such appliance load monitoring system. An intuitive graphical user interface is proposed to drive the system setup for profiling appliances' signatures and for visualising the monitoring output.}
-}
-
-@Article{schuckmann2009,
-  title                    = {Global Hydrographic Variability Patterns During 2003â2008},
-  author                   = {von Schuckmann, K. and Gaillard, F. and Traon, P.-Y. Le},
-  date                     = {2009-09},
-  journaltitle             = {Journal of Geophysical Research},
-  pages                    = {17 PP.},
-  url                      = {http://www.agu.org/pubs/crossref/2009/2008JC005237.shtml},
-  volume                   = {114}
-}
-
-@InProceedings{scott2011,
-  title                    = {PreHeat: Controlling Home Heating Using Occupancy Prediction},
-  author                   = {Scott, James and Bernheim Brush, A.J. and Krumm, John and Meyers, Brian and Hazas, Michael and Hodges, Stephen and Villar, Nicolas},
-  date                     = {2011},
-  doi                      = {10.1145/2030112.2030151},
-  isbn                     = {978-1-4503-0630-0},
-  pages                    = {281--290},
-  publisher                = {ACM},
-  series                   = {UbiComp '11},
-  url                      = {http://doi.acm.org/10.1145/2030112.2030151},
-  abstract                 = {Home heating is a major factor in worldwide energy use. Our system, PreHeat, aims to more efficiently heat homes by using occupancy sensing and occupancy prediction to automatically control home heating. We deployed PreHeat in five homes, three in the US and two in the UK. In UK homes, we controlled heating on a per-room basis to enable further energy savings. We compared PreHeat's prediction algorithm with a static program over an average 61 days per house, alternating days between these conditions, and measuring actual gas consumption and occupancy. In UK homes PreHeat both saved gas and reduced MissTime (the time that the house was occupied but not warm). In US homes, PreHeat decreased MissTime by a factor of 6-12, while consuming a similar amount of gas. In summary, PreHeat enables more efficient heating while removing the need for users to program thermostat schedules.},
-  address                  = {New York, NY, USA}
-}
-
-@Article{sehgal2010,
-  title                    = {Optimizing Energy and Performance for Server-Class File System Workloads},
-  author                   = {Sehgal, Priya and Tarasov, Vasily and Zadok, Erez},
-  date                     = {2010-09},
-  journaltitle             = {ACM Transactions on Storage (TOS)},
-  doi                      = {10.1145/1837915.1837918},
-  issn                     = {1553-3077},
-  pages                    = {10:1--10:31},
-  url                      = {http://portal.acm.org/citation.cfm?id=1837915.1837918&coll=DL&dl=ACM&CFID=16265639&CFTOKEN=44506532 http://portal.acm.org/ft_gateway.cfm?id=1837918&type=pdf&CFID=16265639&CFTOKEN=44506532},
-  volume                   = {6},
-  abstract                 = {Recently, power has emerged as a critical factor in designing components of storage systems, especially for power-hungry data centers. While there is some research into power-aware storage stack components, there are no systematic studies evaluating each component's impact separately. Various factors like workloads, hardware configurations, and software configurations impact the performance and energy efficiency of the system. This article evaluates the file system's impact on energy consumption and performance. We studied several popular Linux file systems, with various mount and format options, using the FileBench workload generator to emulate four server workloads: Web, database, mail, and fileserver, on two different hardware configurations. The file system design, implementation, and available features have a significant effect on CPU/disk utilization, and hence on performance and power. We discovered that default file system options are often suboptimal, and even poor. In this article we show that a careful matching of expected workloads and hardware configuration to a single software configurationâthe file systemâcan improve power-performance efficiency by a factor ranging from 1.05 to 9.4 times.}
-}
-
-@InProceedings{seryak2003,
-  title                    = {Occupancy and Behavioral Affects on Residential Energy Use},
-  author                   = {Seryak, J. and Kissock, K.},
-  booktitle                = {American Solar Energy Society Solar Conference},
-  date                     = {2003},
-  pages                    = {717--722},
-  url                      = {http://www.sbse.org/awards/docs/2003/Seryak1.pdf http://direct.bl.uk/bld/PlaceOrder.do?UIN=135695130&ETOC=RN&from=searchengine},
-  address                  = {Austin, Texas}
-}
-
-@InProceedings{shahriar2013b,
-  title                    = {Energy Disaggregation Using Ensemble of Classifiers},
-  author                   = {Shahriar, Md. Sumon and Rahman, Ashfaqur},
-  booktitle                = {IEEE 2013 Tencon - Spring},
-  date                     = {2013-04},
-  doi                      = {10.1109/TENCONSpring.2013.6584433},
-  isbn                     = {978-1-4673-6349-5},
-  pages                    = {161--164},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6584433},
-  abstract                 = {We study an approach towards energy disaggregation using ensemble of classifiers, a supervised machine learning method. Specifically we identify different appliance loads from the aggregated power usage data. Experimental results on a public data sets show the accuracy of ensemble of classifiers using diverse features in identifying appliance loads.}
-}
-
-@InProceedings{huijuanShao2012,
-  title                    = {A Temporal Motif Mining Approach to Unsupervised Energy Disaggregation},
-  author                   = {Huijuan Shao and Manish Marwah and Naren Ramakrishnan},
-  date                     = {2012-05},
-  url                      = {http://www.ices.cmu.edu/psii/nilm/abstracts/shao_VT_NILM2012_abstract.pdf},
-  abstract                 = {Non-intrusive appliance load monitoring has emerged as a
-popular approach to study energy consumption patterns
-without instrumenting every device in an installation. The
-resulting computational problem is to disaggregate total en-
-ergy usage into usage by specific circuits and devices, to gain
-insight into consumption patterns. We exploit the temporal
-ordering implicit in on/off events of devices to uncover mo-
-tifs (episodes) corresponding to the operation of individual
-devices. Extracted motifs are then subjected to a sequence
-of constraint checks to ensure that the resulting episodes are
-interpretable. Our preliminary results show that motif min-
-ing is adept at distinguishing devices with multiple power
-levels and at disentangling the combinatorial operation of
-devices},
-  address                  = {Pittsburgh, PA}
-}
-
-@Book{shapiro1995,
-  title                    = {Affine Analysis of Image Sequences},
-  author                   = {Shapiro, Larry S.},
-  date                     = {1995},
-  isbn                     = {9780521550635},
-  language                 = {en},
-  pages                    = {232},
-  publisher                = {Cambridge University Press},
-  url                      = {http://books.google.co.uk/books?id=aWm9mv4mKH0C},
-  abstract                 = {Computer vision is a rapidly growing field which aims to make computers see as effectively as humans. In this book Dr Shapiro presents a new computer vision framework for interpreting time-varying imagery. This is an important task, since movement reveals valuable information about the environment. The fully-automated system operates on long, monocular image sequences containing multiple, independently-moving objects, and demonstrates the practical feasibility of recovering scene structure and motion in a bottom-up fashion. Real and synthetic examples are given throughout, with particular emphasis on image coding applications. Novel theory is derived in the context of the affine camera, a generalisation of the familiar scaled orthographic model. Analysis proceeds by tracking 'corner features' through successive frames and grouping the resulting trajectories into rigid objects using new clustering and outlier rejection techniques. The three-dimensional motion parameters are then computed via affine epipolar geometry, and affine structure is used to generate alternative views of the object and fill in partial views. The use of all available features (over multiple frames) and the incorporation of statistical noise properties substantially improves existing algorithms, giving greater reliability and reduced noise sensitivity.}
-}
-
-@InProceedings{sharma2011,
-  title                    = {Blink: Managing Server Clusters on Intermittent Power},
-  author                   = {Sharma, Navin and Barker, Sean and Irwin, David and Shenoy, Prashant},
-  date                     = {2011},
-  doi                      = {10.1145/1950365.1950389},
-  isbn                     = {978-1-4503-0266-1},
-  pages                    = {185--198},
-  publisher                = {ACM},
-  series                   = {ASPLOS '11},
-  url                      = {http://portal.acm.org/citation.cfm?id=1950365.1950389&coll=DL&dl=ACM&CFID=16265639&CFTOKEN=44506532},
-  abstract                 = {Reducing the energy footprint of data centers continues to receive significant attention due to both its financial and environmental impact. There are numerous methods that limit the impact of both factors, such as expanding the use of renewable energy or participating in automated demand-response programs. To take advantage of these methods, servers and applications must gracefully handle intermittent constraints in their power supply. In this paper, we propose blinking---metered transitions between a high-power active state and a low-power inactive state---as the primary abstraction for conforming to intermittent power constraints. We design Blink, an application-independent hardware-software platform for developing and evaluating blinking applications, and define multiple types of blinking policies. We then use Blink to design BlinkCache, a blinking version of memcached, to demonstrate the effect of blinking on an example application. Our results show that a load-proportional blinking policy combines the advantages of both activation and synchronous blinking for realistic Zipf-like popularity distributions and wind/solar power signals by achieving near optimal hit rates (within 15{\%} of an activation policy), while also providing fairer access to the cache (within 2{\%} of a syn- chronous policy) for equally popular objects.},
-  address                  = {New York, NY, USA}
-}
-
-@Article{shaw2008,
-  title                    = {Nonintrusive Load Monitoring and Diagnostics in Power Systems},
-  author                   = {Shaw, S.R. and Leeb, S.B. and Norford, L.K. and Cox, R.W.},
-  date                     = {2008-07},
-  journaltitle             = {Instrumentation and Measurement, IEEE Transactions on},
-  doi                      = {10.1109/TIM.2008.917179},
-  issn                     = {0018-9456},
-  number                   = {7},
-  pages                    = {1445 --1454},
-  url                      = {http://ieeexplore.ieee.org/ielx5/19/4531714/04463663.pdf?tp=&arnumber=4463663&isnumber=4531714 http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4463663&tag=1},
-  volume                   = {57},
-  abstract                 = {This paper describes a transient event classification scheme, system identification techniques, and implementation for use in nonintrusive load monitoring. Together, these techniques form a system that can determine the operating schedule and find parameters of physical models of loads that are connected to an AC or DC power distribution system. The monitoring system requires only off-the-shelf hardware and recognizes individual transients by disaggregating the signal from a minimal number of sensors that are installed at a central location in the distribution system. Implementation details and field tests for AC and DC systems are presented.}
-}
-
-@Article{shaw1998,
-  title                    = {Instrumentation for High Performance Nonintrusive Electrical Load Monitoring},
-  author                   = {Shaw, S. R. and Abler, C. B. and Lepard, R. F. and Luo, D. and Leeb, S. B. and Norford, L. K.},
-  date                     = {1998},
-  journaltitle             = {Journal of Solar Energy Engineering},
-  doi                      = {10.1115/1.2888073},
-  number                   = {3},
-  pages                    = {224--229},
-  url                      = {http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=JSEEDO000120000003000224000001&idtype=cvips&gifs=yes&ref=no},
-  volume                   = {120}
-}
-
-@Article{shaw1999,
-  title                    = {Identification of Induction Motor Parameters From Transient Stator Current Measurements},
-  author                   = {Shaw, S. R and Leeb, S. B},
-  date                     = {1999-02},
-  journaltitle             = {IEEE Transactions on Industrial Electronics},
-  doi                      = {10.1109/41.744405},
-  issn                     = {0278-0046},
-  language                 = {English},
-  number                   = {1},
-  pages                    = {139--149},
-  url                      = {http://ieeexplore.ieee.org/ielx4/41/16068/00744405.pdf?tp=&arnumber=744405&isnumber=16068},
-  volume                   = {46},
-  abstract                 = {This paper describes three methods for estimating the lumped model parameters of an induction motor using startup transient data. A three-phase balanced induction motor is assumed. Measurements of the stator currents and voltages are required for the identification procedure, but no measurements from the motor shaft are needed. The first method presented applies simple models with limited temporal domains of validity and obtains parameter estimates by extrapolating the model error bias to zero. This method does not minimize any specific error criterion and is presented as a means of finding a good initial guess for a conventional iterative maximum-likelihood or least-squares estimator. The second method presented minimizes equation errors in the induction motor model in the least-square sense using a Levenburg-Marquardt iteration. The third identification method is a continuation of the Levenburg-Marquardt method, motivated by observed properties of some pathological loss functions. The third method minimizes errors in the observations in the least-squared sense and is, therefore, a maximum-likelihood estimator under appropriate conditions of normality. The performance of the identification schemes is demonstrated with both simulated and measured data, and parameters obtained using the methods are compared with parameters obtained from standard tests}
-}
-
-@Article{4463663,
-  title                    = {Nonintrusive Load Monitoring and Diagnostics in Power Systems},
-  author                   = {Shaw, S R and Leeb, S B and Norford, L K and Cox, R W},
-  date                     = {2008},
-  journaltitle             = {Instrumentation and Measurement, IEEE Transactions on},
-  doi                      = {10.1109/TIM.2008.917179},
-  issn                     = {0018-9456},
-  number                   = {7},
-  pages                    = {1445--1454},
-  volume                   = {57}
-}
-
-@Article{shaw2008a,
-  title                    = {Nonintrusive Load Monitoring and Diagnostics in Power Systems},
-  author                   = {Shaw, S R and Leeb, S B and Norford, L K and Cox, R W},
-  date                     = {2008},
-  journaltitle             = {Instrumentation and Measurement, IEEE Transactions on},
-  doi                      = {10.1109/TIM.2008.917179},
-  issn                     = {0018-9456},
-  number                   = {7},
-  pages                    = {1445--1454},
-  volume                   = {57}
-}
-
-@Article{shrivastava2011,
-  title                    = {Data-Driven Visual Similarity for Cross-Domain Image Matching},
-  author                   = {Shrivastava, Abhinav and Malisiewicz, Tomasz and Gupta, Abhinav and Efros, Alexei A.},
-  date                     = {2011-12},
-  journaltitle             = {ACM Trans. Graph.},
-  doi                      = {10.1145/2070781.2024188},
-  issn                     = {0730-0301},
-  number                   = {6},
-  pages                    = {154:1--154:10},
-  url                      = {http://doi.acm.org/10.1145/2070781.2024188 http://dl.acm.org/ft_gateway.cfm?id=2024188&type=pdf},
-  volume                   = {30},
-  abstract                 = {The goal of this work is to find visually similar images even if they appear quite different at the raw pixel level. This task is particularly important for matching images across visual domains, such as photos taken over different seasons or lighting conditions, paintings, hand-drawn sketches, etc. We propose a surprisingly simple method that estimates the relative importance of different features in a query image based on the notion of "data-driven uniqueness". We employ standard tools from discriminative object detection in a novel way, yielding a generic approach that does not depend on a particular image representation or a specific visual domain. Our approach shows good performance on a number of difficult cross-domain visual tasks e.g., matching paintings or sketches to real photographs. The method also allows us to demonstrate novel applications such as Internet re-photography, and painting2gps. While at present the technique is too computationally intensive to be practical for interactive image retrieval, we hope that some of the ideas will eventually become applicable to that domain as well.}
-}
-
-@Article{si2009,
-  title                    = {Optimization of Coal-Fired Boiler SCRs Based on Modified Support Vector Machine Models and Genetic Algorithms},
-  author                   = {Si, Fengqi and Romero, Carlos E. and Yao, Zheng and Schuster, Eugenio and Xu, Zhigao and Morey, Robert L. and Liebowitz, Barry N.},
-  date                     = {2009-05},
-  journaltitle             = {Fuel},
-  doi                      = {10.1016/j.fuel.2008.10.038},
-  issn                     = {0016-2361},
-  number                   = {5},
-  pages                    = {806--816},
-  url                      = {http://www.sciencedirect.com/science/article/B6V3B-4TYXSRR-1/2/e4e96eadcf393b576f8efb6665762df0 http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6V3B-4TYXSRR-1&_user=10&_coverDate=05/31/2009&_rdoc=1&_fmt=high&_orig=gateway&_origin=gateway&_sort=d&_docanchor=&view=c&_searchStrId=1736945786&_rerunOrigin=scholar.google&_acct=C000050221&_version=1&_urlVersion=0&_userid=10&md5=b89cbf4db264be5846220b062c793348&searchtype=a http://www.sciencedirect.com/science?_ob=ShoppingCartURL&_method=a},
-  volume                   = {88},
-  abstract                 = {<p><br/>An integrated combustion optimization approach is presented for the combined considering the trade offs in optimization of coal-fired boiler and selective catalyst reaction (SCR) system, to balance the unit thermal efficiency, SCR reagent consumption and NOx emissions. Field tests were performed at a 160Â MW coal-fired unit to investigate the relationships between process controllable variables, and optimization targets and constraints. Based on the test data, a modified on-line support vector regression model was proposed for characteristic function approximation, in which the model parameters can be continuously adapted for changes in coal quality and other conditions of plant equipment. The optimization scheme was implemented by a genetic algorithm in two stages. Firstly, the multi-objective combustion optimization problem was solved to achieve an optimal Pareto front, which contains optimal solutions for lowest unit heat rate and lowest NOx emissions. Secondly, best operating settings for the boiler, and SCR system and air preheater were obtained for lowest operating cost under the constraints of NOx emissions limit and air preheater ammonium bisulfate deposition depth.</p>}
-}
-
-@Article{solomon2009,
-  title                    = {Irreversible Climate Change Due to Carbon Dioxide Emissions},
-  author                   = {Solomon, Susan and Plattner, Gian-Kasper and Knutti, Reto and Friedlingstein, Pierre},
-  date                     = {2009-02},
-  journaltitle             = {Proceedings of the National Academy of Sciences},
-  doi                      = {10.1073/pnas.0812721106},
-  number                   = {6},
-  pages                    = {1704 --1709},
-  url                      = {http://www.pnas.org/content/106/6/1704.full http://www.pnas.org/content/106/6/1704.full.pdf},
-  volume                   = {106},
-  abstract                 = {The severity of damaging human-induced climate change depends not only on the magnitude of the change but also on the potential for irreversibility. This paper shows that the climate change that takes place due to increases in carbon dioxide concentration is largely irreversible for 1,000 years after emissions stop. Following cessation of emissions, removal of atmospheric carbon dioxide decreases radiative forcing, but is largely compensated by slower loss of heat to the ocean, so that atmospheric temperatures do not drop significantly for at least 1,000 years. Among illustrative irreversible impacts that should be expected if atmospheric carbon dioxide concentrations increase from current levels near 385 parts per million by volume (ppmv) to a peak of 450â600 ppmv over the coming century are irreversible dry-season rainfall reductions in several regions comparable to those of the âdust bowlâ era and inexorable sea level rise. Thermal expansion of the warming ocean provides a conservative lower limit to irreversible global average sea level rise of at least 0.4â1.0 m if 21st century CO2 concentrations exceed 600 ppmv and 0.6â1.9 m for peak CO2 concentrations exceeding â1,000 ppmv. Additional contributions from glaciers and ice sheet contributions to future sea level rise are uncertain but may equal or exceed several meters over the next millennium or longer.}
-}
-
-@InProceedings{sommer2010,
-  title                    = {Outside the Closed World: On Using Machine Learning for Network Intrusion Detection},
-  author                   = {Sommer, Robin and Paxson, Vern},
-  booktitle                = {2010 IEEE Symposium on Security and Privacy},
-  date                     = {2010},
-  doi                      = {10.1109/SP.2010.25},
-  isbn                     = {978-1-4244-6894-2},
-  pages                    = {305--316},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5504793},
-  abstract                 = {In network intrusion detection research, one popular strategy for finding attacks is monitoring a network's activity for anomalies: deviations from profiles of normality previously learned from benign traffic, typically identified using tools borrowed from the machine learning community. However, despite extensive academic research one finds a striking gap in terms of actual deployments of such systems: compared with other intrusion detection approaches, machine learning is rarely employed in operational "real world" settings. We examine the differences between the network intrusion detection problem and other areas where machine learning regularly finds much more success. Our main claim is that the task of finding attacks is fundamentally different from these other applications, making it significantly harder for the intrusion detection community to employ machine learning effectively. We support this claim by identifying challenges particular to network intrusion detection, and provide a set of guidelines meant to strengthen future research on anomaly detection.},
-  issn                     = {1081-6011}
-}
-
-@Article{srinivasan2006a,
-  title                    = {Neural-Network-Based Signature Recognition for Harmonic Source Identification},
-  author                   = {Srinivasan, D. and Ng, W.S. and Liew, A.C.},
-  date                     = {2006-01},
-  journaltitle             = {Power Delivery, IEEE Transactions on},
-  doi                      = {10.1109/TPWRD.2005.852370},
-  issn                     = {0885-8977},
-  number                   = {1},
-  pages                    = {398 -- 405},
-  url                      = {http://ieeexplore.ieee.org/ielx5/61/33198/01564224.pdf?tp=&arnumber=1564224&isnumber=33198 http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1564224},
-  volume                   = {21},
-  abstract                 = {This paper proposes a neural-network (NN)-based approach to nonintrusive harmonic source identification. In this approach, NNs are trained to extract important features from the input current waveform to uniquely identify various types of devices using their distinct harmonic "signatures". Such automated, noninvasive device identification will be critical in future power-quality monitoring and enhancement systems. Several NN-based classification models including multilayer perceptron (MLP), radial basis function (RBF) network, and support vector machines (SVM) with linear, polynomial, and RBF kernels were developed for signature extraction and device identification. These models were trained and tested using spike train data gathered from the Fourier analysis of the input current waveform in the presence of multiple devices. The performance of these models was compared in terms of their accuracy, generalization ability, and noise tolerance limits. The results showed that MLPs and SVM were both able to determine the presence of devices based on their harmonic signatures with high accuracy. MLP was found to be the best signature identification method because of its low computational requirements and ability to extract the information necessary for highly accurate device identification.}
-}
-
-@Article{srinivasan2006,
-  title                    = {Neural-Network-Based Signature Recognition for Harmonic Source Identification},
-  author                   = {Srinivasan, D and Ng, W S and Liew, A C},
-  date                     = {2006},
-  journaltitle             = {IEEE Transactions on Power Delivery},
-  doi                      = {10.1109/TPWRD.2005.852370},
-  number                   = {1},
-  pages                    = {398--405},
-  volume                   = {21}
-}
-
-@Article{stine2009,
-  title                    = {Changes in the Phase of the Annual Cycle of Surface Temperature},
-  author                   = {Stine, A. R. and Huybers, P. and Fung, I. Y.},
-  date                     = {2009-01},
-  journaltitle             = {Nature},
-  doi                      = {10.1038/nature07675},
-  issn                     = {0028-0836},
-  number                   = {7228},
-  pages                    = {435--440},
-  url                      = {http://www.nature.com/nature/journal/v457/n7228/abs/nature07675.html http://www.nature.com/nature/journal/v457/n7228/pdf/nature07675.pdf},
-  volume                   = {457}
-}
-
-@InProceedings{4655131,
-  title                    = {Nonintrusive Appliance Load Monitoring Based on Integer Programming},
-  author                   = {Suzuki, K and Inagaki, S and Suzuki, T and Nakamura, H and Ito, K},
-  booktitle                = {SICE Annual Conference, 2008},
-  date                     = {2008},
-  doi                      = {10.1109/SICE.2008.4655131},
-  pages                    = {2742--2747}
-}
-
-@InProceedings{suzuki2008,
-  title                    = {Nonintrusive Appliance Load Monitoring Based on Integer Programming},
-  author                   = {Suzuki, K. and Inagaki, S. and Suzuki, T. and Nakamura, H. and Ito, K.},
-  date                     = {2008-08},
-  doi                      = {10.1109/SICE.2008.4655131},
-  isbn                     = {978-4-907764-30-2},
-  language                 = {English},
-  pages                    = {2742--2747},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/ielx5/4638686/4654597/04655131.pdf?tp=&arnumber=4655131&isnumber=4654597},
-  abstract                 = {This paper presents a new nonintrusive appliance load monitoring technique based on the integer programming. Nonintrusive appliance load monitoring is a problem to identify the operating conditions of the electric appliances in a house only by observing the overall load current and voltage. Since the overall load current is expressed as a superposition of each current of the operating appliance, the monitoring problem can be formulated as an integer quadratic programming problem by expressing the operating conditions as integer variables. This problem is solvable with sufficiently small computational burden thanks to the recent development of the commercial software. The proposed method does not require the relearning even when a new appliance is installed in the house. Furthermore, the proposed formulation is applicable to cases that some appliance has multiple modes, and cases that some same-type appliances operate simultaneously. Usefulness of the proposed technique is verified through some experimental results.}
-}
-
-@Article{tang2014,
-  title                    = {Plug and Play! A Simple, Universal Model for Energy Disaggregation},
-  author                   = {Tang, Guoming and Wu, Kui and Lei, Jingsheng and Tang, Jiuyang},
-  date                     = {2014-04},
-  eprint                   = {1404.1884},
-  url                      = {http://arxiv.org/abs/1404.1884},
-  archiveprefix            = {arXiv},
-  arxivid                  = {1404.1884}
-}
-
-@Book{tanguiane1993,
-  title                    = {Artificial Perception and Music Recognition},
-  author                   = {Tanguiane, Andranick S.},
-  date                     = {1993},
-  isbn                     = {9783540573944},
-  language                 = {en},
-  pages                    = {210},
-  publisher                = {Springer-Verlag},
-  url                      = {http://books.google.co.uk/books?id=XRCXQgAACAAJ},
-  abstract                 = {Some of the current concepts used in transgenic research, an increasingly important tool to study the regulation and function of genes, are illustrated in this book. With these techniques, animal models can be used to study human diseases; this opens up new possibilities in both applied and basic research. Specifically, the ability to introduce genes into the germline of mice and the successful expression of the inserted gene within an organism provide new insights and opportunities for biomedical research. The discussion here shows how a detailed analysis of the underlying molecular mechanisms will provide new insights into the genetic origin of certain diseases and will lead to a better understanding of normal and abnormal physiological processes.}
-}
-
-@Book{thaler2008,
-  title                    = {Nudge: Improving Decisions About Health, Wealth, and Happiness},
-  author                   = {Thaler, Richard H and Sunstein, Cass R},
-  date                     = {2008-05},
-  isbn                     = {0300122233},
-  pages                    = {224},
-  publisher                = {Yale University Press},
-  url                      = {http://www.amazon.co.uk/dp/0300122233}
-}
-
-@Article{thomas2007,
-  title                    = {Current Treatment Strategies for Multiple Myeloma},
-  author                   = {Thomas, Sheeba and Alexanian, Raymond},
-  date                     = {2007-04},
-  journaltitle             = {Clinical Lymphoma {\&} Myeloma},
-  doi                      = {10.3816/CLM.2007.s.014},
-  issn                     = {1557-9190, 1938-0712},
-  pages                    = {S139--S144},
-  url                      = {http://ovidsp.tx.ovid.com/sp-3.5.0b/ovidweb.cgi?T=JS&PAGE=fulltext&D=ovft&AN=01244628-200704004-00002&NEWS=N&CSC=Y&CHANNEL=PubMed},
-  volume                   = {7}
-}
-
-@Article{tollefson2012,
-  title                    = {Air Sampling Reveals High Emissions From Gas Field},
-  author                   = {Tollefson, Jeff},
-  date                     = {2012-02},
-  journaltitle             = {Nature},
-  doi                      = {10.1038/482139a},
-  issn                     = {0028-0836, 1744-7933},
-  number                   = {7384},
-  pages                    = {139--140},
-  url                      = {http://www.nature.com/news/air-sampling-reveals-high-emissions-from-gas-field-1.9982},
-  volume                   = {482}
-}
-
-@Article{tsagarakis2013a,
-  title                    = {A Statistical Survey of the UK Residential Sector Electrical Loads},
-  author                   = {Tsagarakis, G. and Collin, A. J. and Kiprakis, A. E.},
-  date                     = {2013-06},
-  journaltitle             = {International Journal of Emerging Electric Power Systems},
-  doi                      = {10.1515/ijeeps-2013-0078},
-  eprint                   = {1306.0802},
-  pages                    = {509--523},
-  volume                   = {14},
-  abstract                 = {This paper presents a comprehensive statistical review of data obtained from a wide range of literature on the most widely used electrical appliances in the UK residential load sector. It focuses on individual appliances and begins by consideration of the electrical operations performed by the load. This approach allows for the loads to be categorised based on the electrical characteristics, and also provides information on the reactive power characteristics of the load, which is often neglected from standard consumption statistics. This data is particularly important for power system analysis. In addition to this, device ownership statistics and probability distribution functions of power demand are presented for the main residential loads. Although the data presented is primarily intended as a resource for the development of load profiles for power system analysis, it contains a large volume of information which provides a useful database for the wider research community.},
-  archiveprefix            = {arXiv},
-  arxivid                  = {1306.0802}
-}
-
-@Article{tzeLeung2011,
-  title                    = {A Simple Bayesian Approach to Multiple Change-Points},
-  author                   = {Tze Leung, Haipeng Xing},
-  date                     = {2011},
-  journaltitle             = {Statistica Sinica},
-  issn                     = {1017-0405},
-  url                      = {http://www.researchgate.net/publication/228657446_A_simple_Bayesian_approach_to_multiple_change-points},
-  volume                   = {21}
-}
-
-@Article{ugursal2008,
-  title                    = {Comparison of Neural Network, Conditional Demand Analysis, and Engineering Approaches for Modeling End-Use Energy Consumption in the Residential Sector},
-  author                   = {Ugursal, V. and Aydinalpkoksal},
-  date                     = {2008},
-  journaltitle             = {Applied Energy},
-  doi                      = {10.1016/j.apenergy.2006.09.012},
-  number                   = {4},
-  pages                    = {271--296},
-  volume                   = {85}
-}
-
-@Article{ugursal2009,
-  title                    = {Modeling of End-Use Energy Consumption in the Residential Sector: A Review of Modeling Techniques},
-  author                   = {Ugursal, V Ismet and Swan, Lukas G},
-  date                     = {2009},
-  journaltitle             = {Renewable and Sustainable Energy Reviews},
-  doi                      = {10.1016/j.rser.2008.09.033},
-  number                   = {8},
-  pages                    = {1819--1835},
-  volume                   = {13}
-}
-
-@Article{vermeer2009,
-  title                    = {Global Sea Level Linked to Global Temperature},
-  author                   = {Vermeer, Martin and Rahmstorf, Stefan},
-  date                     = {2009-12},
-  journaltitle             = {Proceedings of the National Academy of Sciences},
-  doi                      = {10.1073/pnas.0907765106},
-  number                   = {51},
-  pages                    = {21527 --21532},
-  url                      = {http://www.pnas.org/content/106/51/21527.full.pdf http://www.pnas.org/content/106/51/21527.short},
-  volume                   = {106},
-  abstract                 = {We propose a simple relationship linking global sea-level variations on time scales of decades to centuries to global mean temperature. This relationship is tested on synthetic data from a global climate model for the past millennium and the next century. When applied to observed data of sea level and temperature for 1880â2000, and taking into account known anthropogenic hydrologic contributions to sea level, the correlation is >0.99, explaining 98{\%} of the variance. For future global temperature scenarios of the Intergovernmental Panel on Climate Change's Fourth Assessment Report, the relationship projects a sea-level rise ranging from 75 to 190 cm for the period 1990â2100.}
-}
-
-@Article{vogelstein2014,
-  title                    = {Discovery of Brainwide Neural-Behavioral Maps via Multiscale Unsupervised Structure Learning.},
-  author                   = {Vogelstein, Joshua T and Park, Youngser and Ohyama, Tomoko and Kerr, Rex A and Truman, James W and Priebe, Carey E and Zlatic, Marta},
-  date                     = {2014-04},
-  journaltitle             = {Science (New York, N.Y.)},
-  doi                      = {10.1126/science.1250298},
-  issn                     = {1095-9203},
-  number                   = {6182},
-  pages                    = {386--92},
-  url                      = {http://www.sciencemag.org/content/344/6182/386.full},
-  volume                   = {344},
-  abstract                 = {A single nervous system can generate many distinct motor patterns. Identifying which neurons and circuits control which behaviors has been a laborious piecemeal process, usually for one observer-defined behavior at a time. We present a fundamentally different approach to neuron-behavior mapping. We optogenetically activated 1054 identified neuron lines in Drosophila larvae and tracked the behavioral responses from 37,780 animals. Application of multiscale unsupervised structure learning methods to the behavioral data enabled us to identify 29 discrete, statistically distinguishable, observer-unbiased behavioral phenotypes. Mapping the neural lines to the behavior(s) they evoke provides a behavioral reference atlas for neuron subsets covering a large fraction of larval neurons. This atlas is a starting point for connectivity- and activity-mapping studies to further investigate the mechanisms by which neurons mediate diverse behaviors.},
-  pmid                     = {24674869}
-}
-
-@Article{vogelstein2014a,
-  title                    = {Discovery of Brainwide Neural-Behavioral Maps via Multiscale Unsupervised Structure Learning.},
-  author                   = {Vogelstein, Joshua T and Park, Youngser and Ohyama, Tomoko and Kerr, Rex A and Truman, James W and Priebe, Carey E and Zlatic, Marta},
-  date                     = {2014-04},
-  journaltitle             = {Science (New York, N.Y.)},
-  doi                      = {10.1126/science.1250298},
-  issn                     = {1095-9203},
-  number                   = {6182},
-  pages                    = {386--92},
-  url                      = {http://www.sciencemag.org/content/344/6182/386.abstract},
-  volume                   = {344},
-  abstract                 = {A single nervous system can generate many distinct motor patterns. Identifying which neurons and circuits control which behaviors has been a laborious piecemeal process, usually for one observer-defined behavior at a time. We present a fundamentally different approach to neuron-behavior mapping. We optogenetically activated 1054 identified neuron lines in Drosophila larvae and tracked the behavioral responses from 37,780 animals. Application of multiscale unsupervised structure learning methods to the behavioral data enabled us to identify 29 discrete, statistically distinguishable, observer-unbiased behavioral phenotypes. Mapping the neural lines to the behavior(s) they evoke provides a behavioral reference atlas for neuron subsets covering a large fraction of larval neurons. This atlas is a starting point for connectivity- and activity-mapping studies to further investigate the mechanisms by which neurons mediate diverse behaviors.},
-  pmid                     = {24674869}
-}
-
-@InProceedings{deVos2001,
-  title                    = {Knowledge Representation for Power System Modelling},
-  author                   = {de Vos, A. and Rowbotham, C. T},
-  date                     = {2001},
-  doi                      = {10.1109/PICA.2001.932318},
-  isbn                     = {0-7803-6681-6},
-  language                 = {English},
-  pages                    = {50--56},
-  publisher                = {IEEE},
-  abstract                 = {Modelling power systems is an area of ongoing interest in the transmission management and control systems community. Continuing development is driven by two forces. The traditional tasks of model maintenance and management must be achieved with fewer resources. At the same time, model exchange and coordination has become a priority. The latter force arises from the disaggregation of utility functions and the introduction of power markets. This paper begins by identifying some of the power system modelling tasks that have become important, but are ill served by current tools and techniques. Among these are model versioning and version control, migration of models between, different schema, the transformation of models for different purposes or applications, and the merging of models from different sources. These tasks are typically handled by semi-manual methods or heavily customized software. The paper then describes the application of knowledge representation to power system modelling. In particular, the power of this approach to provide generic solutions to the, foregoing problems is explored. Knowledge representation is contrasted with more common data representations and put into context with current industry initiatives, EPRI CIM (common information model), UMS DAF (data access facility) and XML/CIM. Finally, the feasibility of using knowledge representation for power system models is illustrated with a case study from a major Australian distribution utility}
-}
-
-@InProceedings{hang-ShengWang2002,
-  title                    = {Orion: A Power-Performance Simulator for Interconnection Networks},
-  author                   = {Hang-Sheng Wang and Xinping Zhu and Li-Shiuan Peh and Malik, S.},
-  date                     = {2002},
-  doi                      = {10.1109/MICRO.2002.1176258},
-  isbn                     = {0-7695-1859-1},
-  language                 = {English},
-  pages                    = {294-- 305},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/ielx5/8385/26403/01176258.pdf?tp=&arnumber=1176258&isnumber=26403},
-  abstract                 = {We present Orion, a power-performance interconnection network simulator that is capable of providing detailed power characteristics, in addition to performance characteristics, to enable rapid power-performance tradeoffs at the architectural-level. This capability is provided within a general framework that builds a simulator starting from a microarchitectural specification of the interconnection network. A key component of this construction is the architectural-level parameterized power models that we have derived as part of this effort. Using component power models and a synthesized efficient power (and performance) simulator a microarchitect can rapidly explore the design space. As case studies, we demonstrate the use of Orion in determining optimal system parameters, in examining the effect of diverse traffic conditions, as well as evaluating new network microarchitectures. In each of the above, the ability to simultaneously monitor power and performance is key in determining suitable microarchitectures.}
-}
-
-@Article{wang2009,
-  title                    = {A Sea Ice Free Summer Arctic Within 30 Years?},
-  author                   = {Wang, Muyin and Overland, James E.},
-  date                     = {2009-04},
-  journaltitle             = {Geophysical Research Letters},
-  doi                      = {10.1029/2009GL037820},
-  issn                     = {0094-8276},
-  number                   = {7},
-  url                      = {http://europa.agu.org/?uri=/journals/gl/gl0907/2009GL037820/2009GL037820.xml&view=article},
-  volume                   = {36}
-}
-
-@InProceedings{zhenyuWang2011,
-  title                    = {New Method for Non-Intrusive Data Extraction and Classification of Residential Appliances},
-  author                   = {Zhenyu Wang and Guilin Zheng},
-  date                     = {2011-05},
-  doi                      = {10.1109/CCDC.2011.5968571},
-  isbn                     = {978-1-4244-8737-0},
-  language                 = {English},
-  pages                    = {2196--2201},
-  publisher                = {IEEE},
-  url                      = {http://ieeexplore.ieee.org/ielx5/5946174/5968129/05968571.pdf?tp=&arnumber=5968571&isnumber=5968129},
-  abstract                 = {This paper is focused on the non-intrusive load monitoring(NILM) system, which allows the identification of residential appliances in a non-intrusive way. The previous techniques are not performing perfectly in all aspects of economy, feasibility and accuracy. A new method, via the feature of working style and power characteristic of residential appliances, using human reaction time as the time scale unit (sampling frequency), to complete the classification and identification in a financially viable and easily applicable solution. The attribution of this paper is simplify the identification, which can be integrated into the meters now, and this simplification will improve the application of NILM system in demand side management(DSM). Feature selection, mathematic model and algorithm details are described. Analysis of typical experiments is shown in detail. Classification objects including 12 important power consumption types of the most common residential appliances.}
-}
-
-@PhdThesis{wichakool2011,
-  title                    = {Advanced Nonintrusive Load Monitoring System},
-  author                   = {Wichakool, Warit},
-  date                     = {2011},
-  url                      = {http://dspace.mit.edu/handle/1721.1/64590},
-  abstract                 = {There is a need for flexible, inexpensive metering technologies that can be deployed in many different monitoring scenarios. Individual loads may be expected to compute information about their power consumption. Utility providers, facilities managers, and other consumers will likely find innumerable ways to mine information if made available in a useful form. However, appropriate sensing and information delivery systems remain a chief bottleneck for many applications, and metering hardware and access to metered information will likely limit the implementation of new electric energy conservation strategies in the near future. This thesis presents solutions for two long standing problems in nonintrusive power and diagnostic monitoring. First, a high-resolution, physically windowed sensor architecture that is well-suited for energy score-keeping and diagnostic applications will be discussed. The sensor can track a large-scale main signal while capturing small-scale variations. The prototype system uses digital techniques to reconstruct an observed current with a high effective bit resolution. The sensor measures a small current signal using a closed-loop Hall sensor. and extends the range by driving a compensation current with a high performance current source through an auxiliary winding. The system combines the compensation command and the sampled output of the residual sensor to reconstruct the input signal with high bit resolution and bandwidth. Second, a long-standing problem in nonintrusive power monitoring involves the tracking of power consumption in the in the presence of loads with a continuously variable power demand. Two new techniques have been developed for automatically disaggregating, in real-time. different classes of continuously variable power electronic loads which draw distorted line currents. Experimental results of the proposed power estimator extracting the power consumption of common variable power loads such as a variable speed drive, a computer, and a light dimmer are presented.}
-}
-
 @Article{wilkinson1996,
   title                    = {Discrete Wavelet Analysis of Power System Transients},
   author                   = {Wilkinson, W. A and Cox, M. D},
@@ -1259,23 +275,17 @@ http://xkcd.com/793/},
 }
 
 @TechReport{,
-  title                    = {Fourth Assessment Report: Climate Change 2007 (AR4)},
-  date                     = {2007},
-  institution              = {IPCC},
-  url                      = {http://www.ipcc.ch/publications_and_data/publications_and_data_reports.shtml}
-}
-
-@TechReport{,
   title                    = {Report to Congress on Server and Data Center Energy Efficiency},
   date                     = {2007-08},
   institution              = {U.S. Environmental Protection Agency ENERGY STAR Program},
   url                      = {http://www.energystar.gov/ia/partners/prod_development/downloads/EPA_Datacenter_Report_Congress_Final1.pdf}
 }
 
-@Misc{,
-  title                    = {Carbon Emissions From Electricity Generation, by Country | Lightbucket},
-  date                     = {2008-10},
-  url                      = {http://lightbucket.wordpress.com/2008/10/22/carbon-emissions-from-electricity-generation-by-country/}
+@TechReport{,
+  title                    = {Fourth Assessment Report: Climate Change 2007 (AR4)},
+  date                     = {2007},
+  institution              = {IPCC},
+  url                      = {http://www.ipcc.ch/publications_and_data/publications_and_data_reports.shtml}
 }
 
 @TechReport{,
@@ -1285,28 +295,16 @@ http://xkcd.com/793/},
   url                      = {http://www.smart2020.org/_assets/files/03_Smart2020Report_lo_res.pdf}
 }
 
+@Misc{,
+  title                    = {Carbon Emissions From Electricity Generation, by Country | Lightbucket},
+  date                     = {2008-10},
+  url                      = {http://lightbucket.wordpress.com/2008/10/22/carbon-emissions-from-electricity-generation-by-country/}
+}
+
 @TechReport{,
   title                    = {Copenhagen Accord},
   date                     = {2009},
   url                      = {http://unfccc.int/resource/docs/2009/cop15/eng/11a01.pdf#page=4}
-}
-
-@Misc{,
-  title                    = {Application of Computational Intelligence in Emerging Power Systems},
-  date                     = {2010-09},
-  url                      = {http://www.ajol.info/index.php/ijest/article/view/59166}
-}
-
-@TechReport{,
-  title                    = {Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric},
-  date                     = {2010},
-  institution              = {The Green Grid}
-}
-
-@Misc{,
-  title                    = {Global Carbon Project (GCP)},
-  date                     = {2010-11},
-  url                      = {http://www.globalcarbonproject.org/carbonbudget/index.htm}
 }
 
 @Article{,
@@ -1323,18 +321,66 @@ http://xkcd.com/793/},
   abstract                 = {Load signatures embedded in common electricity consumption patterns, in fact, could render much information pertaining to the nature of the appliances and their usage patterns. Based on the proposed disaggregation framework, we use three advanced disaggregation algorithms, called committee decision mechanisms (CDMs), to perform load disaggregation at the metering level. Three random switching simulators are also developed to investigate the performance of different CDMs under a variety of scenarios. Through Monte Carlo simulations, we demonstrate that all CDMs outperform any single-feature, single-algorithm-based disaggregation methods. With sensitivity analysis, we also show that the CDMs are less sensitive to any load dynamics and noise. We finally demonstrate some applications of this technology in terms of appliance usage tacking and estimated energy consumption of each appliance.}
 }
 
+@Misc{,
+  title                    = {Global Carbon Project (GCP)},
+  date                     = {2010-11},
+  url                      = {http://www.globalcarbonproject.org/carbonbudget/index.htm}
+}
+
 @TechReport{,
-  title                    = {Energy Price Statistics},
-  date                     = {2011},
-  institution              = {Department of Energy and Climate Change},
-  url                      = {http://www.decc.gov.uk/en/content/cms/statistics/energy_stats/prices/},
-  address                  = {webpage}
+  title                    = {Carbon Usage Effectiveness (CUE): A Green Grid Data Center Sustainability Metric},
+  date                     = {2010},
+  institution              = {The Green Grid}
 }
 
 @Misc{,
-  title                    = {Arctic Sea Ice Volume Anomaly, Version 2},
+  title                    = {Application of Computational Intelligence in Emerging Power Systems},
+  date                     = {2010-09},
+  url                      = {http://www.ajol.info/index.php/ijest/article/view/59166}
+}
+
+@Misc{,
+  title                    = {Polarstern Reaches North Pole. \A\rctic \S\ea \I\ce \B\log},
   date                     = {2011-08},
-  url                      = {http://psc.apl.washington.edu/wordpress/research/projects/arctic-sea-ice-volume-anomaly/}
+  url                      = {http://neven1.typepad.com/blog/2011/08/polarstern-reaches-north-pole.html}
+}
+
+@Misc{,
+  title                    = {Climate \C\hange \L\evy. HMRC Website},
+  date                     = {2011},
+  url                      = {http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&_pageLabel=pageExcise_InfoGuides&propertyType=document&id=HMCE_CL_001174}
+}
+
+@Misc{,
+  title                    = {IBM Smart Energy â Signs of Smart â United Kingdom - United Kingdom},
+  date                     = {2011-04},
+  url                      = {http://www.ibm.com/smarterplanet/uk/en/smart_grid/ideas/index.html?re=CS1}
+}
+
+@TechReport{,
+  title                    = {Digest of UK Energy Statistics (DUKES) Chapter 5: Electricity},
+  date                     = {2011},
+  institution              = {UK Department for Energy and Climate Change},
+  url                      = {http://www.decc.gov.uk/assets/decc/11/stats/publications/dukes/2307-dukes-2011-chapter-5-electricity.pdf}
+}
+
+@Misc{,
+  title                    = {Arctic Sea Ice Thickness. \US\ \N\aval \O\ceanographic \O\ffice (\NAVO\) Website},
+  date                     = {2011-09},
+  url                      = {http://www7320.nrlssc.navy.mil/hycomARC/navo/arcticictnnowcast.gif}
+}
+
+@Misc{,
+  title                    = {GISTEMP Surface Temperature Analysis: Analysis Graphs and Plots},
+  date                     = {2011},
+  url                      = {http://data.giss.nasa.gov/gistemp/graphs/}
+}
+
+@TechReport{,
+  title                    = {Shale Gas},
+  date                     = {2011},
+  institution              = {British Geological Survey website},
+  url                      = {http://www.bgs.ac.uk/research/energy/shaleGas.html}
 }
 
 @Misc{,
@@ -1369,48 +415,18 @@ Citizens Advice said increasing numbers of people were seeking information on cu
 "Combining that advice with new technology which puts customers in control of their energy usage could be a powerful combination to help a lot of people in future."}
 }
 
-@TechReport{,
-  title                    = {Shale Gas},
-  date                     = {2011},
-  institution              = {British Geological Survey website},
-  url                      = {http://www.bgs.ac.uk/research/energy/shaleGas.html}
-}
-
 @Misc{,
-  title                    = {GISTEMP Surface Temperature Analysis: Analysis Graphs and Plots},
-  date                     = {2011},
-  url                      = {http://data.giss.nasa.gov/gistemp/graphs/}
-}
-
-@Misc{,
-  title                    = {Arctic Sea Ice Thickness. \US\ \N\aval \O\ceanographic \O\ffice (\NAVO\) Website},
-  date                     = {2011-09},
-  url                      = {http://www7320.nrlssc.navy.mil/hycomARC/navo/arcticictnnowcast.gif}
-}
-
-@TechReport{,
-  title                    = {Digest of UK Energy Statistics (DUKES) Chapter 5: Electricity},
-  date                     = {2011},
-  institution              = {UK Department for Energy and Climate Change},
-  url                      = {http://www.decc.gov.uk/assets/decc/11/stats/publications/dukes/2307-dukes-2011-chapter-5-electricity.pdf}
-}
-
-@Misc{,
-  title                    = {IBM Smart Energy â Signs of Smart â United Kingdom - United Kingdom},
-  date                     = {2011-04},
-  url                      = {http://www.ibm.com/smarterplanet/uk/en/smart_grid/ideas/index.html?re=CS1}
-}
-
-@Misc{,
-  title                    = {Climate \C\hange \L\evy. HMRC Website},
-  date                     = {2011},
-  url                      = {http://customs.hmrc.gov.uk/channelsPortalWebApp/channelsPortalWebApp.portal?_nfpb=true&_pageLabel=pageExcise_InfoGuides&propertyType=document&id=HMCE_CL_001174}
-}
-
-@Misc{,
-  title                    = {Polarstern Reaches North Pole. \A\rctic \S\ea \I\ce \B\log},
+  title                    = {Arctic Sea Ice Volume Anomaly, Version 2},
   date                     = {2011-08},
-  url                      = {http://neven1.typepad.com/blog/2011/08/polarstern-reaches-north-pole.html}
+  url                      = {http://psc.apl.washington.edu/wordpress/research/projects/arctic-sea-ice-volume-anomaly/}
+}
+
+@TechReport{,
+  title                    = {Energy Price Statistics},
+  date                     = {2011},
+  institution              = {Department of Energy and Climate Change},
+  url                      = {http://www.decc.gov.uk/en/content/cms/statistics/energy_stats/prices/},
+  address                  = {webpage}
 }
 
 @Misc{,
@@ -1428,56 +444,35 @@ Citizens Advice said increasing numbers of people were seeking information on cu
 }
 
 @Misc{,
-  title                    = {Current Cost's 'Bridge' Uses Pachube for Backend Data Management | pachube.community},
-  url                      = {http://community.pachube.com/node/436}
+  title                    = {Report: Mascot 9 v AC/AC Adaptor | OpenEnergyMonitor},
+  url                      = {http://openenergymonitor.org/emon/buildingblocks/report-mascot-9v-acac-adaptor},
+  urldate                  = {2013-06-26}
 }
 
 @Misc{,
-  title                    = {Overview | NeuCo, Inc.},
-  url                      = {http://www.neuco.net/company/default.cfm}
+  title                    = {Current Cost to Pachube App: No Hacking Necessary! | pachube.community},
+  url                      = {http://community.pachube.com/currentcost}
 }
 
 @Misc{,
-  title                    = {Preparations for the Roll-Out of Smart Meters},
-  url                      = {http://www.nao.org.uk/publications/1012/smart_meters.aspx}
+  title                    = {Floppy/Currentcost-Daemon - GitHub},
+  url                      = {https://github.com/Floppy/currentcost-daemon}
 }
 
 @Misc{,
-  title                    = {ERC Recommendation Relating to the Use of Short Range Devices (SRD)},
-  url                      = {http://www.erodocdb.dk/docs/doc98/official/pdf/rec7003e.pdf},
-  urldate                  = {2013-06-08}
+  title                    = {Feature Learning in Deep Neural Networks - Studies on Speech Recognition - Microsoft Research},
+  url                      = {http://research.microsoft.com/apps/pubs/default.aspx?id=189337},
+  urldate                  = {2013-06-26}
 }
 
 @Misc{,
-  title                    = {Pachube - Real-Time Open Data Web Service for the Internet of Things},
-  url                      = {https://pachube.com/}
+  title                    = {Graphviz - Graph Visualization Software},
+  url                      = {http://www.graphviz.org/}
 }
 
 @Misc{,
-  title                    = {Innovation: Sensing a Good Vibe | the Economist},
-  url                      = {http://www.economist.com/blogs/babbage/2011/10/innovation}
-}
-
-@Misc{,
-  title                    = {Impact Assessment for the Smart Meter Rollout for the Domestic Sector (GB)},
-  url                      = {https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/42740/1485-impact-assessment-smart-metering-implementation-p.pdf},
-  urldate                  = {2013-06-13}
-}
-
-@Misc{,
-  title                    = {How the Current Cost Bridge Posts Data. \C\urrent \C\ost \T\echnical \B\log},
-  url                      = {http://currentcost.posterous.com/how-the-current-cost-bridge-posts-data}
-}
-
-@Misc{,
-  title                    = {PreHeat: Controlling Home Heating Using Occupancy Prediction - Microsoft Research},
-  url                      = {http://research.microsoft.com/apps/pubs/?id=151389}
-}
-
-@Misc{,
-  title                    = {Intel Invests in UK Institute to Create Global Centre for Research in Sustainable Connected Cities},
-  url                      = {http://newsroom.intel.com/community/en_eu/blog/2012/05/24/intel-invests-in-uk-institute-to-create-global-centre-for-research-in-sustainable-connected-cities},
-  abstract                 = {New Intel Labs Europe UK network to coordinate nine R{\&}D locations in the UK NEWS HIGHLIGHTS Intel, Imperial College London and University College London launch the Intel Collaborative Research Institute for Sustainable Connected CitiesIntel Labs Eur...}
+  title                    = {Benchmarking - Thrift-Protobuf-Compare - Comparing Varius Aspects of Serialization Libraries on the JVM Platform - Google Project Hosting},
+  url                      = {http://code.google.com/p/thrift-protobuf-compare/wiki/Benchmarking}
 }
 
 @Misc{,
@@ -1493,34 +488,55 @@ The DEHEMS system could set a huge trend in the coming years. Two commercial pro
 }
 
 @Misc{,
-  title                    = {Benchmarking - Thrift-Protobuf-Compare - Comparing Varius Aspects of Serialization Libraries on the JVM Platform - Google Project Hosting},
-  url                      = {http://code.google.com/p/thrift-protobuf-compare/wiki/Benchmarking}
+  title                    = {Intel Invests in UK Institute to Create Global Centre for Research in Sustainable Connected Cities},
+  url                      = {http://newsroom.intel.com/community/en_eu/blog/2012/05/24/intel-invests-in-uk-institute-to-create-global-centre-for-research-in-sustainable-connected-cities},
+  abstract                 = {New Intel Labs Europe UK network to coordinate nine R{\&}D locations in the UK NEWS HIGHLIGHTS Intel, Imperial College London and University College London launch the Intel Collaborative Research Institute for Sustainable Connected CitiesIntel Labs Eur...}
 }
 
 @Misc{,
-  title                    = {Graphviz - Graph Visualization Software},
-  url                      = {http://www.graphviz.org/}
+  title                    = {PreHeat: Controlling Home Heating Using Occupancy Prediction - Microsoft Research},
+  url                      = {http://research.microsoft.com/apps/pubs/?id=151389}
 }
 
 @Misc{,
-  title                    = {Feature Learning in Deep Neural Networks - Studies on Speech Recognition - Microsoft Research},
-  url                      = {http://research.microsoft.com/apps/pubs/default.aspx?id=189337},
-  urldate                  = {2013-06-26}
+  title                    = {How the Current Cost Bridge Posts Data. \C\urrent \C\ost \T\echnical \B\log},
+  url                      = {http://currentcost.posterous.com/how-the-current-cost-bridge-posts-data}
 }
 
 @Misc{,
-  title                    = {Floppy/Currentcost-Daemon - GitHub},
-  url                      = {https://github.com/Floppy/currentcost-daemon}
+  title                    = {Impact Assessment for the Smart Meter Rollout for the Domestic Sector (GB)},
+  url                      = {https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/42740/1485-impact-assessment-smart-metering-implementation-p.pdf},
+  urldate                  = {2013-06-13}
 }
 
 @Misc{,
-  title                    = {Current Cost to Pachube App: No Hacking Necessary! | pachube.community},
-  url                      = {http://community.pachube.com/currentcost}
+  title                    = {Innovation: Sensing a Good Vibe | the Economist},
+  url                      = {http://www.economist.com/blogs/babbage/2011/10/innovation}
 }
 
 @Misc{,
-  title                    = {Report: Mascot 9 v AC/AC Adaptor | OpenEnergyMonitor},
-  url                      = {http://openenergymonitor.org/emon/buildingblocks/report-mascot-9v-acac-adaptor},
-  urldate                  = {2013-06-26}
+  title                    = {Pachube - Real-Time Open Data Web Service for the Internet of Things},
+  url                      = {https://pachube.com/}
+}
+
+@Misc{,
+  title                    = {ERC Recommendation Relating to the Use of Short Range Devices (SRD)},
+  url                      = {http://www.erodocdb.dk/docs/doc98/official/pdf/rec7003e.pdf},
+  urldate                  = {2013-06-08}
+}
+
+@Misc{,
+  title                    = {Preparations for the Roll-Out of Smart Meters},
+  url                      = {http://www.nao.org.uk/publications/1012/smart_meters.aspx}
+}
+
+@Misc{,
+  title                    = {Overview | NeuCo, Inc.},
+  url                      = {http://www.neuco.net/company/default.cfm}
+}
+
+@Misc{,
+  title                    = {Current Cost's 'Bridge' Uses Pachube for Backend Data Management | pachube.community},
+  url                      = {http://community.pachube.com/node/436}
 }
 
