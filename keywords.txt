@@ -2,6 +2,7 @@ NILM:
 Always also include 'energy'
 'simulation' : for things useful for coding better simulator
 commercial
+circuit-level
 
 Sample rate keywords
 --------------------
@@ -42,6 +43,8 @@ compressing neural networks
 density estimation
 deconvolutional
 regularisation
+sparse coding
+SVM
 
 climate science
 ---------------
@@ -55,6 +58,14 @@ legislation
 smart meters
 government
 
+energy
+------
+wind turbines
+appliances
+signatures
+
+misc
+----
 software
 open-source
 visualisation
@@ -70,5 +81,6 @@ ZigBee
 web service
 network protocol
 building management
+privacy
 
 review
