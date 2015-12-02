@@ -1,4 +1,5 @@
-NILM:
+NILM
+----
 Always also include 'energy'
 'simulation' : for things useful for coding better simulator
 commercial (NILM articles are assumed to refer to domestic dwellings
@@ -58,18 +59,6 @@ ensemble
 motif mining
 wavelets
 
-climate science
----------------
-palaeontology
-climate change
-ocean acidification
-sea-level
-ice
-
-legislation
-smart meters
-government
-
 energy
 ------
 wind turbines
@@ -80,9 +69,26 @@ coal
 natural gas
 fracking
 generation
+electrical
+thermal efficiency
+heating control
+fuel poverty
+smart meters
 
-misc
-----
+climate change
+--------------
+climate science
+temperature
+methane
+carbon dioxide
+palaeontology
+climate change
+ocean acidification
+sea-level
+ice
+
+computing
+---------
 software
 open-source
 visualisation
@@ -90,22 +96,28 @@ data
 semantic web
 metadata
 wikis
-thermal efficiency
-heating control
-methane
-carbon dioxide
 wireless sensor network
 ZigBee
 web service
 network protocol
-building management
 privacy
-shipping
-tutorial
+computational sustainability
+smart cities
+dashboard
+
+misc
+----
+building management
 occupancy
-intelligence
 physics
 entropy
+shipping
 forecasting
+intelligence
+legislation
+government
 
+paper type
+----------
 review
+tutorial
