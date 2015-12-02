@@ -56,6 +56,7 @@ feature extraction
 finite state machines
 ensemble
 motif mining
+wavelets
 
 climate science
 ---------------
@@ -102,5 +103,9 @@ privacy
 shipping
 tutorial
 occupancy
+intelligence
+physics
+entropy
+forecasting
 
 review
