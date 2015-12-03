@@ -6,6 +6,14 @@ commercial (NILM articles are assumed to refer to domestic dwellings
 unless 'commercial' keyword is present)
 circuit-level
 harmonics
+steady-state
+metrics
+use cases
+
+
+side-channel
+------------
+EMF
 
 Sample rate keywords
 --------------------
@@ -51,6 +59,7 @@ regularisation
 music
 transcription
 feature extraction
+Cox process
 
 ML approaches used in NILM:
 ---------------------------
@@ -70,6 +79,10 @@ unsupervised learning
 KNN
 genetic algorithm
 particle filter
+GMM
+thresholding
+clustering
+maximum likelihood
 
 energy
 ------
@@ -86,6 +99,12 @@ thermal efficiency
 heating control
 fuel poverty
 smart meters
+active power
+reactive power
+power factor
+voltage
+mains frequency
+demand-side management
 
 climate change
 --------------
@@ -104,7 +123,8 @@ computing
 software
 open-source
 visualisation
-data
+data : used to indicate papers which introduce a new dataset or are
+       mostly about a statistical analysis of a dataset.
 semantic web
 metadata
 wikis
@@ -121,6 +141,7 @@ misc
 ----
 building management
 occupancy
+activity detection (NILM use case)
 physics
 entropy
 shipping

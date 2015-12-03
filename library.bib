@@ -57,6 +57,28 @@
   timestamp                = {2015.11.19}
 }
 
+@InProceedings{alcala2015,
+  title                    = {Detecting Anomalies in Activities of Daily Living of Elderly Residents via Energy Disaggregation and Cox Processes},
+  author                   = {Alcalá, José and Parson, Oliver and Rogers, Alex},
+  booktitle                = {2nd International Conference on Embedded Systems for Energy-Efficient Built Environments},
+  date                     = {2015},
+  doi                      = {10.1145/2821650.2821654},
+  isbn                     = {978-1-4503-3981-0},
+  location                 = {Seoul, South Korea},
+  pages                    = {225--234},
+  publisher                = {ACM},
+  series                   = {BuildSys},
+  abstract                 = {Monitoring the health of the elderly living independently in their own homes is a key issue in building sustainable healthcare models which support a country's ageing population. Existing approaches have typically proposed remotely monitoring the behaviour of a household's occupants through the use of additional sensors. However the costs and privacy concerns of such sensors have significantly limited their potential for widespread adoption. In contrast, in this paper we propose an approach which detects Activities of Daily Living, which we use as a proxy for the health of the household residents. Our approach detects appliance usage from existing smart meter data, from which the unique daily routines of the household occupants are learned automatically via a log Gaussian Cox process. We evaluate our approach using two real-world data sets, and show it is able to detect over 80% of kettle uses while generating less than 10% false positives. Furthermore, our approach allows earlier interventions in households with a consistent routine and fewer false alarms in the remaining households, relative to a fixed-time intervention benchmark.},
+  acmid                    = {2821654},
+  address                  = {New York, NY, USA},
+  file                     = {alcala2015.pdf:alcala2015.pdf:PDF},
+  keywords                 = {energy, NILM, Cox process, activity detection, HMM, medium freq},
+  numpages                 = {10},
+  owner                    = {jack},
+  sampleperiod             = {10},
+  timestamp                = {2015.12.03}
+}
+
 @InProceedings{altrabalsi2014,
   title                    = {A low-complexity energy disaggregation method: Performance and robustness},
   author                   = {Altrabalsi, Hana and Liao, Jing and Stankovic, Lina and Stankovic, Vladimir},
@@ -486,6 +508,26 @@ recurrent neural networks.},
   timestamp                = {2015.11.27}
 }
 
+@InProceedings{batra2015systems,
+  title                    = {Non Intrusive Load Monitoring: Systems, Metrics and Use Cases},
+  author                   = {Batra, Nipun},
+  booktitle                = {13th Conference on Embedded Networked Sensor Systems},
+  date                     = {2015},
+  doi                      = {10.1145/2809695.2822523},
+  isbn                     = {978-1-4503-3631-4},
+  location                 = {Seoul, South Korea},
+  pages                    = {501--502},
+  publisher                = {ACM},
+  series                   = {SenSys},
+  abstract                 = {Buildings across the world contribute significantly to the overall energy consumption. Targeted feedback can help occupants optimise energy consumption. In our first work we present techniques for actionable feedback across fridges and air conditioning (HVAC) units, which can save upto 25% of fridge energy and identify homes needing feedback on HVAC setpoint schedule with 84% accuracy. In our next work, we do an extensive sensor deployment in a home in Delhi, India; monitoring appliance level power, home aggregate power and other ambient parameters. Our study presents various insights unseen in the developed world, such as: frequent voltage brownouts, poor network reliability, long lasting blackouts, heavy dominance of fridge and HVAC to overall energy consumption. Our study verifies that measuring appliance level power scales poorly in cost and maintenance. Non-intrusive load monitoring (NILM) is viewed as a viable alternative where machine learning techniques are used to break down aggregate household energy consumption into contributing appliances. Despite the existence of a rich volume of literature in NILM, it remained virtually impossible to compare NILM works due to: i) lack of existence of benchmarks; ii) previous work tested on single data set; iii) inconsistent metrics. To address these challenges we developed an open source toolkit: Non-intrusive load monitoring toolkit (NILMTK), designed specifically to enable the comparison of NILM algorithms. While many new NILM techniques have been proposed in recent times, it is not clear if these can enable energy saving and whether higher accuracy translates to higher energy saving. We explore these questions in our recent work and find that existing energy disaggregation techniques do not provide power traces with sufficient fidelity to support the feedback techniques we developed in our earlier work. Our results indicate a need to revisit the metrics by which disaggregation is evaluated.},
+  acmid                    = {2822523},
+  file                     = {batra2015systems.pdf:batra2015systems.pdf:PDF},
+  keywords                 = {NILM, energy, metrics, use cases, NILMTK},
+  numpages                 = {2},
+  owner                    = {jack},
+  timestamp                = {2015.12.03}
+}
+
 @InProceedings{batra2013occupancy,
   title                    = {Experiences with Occupancy based Building Management Systems},
   author                   = {Batra, Nipun and Arjunan, Pandarasamy and Singh, Ashutosh and Singh, Prashant},
@@ -637,6 +679,49 @@ Citizens Advice said increasing numbers of people were seeking information on cu
   keywords                 = {energy, government, electrical, fuel poverty},
   owner                    = {jack},
   timestamp                = {2015.12.02}
+}
+
+@InProceedings{beckel2014ECO,
+  title                    = {The ECO Data Set and the Performance of Non-intrusive Load Monitoring Algorithms},
+  author                   = {Beckel, Christian and Kleiminger, Wilhelm and Cicchetti, Romano and Staake, Thorsten and Santini, Silvia},
+  booktitle                = {1st International Conference on Embedded Systems for Energy-Efficient Buildings},
+  date                     = {2014},
+  doi                      = {10.1145/2674061.2674064},
+  isbn                     = {978-1-4503-3144-9},
+  location                 = {Memphis, Tennessee},
+  pages                    = {80--89},
+  publisher                = {ACM},
+  series                   = {BuildSys},
+  abstract                 = {Non-intrusive load monitoring (NILM) is a popular approach to estimate appliance-level electricity consumption from aggregate consumption data of households. Assessing the suitability of NILM algorithms to be used in real scenarios is however still cumbersome, mainly because there exists no standardized evaluation procedure for NILM algorithms and the availability of comprehensive electricity consumption data sets on which to run such a procedure is still limited. This paper contributes to the solution of this problem by: (1) outlining the key dimensions of the design space of NILM algorithms; (2) presenting a novel, comprehensive data set to evaluate the performance of NILM algorithms; (3) describing the design and implementation of a framework that significantly eases the evaluation of NILM algorithms using different data sets and parameter configurations; (4) demonstrating the use of the presented framework and data set through an extensive performance evaluation of four selected NILM algorithms. Both the presented data set and the evaluation framework are made publicly available.},
+  acmid                    = {2674064},
+  dataset                  = {ECO},
+  file                     = {beckel2014ECO.pdf:beckel2014ECO.pdf:PDF},
+  keywords                 = {energy, NILM, data, software, open-source, HMM, unsupervised learning, finite state machine},
+  numpages                 = {10},
+  owner                    = {jack},
+  sampleperiod             = {1},
+  timestamp                = {2015.12.03}
+}
+
+@InProceedings{belley2013,
+  title                    = {Activity Recognition in Smart Homes Based on Electrical Devices Identification},
+  author                   = {Belley, Corinne and Gaboury, Sebastien and Bouchard, Bruno and Bouzouane, Abdenour},
+  booktitle                = {6th International Conference on PErvasive Technologies Related to Assistive Environments},
+  date                     = {2013},
+  doi                      = {10.1145/2504335.2504342},
+  isbn                     = {978-1-4503-1973-7},
+  location                 = {Rhodes, Greece},
+  pages                    = {7:1--7:8},
+  publisher                = {ACM},
+  series                   = {PETRA},
+  abstract                 = {Activity recognition constitutes the key challenge in the development of smart home assistive systems. In this paper, we propose a new algorithmic method for activity recognition in a smart home, based on load signatures of appliances. Most recognition approaches rely on distributed and heterogeneous sensors (ex. RFID), which are intrusive require complex installation, deployment and maintenance. On the other hand, most applications of appliance load monitoring (signal analysis) refer to the energy saving and the costs reducing of energy consumption. Consequently, our proposal constitutes an original application and new algorithmic method based on steady-state operations and signatures. The extraction process of load signatures of appliances is carried out in a three-dimensional space through a single power analyzer, which is non-intrusive (NIALM). We have rigorously tested this new approach by conducting an experiment in our smart home prototype by simulating daily scenarios taken from clinical trials previously done with Alzheimer patients. The promising results we obtained are presented and compared to other approaches, showing that, with an exceptionally minimal investment and the exploitation of relatively limited data, our method can efficiently recognize activities of daily living for providing assistive services.},
+  acmid                    = {2504342},
+  articleno                = {7},
+  file                     = {belley2013.pdf:belley2013.pdf:PDF},
+  keywords                 = {energy, NILM, activity detection, steady-state, active power, reactive power},
+  numpages                 = {8},
+  owner                    = {jack},
+  timestamp                = {2015.12.03}
 }
 
 @Article{bengio2015biologically-plausible,
@@ -1336,6 +1421,27 @@ benefits.},
   timestamp                = {2015.11.24}
 }
 
+@InProceedings{chen2013,
+  title                    = {Non-Intrusive Occupancy Monitoring Using Smart Meters},
+  author                   = {Chen, Dong and Barker, Sean and Subbaswamy, Adarsh and Irwin, David and Shenoy, Prashant},
+  booktitle                = {5th Workshop on Embedded Systems For Energy-Efficient Buildings},
+  date                     = {2013},
+  doi                      = {10.1145/2528282.2528294},
+  isbn                     = {978-1-4503-2431-1},
+  location                 = {Roma, Italy},
+  pages                    = {9:1--9:8},
+  publisher                = {ACM},
+  series                   = {BuildSys},
+  abstract                 = {Detailed information about a home's occupancy is necessary to implement many advanced energy-efficiency optimizations. However, monitoring occupancy directly is intrusive, typically requiring the deployment of multiple environmental sensors, e.g., motion, acoustic, CO2, etc. In this paper, we explore the potential for Non-Intrusive Occupancy Monitoring (NIOM) by using electricity data from smart meters to infer occupancy. We first observe that a home's pattern of electricity usage generally changes when occupants are present due to their interact with electrical loads. We empirically evaluate these interactions by monitoring ground truth occupancy in two homes, then correlating it with changes in statistical metrics of smart meter data, such as power's mean and variance, over short intervals. In particular, we use each metric's maximum value at night as a proxy for its maximum value in an unoccupied home, and then signal occupancy whenever the daytime value exceeds it. Our results highlight NIOM's potential and its challenges.},
+  acmid                    = {2528294},
+  articleno                = {9},
+  file                     = {chen2013.pdf:chen2013.pdf:PDF},
+  keywords                 = {smart meters, occupancy, energy, electrical},
+  numpages                 = {8},
+  owner                    = {jack},
+  timestamp                = {2015.12.03}
+}
+
 @Article{chorowski2014end-to-end-speech,
   title                    = {End-to-end Continuous Speech Recognition using Attention-based Recurrent NN: First Results},
   author                   = {Chorowski, Jan and Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
@@ -1376,7 +1482,7 @@ benefits.},
 @Article{cichon2015dendritic-spikes,
   title                    = {Branch-specific dendritic Ca2+ spikes cause persistent synaptic plasticity},
   author                   = {Cichon, Joseph and Gan, Wen-Biao},
-  date                     = {2015/03/30},
+  date                     = {2015-03-30},
   journaltitle             = {Nature},
   doi                      = {10.1038/nature14251},
   abstract                 = {The brain has an extraordinary capacity for memory storage, but how it stores new information without disrupting previously acquired memories remains unknown. Here we show that different motor learning tasks induce dendritic Ca2+ spikes on different apical tuft branches of individual layer V pyramidal neurons in the mouse motor cortex. These task-related, branch-specific Ca2+ spikes cause long-lasting potentiation of postsynaptic dendritic spines active at the time of spike generation. When somatostatin-expressing interneurons are inactivated, different motor tasks frequently induce Ca2+ spikes on the same branches. On those branches, spines potentiated during one task are depotentiated when they are active seconds before Ca2+ spikes induced by another task. Concomitantly, increased neuronal activity and performance improvement after learning one task are disrupted when another task is learned. These findings indicate that dendritic-branch-specific generation of Ca2+ spikes is crucial for establishing long-lasting synaptic plasticity, thereby facilitating information storage associated with different learning experiences.},
@@ -1957,13 +2063,13 @@ digitalized. DIGITALEUROPE believes in the equation of Smart is Digital and Digi
   title                    = {Appliance State Estimation Based on Particle Filtering},
   author                   = {Egarter, Dominik and Bhuvana, Venkata Pathuri and Elmenreich, Wilfried},
   booktitle                = {5th Workshop on Embedded Systems For Energy-Efficient Buildings},
+  date                     = {2013},
   doi                      = {10.1145/2528282.2528306},
   isbn                     = {978-1-4503-2431-1},
   location                 = {Roma, Italy},
   pages                    = {24:1--24:2},
   publisher                = {ACM},
   series                   = {BuildSys},
-  year                     = {2013},
   abstract                 = {Non-Intrusive Load Monitoring is a single-point metering approach to identify and to monitor household appliances according their appliance power characteristics. In this paper, we propose an unsupervised classification approach for appliance state estimation of on/off-appliances modeled by a Hidden Markov Model (HMM). To estimate the states of appliances, we use the sequential Monte Carlo or particle filtering (PF) method. The proposed algorithm is tested with MATLAB simulations and is evaluated according to correctly or incorrectly detected on/off events.},
   acmid                    = {2528306},
   address                  = {New York, NY, USA},
@@ -2575,7 +2681,7 @@ which reveal richer invariants that are learned from natural video data.},
 @Article{graves2013generating-sequences,
   title                    = {Generating sequences with recurrent neural networks},
   author                   = {Alex Graves},
-  date                     = {2013/8/4},
+  date                     = {2013-8-4},
   eprint                   = {1308.0850},
   eprinttype               = {arXiv},
   file                     = {:graves2013generating-sequences.pdf:PDF},
@@ -3399,6 +3505,27 @@ In this paper we introduce the explicit-duration Hierarchical Dirichlet Process 
   timestamp                = {2015.11.30}
 }
 
+@InProceedings{jung2012,
+  title                    = {Tracking Appliance Usage Information in Residential Settings Using Off-the-shelf Low-frequency Meters},
+  author                   = {Jung, Deokwoo and Savvides, Andreas and Bamis, Athanasios},
+  booktitle                = {49th Annual Design Automation Conference},
+  date                     = {2012},
+  doi                      = {10.1145/2228360.2228393},
+  isbn                     = {978-1-4503-1199-1},
+  location                 = {San Francisco, California},
+  pages                    = {163--168},
+  publisher                = {ACM},
+  series                   = {DAC},
+  abstract                 = {Given the ongoing widespread deployment of low frequency electricity sub-metering devices at residential and commercial buildings, fine-grained usage information of end-loads can bring a new powerful sensing modality in Cyber-Physical Systems (CPS). Motivated by the opportunity, this paper describes an algorithm of estimating the ON/OFF sequences for typical household end-loads in close-to-real-time using an off-the-shelf power meter. Unlike previous algorithms that lacks in scalability to support diverse applications in CPS our algorithm is designed to provide control knobs to support various trade-offs between accuracy and computation load or delay to satisfy the different application requirements. We experimentally verify the proposed algorithm using a collection of home appliances. Our experiment result shows that our algorithm is able to detect ON/OFF sequences of 7 appliances nearly without error and 3 appliances with moderate error rate less than 6% among 12 typical household appliances.},
+  acmid                    = {2228393},
+  file                     = {jung2012.pdf:jung2012.pdf:PDF},
+  keywords                 = {energy, NILM, steady-state, medium freq},
+  numpages                 = {6},
+  owner                    = {jack},
+  sampleperiod             = {1},
+  timestamp                = {2015.12.03}
+}
+
 @Article{kavousian2013,
   title                    = {Determinants of residential electricity consumption: Using smart meter data to examine the effect of climate, building characteristics, appliance stock, and occupants' behavior},
   author                   = {Kavousian, Amir and Rajagopal, Ram and Fischer, Martin},
@@ -3721,6 +3848,28 @@ because the drier has very rapid state transitions.},
   keywords                 = {LSTM, language},
   owner                    = {jack},
   timestamp                = {2014.11.17}
+}
+
+@InProceedings{kleiminger2015,
+  title                    = {Household Occupancy Monitoring Using Electricity Meters},
+  author                   = {Kleiminger, Wilhelm and Beckel, Christian and Santini, Silvia},
+  booktitle                = {International Joint Conference on Pervasive and Ubiquitous Computing},
+  date                     = {2015},
+  doi                      = {10.1145/2750858.2807538},
+  isbn                     = {978-1-4503-3574-4},
+  location                 = {Osaka, Japan},
+  pages                    = {975--986},
+  publisher                = {ACM},
+  series                   = {UbiComp},
+  abstract                 = {Occupancy monitoring (i.e. sensing whether a building or room is currently occupied) is required by many building automation systems. An automatic heating system may, for example, use occupancy data to regulate the indoor temperature. Occupancy data is often obtained through dedicated hardware such as passive infrared sensors and magnetic reed switches. In this paper, we derive occupancy information from electric load curves measured by off-the-shelf smart electricity meters. Using the publicly available ECO dataset, we show that supervised machine learning algorithms can extract occupancy information with an accuracy between 83% and 94%. To this end we use a comprehensive feature set containing 35 features. Thereby we found that the inclusion of features that capture changes in the activation state of appliances provides the best occupancy detection accuracy.},
+  acmid                    = {2807538},
+  dataset                  = {ECO},
+  file                     = {kleiminger2015.pdf:kleiminger2015.pdf:PDF},
+  keywords                 = {smart meters, occupancy, energy, SVM, KNN, GMM, HMM, thresholding},
+  numpages                 = {12},
+  owner                    = {jack},
+  sampleperiod             = {1},
+  timestamp                = {2015.12.03}
 }
 
 @InProceedings{klein2013,
@@ -4319,6 +4468,26 @@ training schemes for NILM.},
   timestamp                = {2015.12.01}
 }
 
+@InProceedings{liu2014,
+  title                    = {SHE: Smart Home Energy Management System for Appliance Identification and Personalized Scheduling},
+  author                   = {Liu, Ting and Liu, Yuqi and Che, Yulin and Chen, Siyun and Xu, Zhanbo and Duan, Yufei},
+  booktitle                = {International Joint Conference on Pervasive and Ubiquitous Computing: Adjunct Publication},
+  date                     = {2014},
+  doi                      = {10.1145/2638728.2638732},
+  isbn                     = {978-1-4503-3047-3},
+  location                 = {Seattle, Washington},
+  pages                    = {247--250},
+  publisher                = {ACM},
+  series                   = {UbiComp Adjunct},
+  abstract                 = {The home appliance scheduling is a promising energy saving technique that has significant commercial potential. In this demo, Smart Home Energy Management System (SHE) is developed on Android platform to schedule users' appliances. SHE monitors the power consumption to identify the operations of home appliances using a privacy preserving technique called Non-Intrusion Load Monitoring (NILM). The operations are integrated with dynamic electric price and environment data to mine users' personal demand and preference on appliance operation. Finally, SHE generates personalized scheduling strategies to meet the different users' demands at the minimal cost.},
+  acmid                    = {2638732},
+  file                     = {liu2014.pdf:liu2014.pdf:PDF},
+  keywords                 = {energy, NILM, active power, reactive power, power factor, harmonics},
+  numpages                 = {4},
+  owner                    = {jack},
+  timestamp                = {2015.12.03}
+}
+
 @InProceedings{lovett2014,
   title                    = {Designing Sensor Sets for Capturing Energy Events in Buildings},
   author                   = {Tom R. Lovett and Elizabeth Gabe-Thomas and Sukumar Natarajan and Matthew Brown and Julian A. Padget},
@@ -4514,6 +4683,27 @@ ments over the challenge baseline.},
   owner                    = {jack},
   publisher                = {IEEE},
   timestamp                = {2015.12.01}
+}
+
+@InProceedings{marchiori2009,
+  title                    = {Using Circuit-level Power Measurements in Household Energy Management Systems},
+  author                   = {Marchiori, Alan and Han, Qi},
+  booktitle                = {1st Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings},
+  date                     = {2009},
+  doi                      = {10.1145/1810279.1810282},
+  isbn                     = {978-1-60558-824-7},
+  location                 = {Berkeley, California},
+  pages                    = {7--12},
+  publisher                = {ACM},
+  series                   = {BuildSys},
+  abstract                 = {The first requirement for any intelligent household energy management system is to be able to accurately measure energy usage in the home. Measuring energy usage is not difficult, however we must decide what to measure. Whole-home energy measurement is cheap and easy to setup because only one sensor is placed where the home connects to the power grid. The collected data can provide useful information for large appliances. However, the only way to monitor the energy usage of smaller devices is to install an energy meter on every device of interest. This creates a very detailed picture of household energy consumption, but requires a lot of additional hardware---one meter per device in the home. This paper explores an alternative, more practical, approach to monitor household energy usage including small devices. Our approach uses circuit-level power measurements and a new method to separate aggregate data into device-level estimates. Our initial evaluation resulted in an average error less than 5:35% for three devices with good response to changing device state. We therefore believe that this approach, coupled with a device-level control system, would create an ideal architecture for the next generation of household energy management systems.},
+  acmid                    = {1810282},
+  file                     = {marchiori2009.pdf:marchiori2009.pdf:PDF},
+  keywords                 = {energy, circuit-level, NILM, active power, reactive power, voltage, mains frequency, clustering, maximum likelihood, medium freq},
+  numpages                 = {6},
+  owner                    = {jack},
+  sampleperiod             = {1},
+  timestamp                = {2015.12.03}
 }
 
 @InProceedings{masci2011stacked,
@@ -5033,6 +5223,26 @@ The in-depth Household Electricity Use Study aimed to cover the electricity usag
   keywords                 = {energy, behaviour, data, government},
   owner                    = {jack},
   timestamp                = {2015.12.01}
+}
+
+@InProceedings{ozoh2015,
+  title                    = {Simulating Electricity Consumption Pattern for Household Appliances Using Demand Side Strategies: A Review},
+  author                   = {Ozoh, Patrick and Apperley, Mark},
+  booktitle                = {15th New Zealand Conference on Human-Computer Interaction},
+  date                     = {2015},
+  doi                      = {10.1145/2808047.2808057},
+  isbn                     = {978-1-4503-3670-3},
+  location                 = {Hamilton, New Zealand},
+  pages                    = {65--71},
+  publisher                = {ACM},
+  series                   = {CHINZ},
+  abstract                 = {This paper investigates research work related to the modelling and simulation of household electricity consumption with a view to developing a simulation to evaluate the effectiveness of demand-side management mechanisms. The eventual aim of the research is to be able to model household consumption down to the level of individual appliance use in order to explore and assess the impact of different demand-side strategies, both in individual household consumption, and on overall grid balance. The focus of this paper is to survey relevant research on simulation of household consumption, potential demand-side strategies and their impact, and modelling techniques for residential consumption. From this review, the paper provides a number of pointers for future effort in the area of modelling the impact of demand-side management strategies and techniques.},
+  acmid                    = {2808057},
+  file                     = {ozoh2015.pdf:ozoh2015.pdf:PDF},
+  keywords                 = {energy, appliances, simulation, electrical, demand-side management},
+  numpages                 = {7},
+  owner                    = {jack},
+  timestamp                = {2015.12.03}
 }
 
 @Article{oleary2015thermal-efficiency,
@@ -5933,6 +6143,26 @@ From an initially unstructured network the hidden units differentiate into categ
   timestamp                = {2015.12.01}
 }
 
+@InProceedings{rowe2010,
+  title                    = {Contactless Sensing of Appliance State Transitions Through Variations in Electromagnetic Fields},
+  author                   = {Rowe, Anthony and Bergés, Mario and Rajkumar, Raj},
+  booktitle                = {2nd Workshop on Embedded Sensing Systems for Energy-Efficiency in Building},
+  date                     = {2010},
+  doi                      = {10.1145/1878431.1878437},
+  isbn                     = {978-1-4503-0458-0},
+  location                 = {Zurich, Switzerland},
+  pages                    = {19--24},
+  publisher                = {ACM},
+  series                   = {BuildSys},
+  abstract                 = {Non-Intrusive Load Monitoring (NILM) is a promising technique for disaggregating per-appliance energy consumption in buildings from aggregate voltage/current measurements. One major limitation of the approach is that it typically requires a training phase during which users must manually label device transitions. In this paper, we present an inexpensive contactless electromagnetic field (EMF) event-detector that can detect appliance state changes within close proximity based on magnetic and electric field fluctuations. Each detector wirelessly transmits state changes to a circuit-panel energy meter, which can then be used to label and disambiguate appliance transitions detected from the aggregate signals as well as to track the associated energy consumption. Our EMF sensors are able to detect significant power state changes from a few inches away making it possible to externally monitor in-wall wiring to devices (e.g., overhead lights). We experimentally evaluate our proposed EMF sensor in terms of power consumption, accuracy and detection range on a variety of appliances to demonstrate its effectiveness towards augmenting NILM systems. We show that accurately detecting 100W loads from 10cm away is possible while maintaining multiple-year battery life from a coin-cell battery.},
+  acmid                    = {1878437},
+  file                     = {rowe2010.pdf:rowe2010.pdf:PDF},
+  keywords                 = {energy, NILM, EMF, side-channel},
+  numpages                 = {6},
+  owner                    = {jack},
+  timestamp                = {2015.12.03}
+}
+
 @TechReport{rumelhart1985learning,
   title                    = {Learning internal representations by error propagation},
   author                   = {Rumelhart, David E and Hinton, Geoffrey E and Williams, Ronald J},
@@ -6675,6 +6905,26 @@ Kokichi Sugihara is Professor in the Department of Mathematical Engineering and 
   keywords                 = {machine learning, music, timeseries, speech, transcription},
   owner                    = {jack},
   timestamp                = {2015.12.01}
+}
+
+@InProceedings{taysi2010,
+  title                    = {TinyEARS: Spying on House Appliances with Audio Sensor Nodes},
+  author                   = {Taysi, Z. Cihan and Guvensan, M. Amac and Melodia, Tommaso},
+  booktitle                = {2nd ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Building},
+  date                     = {2010},
+  doi                      = {10.1145/1878431.1878439},
+  isbn                     = {978-1-4503-0458-0},
+  location                 = {Zurich, Switzerland},
+  pages                    = {31--36},
+  publisher                = {ACM},
+  series                   = {BuildSys},
+  abstract                 = {Fine-grained awareness on how and where energy is spent is being increasingly recognized as the key to conserve energy. While several solutions to monitor the energy consumption patterns for commercial and industrial users exist, energy reporting systems currently available to residential users require time-consuming and intrusive installation procedures, or are otherwise unable to provide device-level reports on energy consumption. To fill this gap, this paper discusses the design and performance evaluation of the Tiny Energy Accounting and Reporting System (TinyEARS), a fine-grained energy monitoring system that generates devicelevel power consumption reports primarily based on the acoustic signatures of household appliances. Experiments demonstrate that TinyEARS is able to report the power consumption of individual household appliances within a 10% error margin.},
+  acmid                    = {1878439},
+  file                     = {taysi2010.pdf:taysi2010.pdf:PDF},
+  keywords                 = {energy, audio, side-channel, NILM},
+  numpages                 = {6},
+  owner                    = {jack},
+  timestamp                = {2015.12.03}
 }
 
 @Book{thaler2008,
