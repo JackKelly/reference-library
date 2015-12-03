@@ -7,7 +7,7 @@
 `keywords.txt` lists most of the `keywords` that I use to categorise
 entries.  The list in `keywords.txt` is not exhaustive.
 
-The `*.ipynb` files are IPython Notebook scripts that I have used for
+The files in `python/` are IPython Notebook scripts that I have used for
 processing my `.bib` files using the excellent [`bibtexparser` package](http://bibtexparser.readthedocs.org).
 
 Please feel free to re-use any of this content.  Also, please do
