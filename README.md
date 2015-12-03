@@ -10,6 +10,18 @@ entries.  The list in `keywords.txt` is not exhaustive.
 The `*.ipynb` files are IPython Notebook scripts that I have used for
 processing my `.bib` files using the excellent [`bibtexparser` package](http://bibtexparser.readthedocs.org).
 
+Please feel free to re-use any of this content.  Also, please do
+submit an issue or a pull request if you find any errors!!
+
+### Subjects
+
+* Energy disaggregation (aka NILM, NIALM, NALM)
+* Behavioural / psychological studies surrounding NILM
+* Climate science
+* Climate change legislation
+* Machine learning, especially deep learning
+* Neuroscience
+
 #### Conventions
 
 ##### `title` capitalisation
