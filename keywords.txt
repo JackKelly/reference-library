@@ -21,23 +21,24 @@ separate biblatex field, e.g. `samplefrequency = {1}` means 1Hz whilst
 
 machine learning
 ----------------
+(in general I use the singular; e.g. 'RNN' not 'RNNs')
 changepoint detection
 dynamic programming
 integer programming
-dynamical systems
+dynamical system
 speech
 vision
 character recognition
-graphical models
+graphical model
 RNN-RBM
-RNNs
+RNN
 generative
-RBMs
-deep neural networks
+RBM
+deep neural network
 variational
 autoencoder
 recurrent
-CNNs
+CNN
 timeseries
 pattern mining
 video
@@ -53,21 +54,21 @@ feature extraction
 
 ML approaches used in NILM:
 ---------------------------
-finite state machines
+finite state machine
 ensemble
 motif mining
-wavelets
+wavelet
 sparse coding
 SVM
 decision tree
-RBF networks
-artificial neural networks
+RBF network
+artificial neural network
 LSTM
 Bayesian
-HMMs
+HMM
 unsupervised learning
 KNN
-genetic algorithms
+genetic algorithm
 particle filter
 
 energy
