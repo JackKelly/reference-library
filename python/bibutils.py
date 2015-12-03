@@ -2,7 +2,7 @@ from __future__ import print_function, division
 import bibtexparser
 import codecs
 
-BIB_FILENAME = 'library.bib'
+BIB_FILENAME = '../library.bib'
 
 
 def load_bib(filename=BIB_FILENAME):
