@@ -9,10 +9,15 @@ harmonics
 
 Sample rate keywords
 --------------------
-'very low freq' (15 minutes or slower).  Specific words = hourly, 
+'very low freq' (15 minutes or slower)
 'low freq' (1 min >= x < 15 mins)
 'medium freq' (1Hz >= x < 1min)
 'high freq' (faster than 1Hz)
+
+If a specific sample frequency (in Hz) or sample period (in
+seconds) is found in the paper then this is put into a
+separate biblatex field, e.g. `samplefrequency = {1}` means 1Hz whilst
+`sampleperiod = {3600}` means hourly.
 
 machine learning
 ----------------
@@ -20,14 +25,10 @@ changepoint detection
 dynamic programming
 integer programming
 dynamical systems
-genetic algorithms
 speech
-HMMs
 vision
 character recognition
 graphical models
-Bayesian
-artificial neural networks
 RNN-RBM
 RNNs
 generative
@@ -40,24 +41,34 @@ CNNs
 timeseries
 pattern mining
 video
-unsupervised learning
 semi-supervised
-LSTM
 handwriting
 compressing neural networks
 density estimation
 deconvolutional
 regularisation
-sparse coding
-SVM
 music
 transcription
-decision tree
 feature extraction
+
+ML approaches used in NILM:
+---------------------------
 finite state machines
 ensemble
 motif mining
 wavelets
+sparse coding
+SVM
+decision tree
+RBF networks
+artificial neural networks
+LSTM
+Bayesian
+HMMs
+unsupervised learning
+KNN
+genetic algorithms
+particle filter
 
 energy
 ------
