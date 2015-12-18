@@ -94,6 +94,7 @@ coal
 natural gas
 fracking
 generation
+energy efficiency
 electrical
 thermal efficiency
 heating control
@@ -136,6 +137,7 @@ privacy
 computational sustainability
 smart cities
 dashboard
+modelling
 
 misc
 ----
