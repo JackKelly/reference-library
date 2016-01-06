@@ -106,6 +106,8 @@ power factor
 voltage
 mains frequency
 demand-side management
+demand response
+air conditioning
 
 climate change
 --------------
@@ -138,6 +140,7 @@ computational sustainability
 smart cities
 dashboard
 modelling
+data cleaning
 
 misc
 ----
