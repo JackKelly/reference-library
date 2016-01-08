@@ -9,7 +9,8 @@ harmonics
 steady-state
 metrics
 use cases
-
+water
+apportionment (i.e. deciding which individual(s) consumed what energy)
 
 side-channel
 ------------
@@ -20,7 +21,7 @@ Sample rate keywords
 'very low freq' (15 minutes or slower)
 'low freq' (1 min >= x < 15 mins)
 'medium freq' (1Hz >= x < 1min)
-'high freq' (faster than 1Hz)
+'high freq' (faster than  1Hz)
 
 If a specific sample frequency (in Hz) or sample period (in
 seconds) is found in the paper then this is put into a
@@ -77,12 +78,15 @@ Bayesian
 HMM
 unsupervised learning
 KNN
+k-means
 genetic algorithm
 particle filter
 GMM
 thresholding
 clustering
 maximum likelihood
+SSER (Sparse Switching Event Recovering)
+CRF
 
 energy
 ------

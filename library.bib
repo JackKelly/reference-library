@@ -83,7 +83,7 @@
   Series                   = {CIASG},
   Abstract                 = {Disaggregating total household's energy data down to individual appliances via non-intrusive appliance load monitoring (NALM) has generated renewed interest with ongoing or planned large-scale smart meter deployments worldwide. Of special interest are NALM algorithms that are of low complexity and operate in near real time, supporting emerging applications such as in-home displays, remote appliance scheduling and home automation, and use low sampling rates data from commercial smart meters. NALM methods, based on Hidden Markov Model (HMM) and its variations, have become the state of the art due to their high performance, but suffer from high computational cost. In this paper, we develop an alternative approach based on support vector machine (SVM) and k-means, where k-means is used to reduce the SVM training set size by identifying only the representative subset of the original dataset for the SVM training. The resulting scheme outperforms individual k-means and SVM classifiers and shows competitive performance to the state-of-the-art HMM-based NALM method with up to 45 times lower execution time (including training and testing).},
   File                     = {altrabalsi2014.pdf:altrabalsi2014.pdf:PDF},
-  Keywords                 = {energy, NILM},
+  Keywords                 = {energy, NILM, SVM, k-means},
   Owner                    = {jack},
   Timestamp                = {2015.12.01}
 }
@@ -132,6 +132,21 @@
   Keywords                 = {NILM, energy, data},
   Owner                    = {Jack},
   Timestamp                = {2015.11.19}
+}
+
+@Thesis{anderson2014thesis,
+  Title                    = {Non-Intrusive Load Monitoring: Disaggregation of Energy by Unsupervised Power Consumption Clustering},
+  Author                   = {Kyle D. Anderson},
+  Date                     = {2014-12},
+  Institution              = {Carnegie Mellon University},
+  Type                     = {PhD},
+  Url                      = {http://repository.cmu.edu/dissertations/507},
+  Abstract                 = {There is a growing trend in monitoring residential infrastructures to provide inhabitants with more information about their energy consumption and help them to reduce usage and cost. Device-level power consumption information, while a functionality in newer smart appliances, is not generally available to consumers. In electricity consumption disaggregation, Non-Intrusive Load Monitoring (NILM) refers to methods that provide consumers estimates of device-level energy consumption based on aggregate measurements usually taken at the main circuit panel or electric meter. The traditional NILM approach characterizes changes in the power signal when devices turn on or o, and it infers the consumption of different devices present in the home based on these changes. Generally, these NILM methods require training and models of the devices present in the home in order to function properly. Because of these challenges, much of the NILM literature does not address the actual energy disaggregation problem but focuses on detecting events and classifying changes in power. In this dissertation, we propose a relaxation to the traditional NILM problem and provide an unsupervised, data-driven algorithm to solve it. Specifically we propose Power Consumption Clustered Non-Intrusive Load Monitoring (PCC-NILM), a relaxation that reports on the energy usage of devices grouped together by power consumption levels. In order to solve the PCC-NILM problem, we provide the Approximate Power Trace Decomposition Algorithm (APTDA). Unlike other methods, APTDA does not require training and it provides estimated energy consumption for different classes of devices.},
+  Comment                  = {supervisor: José Moura},
+  File                     = {anderson2014thesis.pdf:anderson2014thesis.pdf:PDF},
+  Keywords                 = {energy, NILM, unsupervised},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @InProceedings{anderson2012event-detection,
@@ -192,7 +207,7 @@
   Volume                   = {52},
   Abstract                 = {This paper aims to address two timely energy problems. First, significant low-cost energy reductions can be made in the residential and commercial sectors, but these savings have not been achievable to date. Second, billions of dollars are being spent to install smart meters, yet the energy saving and financial benefits of this infrastructure – without careful consideration of the human element – will not reach its full potential. We believe that we can address these problems by strategically marrying them, using disaggregation. Disaggregation refers to a set of statistical approaches for extracting end-use and/or appliance level data from an aggregate, or whole-building, energy signal. In this paper, we explain how appliance level data affords numerous benefits, and why using the algorithms in conjunction with smart meters is the most cost-effective and scalable solution for getting this data. We review disaggregation algorithms and their requirements, and evaluate the extent to which smart meters can meet those requirements. Research, technology, and policy recommendations are also outlined.},
   File                     = {armel2013holy-grail.pdf:armel2013holy-grail.pdf:PDF},
-  Keywords                 = {NILM, energy},
+  Keywords                 = {NILM, energy, review},
   Owner                    = {Jack},
   Publisher                = {Elsevier},
   Timestamp                = {2015.09.07}
@@ -448,6 +463,37 @@ robust classification of 30 model phonemes.},
   Timestamp                = {2015.11.19}
 }
 
+@InProceedings{barker2014,
+  Title                    = {NILM redux: The case for emphasizing applications over accuracy},
+  Author                   = {Barker, Sean and Kalra, Sandeep and Irwin, David and Shenoy, Prashant},
+  Booktitle                = {1st International Workshop on NILM},
+  Date                     = {2014},
+  Url                      = {http://none.cs.umass.edu/papers/pdf/nilm14.pdf},
+  Abstract                 = {Non-Intrusive Load Monitoring (NILM) has recently
+experienced a rebirth due to the expanding deployment of
+network-connected smart meters by utilities and the increasing
+availability of Internet-enabled consumer-grade power meters.
+While many dimensions of the problem have been well-studied
+over the past 25 years, we argue that prior work has placed
+too much emphasis on incremental improvements in accuracy
+and not enough on designing novel NILM applications. As a
+result, the basic NILM problem and its primary application—
+a simple appliance-level breakdown of home energy usage—has
+remained unchanged since its inception. We believe a renewed
+focus on NILM applications could help steer future research in
+novel directions by exposing new problem variants, data analysis
+techniques, and evaluation metrics. In this paper, we summarize
+our own application-centric research agenda, which focuses on
+online applications that generate results in real time as smart
+meters produce data. As we discuss, our focus on applications has
+led us to consider efficiency and performance issues not addressed
+in prior work, which typically targets offline data analysis.},
+  File                     = {barker2014.pdf:barker2014.pdf:PDF},
+  Keywords                 = {NILM, energy},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
+}
+
 @InProceedings{barker2012smart,
   Title                    = {Smart*: An open data set and tools for enabling research in sustainable homes},
   Author                   = {Barker, Sean and Mishra, Aditya and Irwin, David and Cecchet, Emmanuel and Shenoy, Prashant and Albrecht, Jeannie},
@@ -476,6 +522,42 @@ robust classification of 30 model phonemes.},
   Owner                    = {Jack},
   Publisher                = {Taylor \& Francis},
   Timestamp                = {2015.11.19}
+}
+
+@InProceedings{barsim2014,
+  Title                    = {Unsupervised Adaptive Event Detection for Building-Level Energy Disaggregation},
+  Author                   = {Barsim, K and Streubel, Roman and Yang, Bin},
+  Booktitle                = {Power and Energy Student Summt},
+  Date                     = {2014},
+  Location                 = {Stuttgart, Germany},
+  Series                   = {PESS},
+  Abstract                 = {The need for energy disaggregation increases with
+the need for a more detailed understanding and more accurate
+estimates about the energy usage. One of the main approaches for
+energy disaggregation is Non-Intrusive Load Monitoring (NILM).
+NILM refers to the analysis of the aggregate power consumption
+of electric loads in order to recognize the existence and the
+consumption profile of each individual appliance. While there
+exist non event-based NILM systems, many NILM systems follow
+the event-based approach in the sense that they rely mainly on the
+detection and classification of events in the aggregate electrical
+signal. In this paper, we describe our work on developing an
+event detector suitable for unsupervised NILM systems. The
+proposed event detector is capable of accurately defining the
+times limits of each transition interval in the power signal. This
+feature is very important specially for NILM systems that depend
+on transient features. The detector is tested on the publicly
+available BLUED dataset and shows event detection results more
+than 98%. Test results of a complete unsupervised NILM system
+using the proposed detector are also provided and show possible
+disaggregation up to 92% of the energy. Moreover, the system
+has been utilized in an energy-disaggregation competition held
+by Belkin and achieved a score within the top ten results with
+disaggregation value of 93.41% of the total time.},
+  File                     = {barsim2014.pdf:barsim2014.pdf:PDF},
+  Keywords                 = {energy, NILM},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
 }
 
 @Misc{bastien2012theano,
@@ -644,6 +726,27 @@ recurrent neural networks.},
   Timestamp                = {2015.11.19}
 }
 
+@InProceedings{batra2015value,
+  Title                    = {If You Measure It, Can You Improve It?: Exploring The Value of Energy Disaggregation},
+  Author                   = {Batra, Nipun and Singh, Amarjeet and Whitehouse, Kamin},
+  Booktitle                = {2nd International Conference on Embedded Systems for Energy-Efficient Built Environments},
+  Date                     = {2015-11},
+  Doi                      = {10.1145/2821650.2821660},
+  ISBN                     = {978-1-4503-3981-0},
+  Location                 = {Seoul, South Korea},
+  Pages                    = {191--200},
+  Publisher                = {ACM},
+  Series                   = {BuildSys},
+  Abstract                 = {Over the past few years, dozens of new techniques have been proposed for more accurate energy disaggregation, but the jury is still out on whether these techniques can actually save energy and, if so, whether higher accuracy translates into higher energy savings. In this paper, we explore both of these questions. First, we develop new techniques that use disaggregated power data to provide actionable feedback to residential users. We evaluate these techniques using power traces from 240 homes and find that they can detect homes that need feedback with as much as 84% accuracy. Second, we evaluate whether existing energy disaggregation techniques provide power traces with sufficient fidelity to support the feedback techniques that we created and whether more accurate disaggregation results translate into more energy savings for the users. Results show that feedback accuracy is very low even while disaggregation accuracy is high. These results indicate a need to revisit the metrics by which disaggregation is evaluated.},
+  Acmid                    = {2821660},
+  Address                  = {New York, NY, USA},
+  File                     = {batra2015value.pdf:batra2015value.pdf:PDF},
+  Keywords                 = {energy, metrics, nilm},
+  Numpages                 = {10},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @Article{baynes2012reconstructing,
   Title                    = {Reconstructing the Energy History of a City},
   Author                   = {Timothy M. Baynes and Xuemei Bai},
@@ -717,6 +820,22 @@ Citizens Advice said increasing numbers of people were seeking information on cu
   Owner                    = {jack},
   Sampleperiod             = {1},
   Timestamp                = {2015.12.03}
+}
+
+@Article{bedwell2014workplace,
+  Title                    = {Apportioning energy consumption in the workplace: a review of issues in using metering data to motivate staff to save energy},
+  Author                   = {Ben Bedwell and Caroline Leygue and Murray Goulden and Derek McAuley and James Colley and Eamonn Ferguson and Nick Banks and Alexa Spence},
+  Date                     = {2014},
+  Journaltitle             = {Technology Analysis \& Strategic Management},
+  Doi                      = {10.1080/09537325.2014.978276},
+  Number                   = {10},
+  Pages                    = {1196-1211},
+  Volume                   = {26},
+  Abstract                 = {The UK government has set ambitious targets to reduce carbon emissions, and lowering energy demand within workplaces is important to help meet these. With the rollout of smart metres and the availability of more fine-grained energy monitoring equipment for the workplace, it is increasingly possible to disaggregate collective energy consumption and apportion this among building users. This article presents an interdisciplinary perspective on the rationale and feasibility of different approaches to apportionment to motivate staff to reduce energy consumption. Our review indicates greatest potential for energy saving when consumption is apportioned to small to medium-sized groups, rather than individuals or entire buildings, particularly when they represent existing communities to which staff members strongly identify. We highlight the complexity of technical, psychological, social and organisational factors that not only inspire, but also often confound, efforts to innovate in this area.},
+  File                     = {bedwell2014workplace.pdf:bedwell2014workplace.pdf:PDF},
+  Keywords                 = {energy, commercial, smart meters, review, apportionment},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @InProceedings{belley2013,
@@ -1039,7 +1158,6 @@ CPU and between 6.5× and 44× faster when compiled for the GPU. This paper illu
   Location                 = {Rome, Italy},
   Publisher                = {IEEE},
   Series                   = {EEEIC},
-  __markedentry            = {[Jack:]},
   Abstract                 = {Research on Smart Grids has recently focused on the energy monitoring issue, with the objective to maximize the user consumption awareness in building contexts on one hand, and to provide a detailed description of customer habits to the utilities on the other. One of the hottest topic in this field is represented by Non-Intrusive Load Monitoring (NILM): it refers to those techniques aimed at decomposing the consumption aggregated data acquired at a single point of measurement into the diverse consumption profiles of appliances operating in the electrical system under study. The focus here is on unsupervised algorithms, which are the most interesting and of practical use in real case scenarios. Indeed, these methods rely on a sustainable amount of a-priori knowledge related to the applicative context of interest, thus minimizing the user intervention to operate, and are targeted to extract all information to operate directly from the measured aggregate data. This paper reports and describes the most promising unsupervised NILM methods recently proposed in the literature, by dividing them into two main categories: load classification and source separation approaches. An overview of the public available dataset used on purpose and a comparative analysis of the algorithms performance is provided, together with a discussion of challenges and future research directions.},
   File                     = {bonfigli2015unsupervised.pdf:bonfigli2015unsupervised.pdf:PDF},
   Keywords                 = {energy, NILM, unsupervised learning, review},
@@ -1118,6 +1236,22 @@ over intermediate representations.},
   Keywords                 = {software, visualisation, data, open-source},
   Owner                    = {jack},
   Timestamp                = {2015.11.23}
+}
+
+@Article{bouhouras2014,
+  Title                    = {Development of distinct load signatures for higher efficiency of NILM algorithms},
+  Author                   = {Aggelos S. Bouhouras and Apostolos N. Milioudis and Dimitris P. Labridis},
+  Date                     = {2014},
+  Journaltitle             = {Electric Power Systems Research},
+  Doi                      = {10.1016/j.epsr.2014.08.015},
+  ISSN                     = {0378-7796},
+  Pages                    = {163 - 171},
+  Volume                   = {117},
+  Abstract                 = {A simple and novel methodology for the configuration of robust and distinct load signatures is presented in this paper. A technique based on a spectral analysis of the current waveform of each load is proposed, leading to load signatures consisting of three distinct spectral coefficients. Data required for each load signature come from only one period of the current waveform, under a sampling frequency at the order of kHz. A simple identification algorithm has also been developed in order to estimate the signatures adequacy. Each appliance has been measured and classified as an individual load, using a simple identification procedure. Data obtained from two different measurement sets show that the proposed technique provides unique data formations for each appliance tested by developing an efficient recognition procedure with high levels of identification rate. Due to the simplicity of both the database configuration and the identification procedure, the proposed methodology could be considered appropriate for online monitoring and real time smart grid applications.},
+  File                     = {bouhouras2014.pdf:bouhouras2014.pdf:PDF},
+  Keywords                 = {energy, NILM, high freq, kHz},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
 }
 
 @InProceedings{boulanger2012music-generation,
@@ -1431,18 +1565,8 @@ operating in the same or adjacent},
   Series                   = {BECC},
   Url                      = {http://escholarship.org/uc/item/62d3456p},
   Abstract                 = {Energy Disaggregation is called the Holy Grail of energy efficiency. You cannot improve what
-you cannot measure. Energy Disaggregation allows us to measure how much energy goes into each
-major appliance, which can be further analyzed to identify and eliminate inefficiencies. This
-disaggregated information has two major impacts: increased consumer engagement and reduced
-energy usage. This paper highlights results from two case studies conducted in real life – one in
-California and other international. The study in California, using an experimental design, shows a
-statistical proof of average 14% energy reduction in users exposed to Bidgely’s Energy
-Disaggregation-based solution with a maximum of 24% and a minimum of 3.5%. The international
-study shows high levels of consumer engagement, favorable consumer reaction and an 80% approval
-from users on making this solution available to all. These studies aim to support the introduction of
-policies that open up real time data access from Smart Meters. Millions of these Smart Meters installed
-in field are already equipped with the right hardware but have not been enabled to deliver the above
-benefits.},
+you cannot measure. Energy Disaggregation allows us to measure how much energy goes into each major appliance, which can be further analyzed to identify and eliminate inefficiencies. This disaggregated information has two major impacts: increased consumer engagement and reduced energy usage. This paper highlights results from two case studies conducted in real life – one in California and other international. The study in California, using an experimental design, shows a statistical proof of average 14% energy reduction in users exposed to Bidgely’s Energy Disaggregation-based solution with a maximum of 24% and a minimum of 3.5%. The international study shows high levels of consumer engagement, favorable consumer reaction and an 80% approval from users on making this solution available to all. These studies aim to support the introduction of
+policies that open up real time data access from Smart Meters. Millions of these Smart Meters installed in field are already equipped with the right hardware but have not been enabled to deliver the above benefits.},
   File                     = {chakravarty2013.pdf:chakravarty2013.pdf:PDF},
   Keywords                 = {energy, NILM, behaviour},
   Owner                    = {jack},
@@ -1589,6 +1713,28 @@ benefits.},
   Timestamp                = {2015.03.30}
 }
 
+@TechReport{christensen2012,
+  Title                    = {NILM Applications for the Energy-Efficient Home},
+  Author                   = {Dane Christensen and Lieko Earle and Bethany Sparn},
+  Date                     = {2012-11},
+  Institution              = {National Renewable Energy Laboratory},
+  Number                   = {NREL/TP-5500-55291},
+  Url                      = {http://www.nrel.gov/docs/fy13osti/55291.pdf},
+  Abstract                 = {Research in non-intrusive load monitoring (NILM) has exploded
+in recent years, enabling innovative and significant technological
+advances. Few products are yet available, but development is
+underway at universities and corporations worldwide. In this
+presentation we discuss our vision of how these products will
+enable energy efficiency, improve comfort, and provide positive
+cash flow in the U.S. housing sector. Specifically, we forecast
+products that serve the greater systems – the energy management,
+whole-house, and community energy systems.},
+  File                     = {christensen2012.pdf:christensen2012.pdf:PDF},
+  Keywords                 = {energy, NILM, review},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
+}
+
 @Article{chung2015gated,
   Title                    = {Gated Feedback Recurrent Neural Networks},
   Author                   = {Chung, Junyoung and Gulcehre, Caglar and Cho, Kyunghyun and Bengio, Yoshua},
@@ -1640,7 +1786,7 @@ benefits.},
 
 This paper presents a detailed review of current approaches to model development and calibration, highlighting the importance of uncertainty in the calibration process. This is accompanied by a detailed assessment of the various analytical and mathematical/statistical tools employed by practitioners to date, as well as a discussion on both the problems and the merits of the presented approaches.},
   File                     = {coakley2014review.pdf:coakley2014review.pdf:PDF},
-  Keywords                 = {energy, simulation, commercial},
+  Keywords                 = {energy, simulation, commercial, review},
   Owner                    = {Jack},
   Publisher                = {Elsevier {BV}},
   Timestamp                = {2015.12.15}
@@ -1733,6 +1879,22 @@ findings of this study and future work.},
   Keywords                 = {heating control, methane, carbon dioxide, wireless sensor network, ZigBee},
   Owner                    = {jack},
   Timestamp                = {2015.11.24}
+}
+
+@Article{cominola2015,
+  Title                    = {Benefits and challenges of using smart meters for advancing residential water demand modeling and management: A review},
+  Author                   = {A. Cominola and M. Giuliani and D. Piga and A. Castelletti and A.E. Rizzoli},
+  Date                     = {2015},
+  Journaltitle             = {Environmental Modelling \& Software},
+  Doi                      = {10.1016/j.envsoft.2015.07.012},
+  ISSN                     = {1364-8152},
+  Pages                    = {198 - 214},
+  Volume                   = {72},
+  Abstract                 = {Over the last two decades, water smart metering programs have been launched in a number of medium to large cities worldwide to nearly continuously monitor water consumption at the single household level. The availability of data at such very high spatial and temporal resolution advanced the ability in characterizing, modeling, and, ultimately, designing user-oriented residential water demand management strategies. Research to date has been focusing on one or more of these aspects but with limited integration between the specialized methodologies developed so far. This manuscript is the first comprehensive review of the literature in this quickly evolving water research domain. The paper contributes a general framework for the classification of residential water demand modeling studies, which allows revising consolidated approaches, describing emerging trends, and identifying potential future developments. In particular, the future challenges posed by growing population demands, constrained sources of water supply and climate change impacts are expected to require more and more integrated procedures for effectively supporting residential water demand modeling and management in several countries across the world.},
+  File                     = {cominola2015.pdf:cominola2015.pdf:PDF},
+  Keywords                 = {water, review, smart meters},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
 }
 
 @TechReport{california2006,
@@ -2186,6 +2348,22 @@ digitalized. DIGITALEUROPE believes in the equation of Smart is Digital and Digi
   Timestamp                = {2015.11.30}
 }
 
+@InProceedings{dong2013adaptive-filtering,
+  Title                    = {Energy disaggregation via adaptive filtering},
+  Author                   = {Dong, R. and Ratliff, L.J. and Ohlsson, H. and Sastry, S.S.},
+  Booktitle                = {51st Annual Allerton Conference on Communication, Control, and Computing},
+  Date                     = {2013-10},
+  Doi                      = {10.1109/Allerton.2013.6736521},
+  Location                 = {Monticello, IL},
+  Pages                    = {173-180},
+  Publisher                = {IEEE},
+  Abstract                 = {The energy disaggregation problem is recovering device level power consumption signals from the aggregate power consumption signal for a building. We show in this paper how the disaggregation problem can be reformulated as an adaptive filtering problem. This gives both a novel disaggregation algorithm and a better theoretical understanding for disaggregation. In particular, we show how the disaggregation problem can be solved online using a filter bank and discuss its optimality.},
+  File                     = {dong2013adaptive-filtering.pdf:dong2013adaptive-filtering.pdf:PDF},
+  Keywords                 = {energy, NILM},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @InProceedings{dong2013dynamical-systems,
   Title                    = {A Dynamical Systems Approach to Energy Disaggregation},
   Author                   = {Dong, Roy and Ratliff, Lillian and Ohlsson, Henrik and Sastry, S. Shankar},
@@ -2336,6 +2514,19 @@ digitalized. DIGITALEUROPE believes in the equation of Smart is Digital and Digi
   Owner                    = {jack},
   Samplefrequency          = {1},
   Timestamp                = {2015.12.03}
+}
+
+@InProceedings{elhamifar2015,
+  Title                    = {Energy Disaggregation via Learning Powerlets and Sparse Coding},
+  Author                   = {Ehsan Elhamifar and Shankar Sastry},
+  Booktitle                = {AAAI Conference on Artificial Intelligence},
+  Date                     = {2015},
+  Url                      = {http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9791},
+  Abstract                 = {In this paper, we consider the problem of energy disaggregation, i.e., decomposing a whole home electricity signal into its component appliances. We propose a new supervised algorithm, which in the learning stage, automatically extracts signature consumption patterns of each device by modeling the device as a mixture of dynamical systems. In order to extract signature consumption patterns of a device corresponding to its different modes of operation, we define appropriate dissimilarities between energy snippets of the device and use them in a subset selection scheme, which we generalize to deal with time-series data. We then form a dictionary that consists of extracted power signatures across all devices. We cast the disaggregation problem as an optimization over a representation in the learned dictionary and incorporate several novel priors such as device-sparsity, knowledge about devices that do or do not work together as well as temporal consistency of the disaggregated solution. Real experiments on a publicly available energy dataset demonstrate that our proposed algorithm achieves promising results for energy disaggregation.},
+  File                     = {elhamifar2015.pdf:elhamifar2015.pdf:PDF},
+  Keywords                 = {energy, NILM, sparse coding},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @InProceedings{erhan2014,
@@ -2856,6 +3047,38 @@ limited, particularly as it relates to induced innovation and productivity growt
   Timestamp                = {2015.12.07}
 }
 
+@InProceedings{giri2012,
+  Title                    = {Study on the Feasibility of Automated Data Labeling and Training Using an EMF Sensor in NILM Platforms},
+  Author                   = {Suman Giri and Mario Bergés},
+  Booktitle                = {International EG-ICE Workshop on Intelligent Computing},
+  Date                     = {2012},
+  Location                 = {Munich, Germany},
+  Url                      = {http://inferlab.org/wp-content/uploads/2012/07/EG-ICE.pdf},
+  Volume                   = {46},
+  File                     = {giri2012.pdf:giri2012.pdf:PDF},
+  Keywords                 = {NILM, energy, EMF, side-channel},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
+@Article{giri2013,
+  Title                    = {Towards automated appliance recognition using an EMF sensor in NILM platforms},
+  Author                   = {Suman Giri and Mario Bergés and Anthony Rowe},
+  Date                     = {2013-10},
+  Journaltitle             = {Advanced Engineering Informatics},
+  Doi                      = {10.1016/j.aei.2013.03.004},
+  Number                   = {4},
+  Pages                    = {477--485},
+  Volume                   = {27},
+  __markedentry            = {[jack:]},
+  Abstract                 = {Non-Intrusive Load Monitoring (NILM) has been studied for a few decades now as a method of disaggregating information about appliance level power consumption in a building from aggregate measurements of voltage and/or current obtained at a centralized location in the electrical system. When such information is provided to the electricity consumer as feedback, they can then take the necessary steps to modify their behavior and conserve electricity. Research has shown potential for savings of up to 20% through this kind of feedback. The training phase required to allow the algorithms to recognize appliances in the home at the beginning of a NILM setup is a big hindrance to wide adoption of the technique. One of the recent advances in this research area includes the addition of an Electro-Magnetic Field (EMF) sensor that measures the electric and magnetic field nearby an appliance to detect its operational state. This information, when coupled with the aggregate power consumption data for the home, can help to train a NILM system, which is a significant step forward in automating the training phase. This paper explores the theory behind the operation of the EMF sensor and discusses the feasibility of automating the training and classification process using these devices. A case study is presented, where magnetic field measurements of eight appliances are analyzed to determine the viability of using these signals alone to determine the type of appliance that the EMF sensor has been placed next to. Various dimensionality reduction techniques are applied to the collected data, and the resulting feature vectors are used to train a variety of common machine learning classifiers. A vector subspace obtained using Independent Component Analysis (ICA), along with a k-NN classifier, was found to perform best among the different alternatives explored. Possible reasons behind the findings are discussed and areas for further exploration are proposed.},
+  File                     = {giri2013.pdf:giri2013.pdf:PDF},
+  Keywords                 = {energy, NILM, EMF, side-channel},
+  Owner                    = {jack},
+  Publisher                = {Elsevier {BV}},
+  Timestamp                = {2016.01.07}
+}
+
 @TechReport{carbon-budget-2014,
   Title                    = {Global Carbon Budget},
   Author                   = {{Global Carbon Project}},
@@ -3370,6 +3593,22 @@ This report describes the makeup and operation of this Load Monitor, emphasizing
   Timestamp                = {2016.01.06}
 }
 
+@InProceedings{heracleous2014,
+  Title                    = {Unsupervised energy disaggregation using conditional random fields},
+  Author                   = {Heracleous, P. and Angkititrakul, P. and Kitaoka, N. and Takeda, K.},
+  Booktitle                = {IEEE PES Innovative Smart Grid Technologies Conference Europe},
+  Date                     = {2014-10},
+  Doi                      = {10.1109/ISGTEurope.2014.7028933},
+  Location                 = {Istanbul},
+  Pages                    = {1-5},
+  Series                   = {ISGT-Europe},
+  Abstract                 = {The task of energy disaggregation is to break up total energy usage into usage by its component electrical appliances. This can provide home owners with useful feedback about how they use electrical energy, and motivate them to save significant amounts of energy. Our ultimate goal is to provide ways to modify human energy consumption behavior in order to conserve and optimize the use of energy. This paper focuses on stochastic modeling and energy disaggregation based on conditional random fields (CRFs) using real-world energy consumption data. The proposed disaggregation method uses a clustering method and histogram analysis to detect the ON/OFF states of selected types of energy-using devices in the home. Data labeling is not required, because the label sequences are obtained by applying a clustering method, and decoding using all of the data. Long spans of data from 21 households were used in a binary classification experiment, in which an 86.1% average classification accuracy was achieved. The proposed method was also evaluated using hidden Markov models (HMMs), but significantly higher accuracy was obtained when CRFs were applied.},
+  File                     = {heracleous2014.pdf:heracleous2014.pdf:PDF},
+  Keywords                 = {energy, NILM, unsupervised learning, CRF},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @InCollection{hermans2013analysing-RNNs,
   Title                    = {Training and Analysing Deep Recurrent Neural Networks},
   Author                   = {Hermans, Michiel and Schrauwen, Benjamin},
@@ -3528,7 +3767,6 @@ which NILM algorithms play a large role},
   Publisher                = {Association for Computing Machinery ({ACM})},
   Series                   = {e-Energy},
   Year                     = {2015},
-  __markedentry            = {[Jack:]},
   Abstract                 = {Industry consumes a large share of the worldwide electricity consumption. Disaggregated information about electricity consumption enables better decision-making and feedback tools to optimize electricity consumption. In industrial settings electricity loads consist of a variety of equipment, which can be difficult to monitor individually due to cost restrictions. We believe that Non-Intrusive Load Monitoring (NILM) can ease the burden of such a monitoring infrastructure. This hypothesis has been preliminary evaluated by collecting a data set, from more than forty sensors, measuring power consumption for six months, at an industrial site. In this poster abstract we provide initial results for how industrial equipment challenge NILM algorithms. These results thereby open up for evaluating the use of NILM in industrial settings.},
   File                     = {holmegaard2015poster.pdf:holmegaard2015poster.pdf:PDF},
   Keywords                 = {NILM, energy, commercial},
@@ -3722,6 +3960,23 @@ Promoting and expanding energy efficiency markets is a worldwide phenomenon, and
   Timestamp                = {2015.03.30}
 }
 
+@InProceedings{jazizadeh2014,
+  Title                    = {Unsupervised Clustering of Residential Electricity Consumption Measurements for Facilitated User-Centric Non-Intrusive Load Monitoring},
+  Author                   = {F. Jazizadeh and B. Becerik-Gerber and M. Bergés and L. Soibelman},
+  Booktitle                = {Computing in Civil and Building Engineering},
+  Date                     = {2014},
+  Doi                      = {10.1061/9780784413616.232},
+  Month                    = {jun},
+  Publisher                = {American Society of Civil Engineers ({ASCE})},
+  Year                     = {2014},
+  __markedentry            = {[jack:6]},
+  Abstract                 = {Non-intrusive load monitoring (NILM) is a low-cost alternative to appliance level sub-metering, that leverages signal processing and machine learning techniques to estimate the power consumption of individual appliances from whole-home measurements. However, the difficulty associated with obtaining training data sets for the commonly used supervised NILM classification algorithms is a major obstacle in wide commercial adoption of the technology. The diversity of electrical load signatures (patterns of appliances' power draw) demands in-situ training (labeling of the signatures), which often needs to be performed by ordinary users through user-system interaction. To produce the example signatures required for training, continuous interaction with users might be required, which could reduce the success of the training process due to user fatigue. Pre-populating the training data set could help facilitate the process by reducing the number of user-system interactions needed for labeling. Taking into consideration all the issues described above, a study to test the feasibility of autonomous clustering of similar appliances' signatures based on hierarchical clustering was investigated. The information contained in the structure of the binary cluster tree was used for clustering without the need for a priori selection of the number of clusters. The assessment, carried out on data collected from a residential setting, showed promising results (with accuracy above 90%, calculated based on the ground truth labels) supporting the feasibility of the approach for unsupervised clustering.},
+  File                     = {jazizadeh2014.pdf:jazizadeh2014.pdf:PDF},
+  Keywords                 = {energy, NILM, unsupervised learning},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
+}
+
 @TechReport{jeffery2015climate,
   Title                    = {How close are INDCs to 2 and 1.5°C pathways?},
   Author                   = {Louise Jeffery and Ryan Alexander and Bill Hare and Marcia Rocha and Michiel Schaeffer and Niklas Höhne and Hanna Fekete and Pieter van Breevoort and Kornelis Blok},
@@ -3816,6 +4071,7 @@ governments this is not yet the case.},
   Author                   = {Lei Jiang and Jiaming Li and Suhuai Luo and Jin, J. and West, S.},
   Booktitle                = {International Conference on Modelling, Identification and Control},
   Date                     = {2011-06},
+  Doi                      = {10.1109/ICMIC.2011.5973672},
   Language                 = {English},
   Location                 = {Shanghai},
   Pages                    = {38--42},
@@ -3939,6 +4195,27 @@ In this paper we introduce the explicit-duration Hierarchical Dirichlet Process 
   Keywords                 = {energy, smart meters, behavior},
   Owner                    = {Jack},
   Timestamp                = {2015.11.30}
+}
+
+@Article{kazmi2014,
+  Title                    = {A Review of Wireless-Sensor-Network-Enabled Building Energy Management Systems},
+  Author                   = {Kazmi, Aqeel H. and O'grady, Michael J. and Delaney, Declan T. and Ruzzelli, Antonio G. and O'hare, Gregory M. P.},
+  Date                     = {2014-06},
+  Journaltitle             = {ACM Transactions on Sensor Networks (TOSN)},
+  Doi                      = {10.1145/2532644},
+  ISSN                     = {1550-4859},
+  Number                   = {4},
+  Pages                    = {66:1--66:43},
+  Volume                   = {10},
+  Abstract                 = {Reducing energy consumption within buildings has been an active area of research in the past decade; more recently, there has been an increased influx of activity, motivated by a variety of issues including legislative, tax-related, as well as an increased awareness of energy-related issues. Energy usage both in commercial and residential buildings represents a significant portion of overall energy consumption; however, much of this may be categorized as waste, that is, energy usage that does not fulfil a definite purpose. In the past decade, the viability of Wireless Sensor Network (WSN) technologies has been demonstrated, leading to increased possibilities for novel services for building energy management. This development has resulted in numerous approaches being proposed for harnessing WSNs for energy management and conservation. This article surveys the state-of-the-art in building energy management systems. A generic architecture is proposed after which a detailed taxonomy of existing documented systems is presented. Gaps in the literature are highlighted and directions for future research identified.},
+  Acmid                    = {2532644},
+  Address                  = {New York, NY, USA},
+  File                     = {kazmi2014.pdf:kazmi2014.pdf:PDF},
+  Keywords                 = {wireless sensor network, energy, building management, review},
+  Numpages                 = {43},
+  Owner                    = {Jack},
+  Publisher                = {ACM},
+  Timestamp                = {2016.01.08}
 }
 
 @Book{keller1994,
@@ -4252,6 +4529,35 @@ because the drier has very rapid state transitions.},
   Timestamp                = {2014.11.17}
 }
 
+@TechReport{kisch2014,
+  Title                    = {Literature Review of Miscellaneous Energy Loads (MELs) in Residential Buildings},
+  Author                   = {Teddy Kisch and Arshak Zakarian and and Nate Dewart},
+  Date                     = {2014-06-03},
+  Institution              = {Southern California Edison and Energy Solutions},
+  Url                      = {http://www.energydataweb.com/cpucFiles/pdaDocs/1104/MEL%20Literature%20Review_6_3_14.pdf},
+  Abstract                 = {Energy consumption from Miscellaneous Energy Loads (MELs) in Residential buildings is growing faster than any
+other end use category and has offset some of the efficiency gains made in lighting, HVAC, and water heating (EIA
+2013). Historically, it has been difficult to develop precise estimates of MEL energy use, and the highly distributed
+nature of MEL energy use makes it time-consuming and expensive to collect meaningful data across the wide
+number of end uses. While there are a wide range of studies that estimate energy consumption for individual
+MELs, it is difficult to evaluate their relative uncertainty without an in-depth review of study methodology. From a
+ZNE planning perspective, understanding the relative confidence in MEL estimates is critical.
+The purpose of this study is to evaluate the relative certainty of existing estimates by conducting a literature
+review of existing MEL studies and to identify their underlying respective methodologies. Due to the limited scope
+of this study, it does not include original, primary research on MEL energy use or significant manipulation of
+existing study data. Based on this information, we identify best available estimates, identify gaps in existing
+information, and develop recommendations for future study. In addition, this report provides an overview of
+alternative methods of estimating energy use and load disaggregation techniques using Non-Intrusive Load
+Monitoring (NILM), which has the potential to improve accuracy and lower the costs of estimating MEL energy use.
+It is important to note that this literature review is, by nature, a backward looking study, and does not reflect the
+most up-to-date usage or energy consumption of new devices coming to market; rather, it is a review of existing
+estimates to clarify the uncertainty of existing data and identify best available information for existing stock.},
+  File                     = {kisch2014.pdf:kisch2014.pdf:PDF},
+  Keywords                 = {energy, data, review},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
+}
+
 @InProceedings{kleiminger2015,
   Title                    = {Household Occupancy Monitoring Using Electricity Meters},
   Author                   = {Kleiminger, Wilhelm and Beckel, Christian and Santini, Silvia},
@@ -4524,6 +4830,32 @@ developing machine learning methods is also discussed.},
   Keywords                 = {energy, NILM, data},
   Owner                    = {jack},
   Timestamp                = {2015.12.01}
+}
+
+@InProceedings{lai2012database,
+  Title                    = {Database establishment for machine learning in NILM},
+  Author                   = {Lai, Po-hsiang and Trayer, Mark and Ramakrishna, Sudhir and Li, Ying},
+  Booktitle                = {1st International Non-Intrusive Load Monitoring Workshop},
+  Date                     = {2012},
+  Url                      = {http://www.ices.cmu.edu/psii/nilm/abstracts/lai_Samsung_NILM2012_abstract.pdf},
+  Abstract                 = {Nonintrusive load monitoring (NILM) is a problem of identifying
+operating appliances and estimating their energy consumptions
+based on whole home electric signals. Machine learning concepts
+and methods have been gradually applied to tackle NILM. A key
+factor of enabling and advancing machine learning methods in
+any problem is the availability of proper databases. The Reference
+Energy Disaggregation Data Set (REDD) is one such initiative
+example for NILM. In this paper, we extend from this initiative to
+address three key properties: informative, diverse, and scalable for
+a database. These properties enable a broader range of application
+and research of machine learning methods in NILM. The
+importance of data sets consisting of single appliance,
+intermediate aggregate appliances, and whole home recordings in
+developing machine learning methods is also discussed.},
+  File                     = {lai2012database.pdf:lai2012database.pdf:PDF},
+  Keywords                 = {NILM, data, energy, metadata},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
 }
 
 @Article{lai2011,
@@ -4834,6 +5166,21 @@ training schemes for NILM.},
   Timestamp                = {2015.12.01}
 }
 
+@Article{ratliff2014disaggregation,
+  Title                    = {Incentive Design and Utility Learning via Energy Disaggregation},
+  Author                   = {Lillian J. Ratliff, Roy Dong, Henrik Ohlsson, S. Shankar Sastry},
+  Date                     = {2014},
+  Journaltitle             = {arXiv},
+  Eprint                   = {1312.1394},
+  Eprinttype               = {arXiv},
+  Abstract                 = {The utility company has many motivations for modifying energy consumption patterns of consumers such as revenue decoupling and demand response programs. We model the utility company--consumer interaction as a principal--agent problem. We present an iterative algorithm for designing incentives while estimating the consumer's utility function. Incentives are designed using the aggregated as well as the disaggregated (device level) consumption data. We simulate the iterative control (incentive design) and estimation (utility learning and disaggregation) process for examples including the design of incentives based on the aggregate consumption data as well as the disaggregated consumption data.},
+  Comment                  = {Related = ratliff2014incentive},
+  File                     = {ratliff2014disaggregation.pdf:ratliff2014disaggregation.pdf:PDF},
+  Keywords                 = {energy, NILM},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @InProceedings{lin2010feature-extraction,
   Title                    = {A novel feature extraction method for the development of nonintrusive load monitoring system based on {BP-ANN}},
   Author                   = {Lin, Yu-Hsiu and Tsai, Men-Shen},
@@ -4904,6 +5251,23 @@ training schemes for NILM.},
   Keywords                 = {energy, NILM, review, commercial},
   Owner                    = {Jack},
   Timestamp                = {2016.01.06}
+}
+
+@Article{lopes2012behaviours,
+  Title                    = {Energy behaviours as promoters of energy efficiency: A 21st century review},
+  Author                   = {M.A.R. Lopes and C.H. Antunes and N. Martins},
+  Date                     = {2012},
+  Journaltitle             = {Renewable and Sustainable Energy Reviews},
+  Doi                      = {10.1016/j.rser.2012.03.034},
+  ISSN                     = {1364-0321},
+  Number                   = {6},
+  Pages                    = {4095 - 4104},
+  Volume                   = {16},
+  Abstract                 = {Energy behaviours represent a significant untapped potential for the increase of end-use energy efficiency in buildings. Although energy behaviours are a major determinant of energy use in buildings, energy savings potential due to behaviour are usually neglected, albeit being referred to be as high as those from technological solutions. This paper presents a review of recent literature on energy behaviours in order to recognise recent trends, quantify energy behaviours potential savings, characterise energy behaviour modelling strategies and identify potential research gaps. Energy behaviour research is vast and has been essentially focused on the residential sector, striving to establish behaviour determinants and the best strategies and instruments to promote more efficient energy behaviours. Potential savings of energy behaviours are referred to reach 20%, but values differ up to 100% between experiences and additional studies to quantify behavioural savings are needed, in particular by using standard quantification techniques. Different modelling techniques have been used to model energy behaviours: qualitative approaches from the social sciences trying to interpret behaviour, here named energy behaviour frameworks; quantitative approaches from the engineering and economics that quantify energy consumption, here designated by energy models; and hybrid approaches that are considered the most relevant since they integrate multiple dimensions of energy behaviours, here referred as energy behaviour modelling. Energy behaviours have a crucial role in promoting energy efficiency, but energy behaviours characteristics and complexity create several research challenges that must be overcome so energy behaviours may be properly valorised and integrated in the energy policy context.},
+  File                     = {lopes2012behaviours.pdf:lopes2012behaviours.pdf:PDF},
+  Keywords                 = {energy, behavior, review},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @InProceedings{lovett2014,
@@ -5026,6 +5390,23 @@ ments over the challenge baseline.},
   Keywords                 = {RNN, recurrent, speech, autoencoder, DRDAE},
   Owner                    = {Jack},
   Timestamp                = {2015.04.21}
+}
+
+@InProceedings{maasoumy2013BERDS,
+  Title                    = {BERDS - BERkeley EneRgy Disaggregation Data Set},
+  Author                   = {Maasoumy, Mehdi and Sanandaji, B and Poolla, Kameshwar and Vincentelli, Alberto Sangiovanni},
+  Booktitle                = {Workshop on Big Learning at the Conference on Neural Information Processing Systems},
+  Date                     = {2013},
+  Series                   = {NIPS},
+  Url                      = {http://biglearn.org/2013/files/papers/biglearning2013_submission_25.pdf},
+  Abstract                 = {We first review some of the suggested methods for energy disaggregation. We then
+provide a real-life data set for researchers to help developing novel energy disaggregation
+algorithms. We also present a publicly available experimental data set
+captured from a typical building on the University of California, Berkeley campus.},
+  File                     = {maasoumy2013BERDS.pdf:maasoumy2013BERDS.pdf:PDF},
+  Keywords                 = {energy, NILM, data},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @Book{mackay2003,
@@ -5605,17 +5986,43 @@ We consider several field applications to illustrate the utility of the NILM},
   Timestamp                = {2015.07.18}
 }
 
+@InProceedings{nunes2011,
+  Title                    = {Deploying and evaluating the effectiveness of energy eco-feedback through a low-cost NILM solution},
+  Author                   = {Nunes, Nuno J and Pereira, Lucas and Quintal, Filipe and Bergés, Mario},
+  Booktitle                = {6th International Conference on Persuasive Technology},
+  Date                     = {2011},
+  Abstract                 = {This paper describes a low cost eco-feedback energy
+monitoring research platform. The prototype system
+developed in Java uses a netbook audio input and a single
+point current and voltage sensor to calculate real-time
+energy usage while also offering multiple visualization
+options and tracking human-activities. The prototype is
+deployed in a multidisciplinary research project to
+understand the long-term effects of eco-feedback and
+enduring behavioral changes towards practices that
+promote sustainability. This paper reports the efforts
+required to deploy the prototype system in 21 houses
+during a period of 9 weeks. The results enable quantitative
+analysis of the effectiveness of energy eco-feedback and
+provide a platform for further research in this domain},
+  File                     = {nunes2011.pdf:nunes2011.pdf:PDF},
+  Keywords                 = {energy, NILM, feedback},
+  Owner                    = {jack},
+  Timestamp                = {2016.01.07}
+}
+
 @Article{oleary2015,
   Title                    = {Review and Evaluation of Using Household Metered Energy Data for Rating of Building Thermal Efficiency of Existing Buildings},
   Author                   = {O'Leary, Timothy and Belusko, M and Whaley, D and Bruno, F},
   Date                     = {2015-12-01},
+  Journaltitle             = {Energy and Buildings},
   Doi                      = {10.1016/j.enbuild.2015.09.018},
   ISSN                     = {0378-7788},
   Pages                    = {433--440},
   Volume                   = {108},
   Abstract                 = {This paper investigates the use of actual monitored household energy as an indicator of the thermal efficiency of a dwelling and subsequently rating of the building thermal performance. The paper reviews evaluation methods used internationally for both building thermal efficiency and building energy labelling and presents results from two discrete studies in South Australia on monitoring actual household energy consumption. In order to investigate the occupancy effect on household energy, monitored energy data collected from two different housing developments in South Australia were examined. The energy ratings for these homes are compliant with the national agreed protocols for thermal performance modelling of dwellings, where one set of homes is a group occupied by higher socio-economic groups and the other is low income public housing in a colder climate region with much poorer home energy ratings. The wide variation of actual household energy for the homes that have relatively similar thermal envelopes indicates a lack of meaningful use for actual household energy in disclosure of house energy performance. Therefore, it is argued that thermal modelling software used to rate homes appears a more useful application of a system of disclosure of energy performance than the use of energy bills.},
   File                     = {oleary2015.pdf:oleary2015.pdf:PDF},
-  Keywords                 = {smart meters, thermal efficiency},
+  Keywords                 = {smart meters, thermal efficiency, review},
   Owner                    = {jack},
   Timestamp                = {2015.12.01}
 }
@@ -5762,20 +6169,6 @@ The in-depth Household Electricity Use Study aimed to cover the electricity usag
   Numpages                 = {7},
   Owner                    = {jack},
   Timestamp                = {2015.12.03}
-}
-
-@Article{oleary2015thermal-efficiency,
-  Title                    = {Review and evaluation of using household metered energy data for rating of building thermal efficiency of existing buildings},
-  Author                   = {Timothy O’Leary and M. Belusko and D. Whaley and F. Bruno},
-  Date                     = {2015},
-  Journaltitle             = {Energy and Buildings},
-  Doi                      = {10.1016/j.enbuild.2015.09.018},
-  ISSN                     = {0378-7788},
-  Pages                    = {433 - 440},
-  Volume                   = {108},
-  Abstract                 = {Abstract This paper investigates the use of actual monitored household energy as an indicator of the thermal efficiency of a dwelling and subsequently rating of the building thermal performance. The paper reviews evaluation methods used internationally for both building thermal efficiency and building energy labelling and presents results from two discrete studies in South Australia on monitoring actual household energy consumption. In order to investigate the occupancy effect on household energy, monitored energy data collected from two different housing developments in South Australia were examined. The energy ratings for these homes are compliant with the national agreed protocols for thermal performance modelling of dwellings, where one set of homes is a group occupied by higher socio-economic groups and the other is low income public housing in a colder climate region with much poorer home energy ratings. The wide variation of actual household energy for the homes that have relatively similar thermal envelopes indicates a lack of meaningful use for actual household energy in disclosure of house energy performance. Therefore, it is argued that thermal modelling software used to rate homes appears a more useful application of a system of disclosure of energy performance than the use of energy bills.},
-  File                     = {oleary2015thermal-efficiency.pdf:oleary2015thermal-efficiency.pdf:PDF},
-  Keywords                 = {Monitored energy use, energy, thermal, efficiency, comfort, behaviour}
 }
 
 @TechReport{palmer2014,
@@ -6284,6 +6677,22 @@ interviews took place between 18th May and 1st June 2015.},
   Timestamp                = {2015.12.01}
 }
 
+@Article{pullinger2014energy-practices,
+  Title                    = {Influencing household energy practices: a critical review of UK smart metering standards and commercial feedback devices},
+  Author                   = {Martin Pullinger and Heather Lovell and Janette Webb},
+  Date                     = {2014},
+  Journaltitle             = {Technology Analysis \& Strategic Management},
+  Doi                      = {10.1080/09537325.2014.977245},
+  Number                   = {10},
+  Pages                    = {1144-1162},
+  Volume                   = {26},
+  Abstract                 = {The smart metering systems currently being installed in UK households support devices that give feedback aimed at encouraging behaviour changes, specifically to reduce energy demand and spending on energy. Detailed standards specify the minimum technical capabilities of the smart meters and feedback devices. In this paper, we assess the extent to which these standards enable feedback that is likely to be effective in reducing demand. Latest research in this field, drawing on theories of social practice, suggests that feedback devices assume and rely on what we term ‘reflection practice’, a distinctive type of social practice, and that feedback attentive to the particular energy-using practices of householders is likely to have most influence on demand. Neither the smart meter standards nor current commercial devices are found to incorporate these latest research findings, potentially significantly limiting the ability of the UK smart metering programme to fulfil its domestic energy demand reduction objectives.},
+  File                     = {pullinger2014energy-practices.pdf:pullinger2014energy-practices.pdf:PDF},
+  Keywords                 = {energy, review},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @Article{rabiner1989,
   Title                    = {A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition},
   Author                   = {Lawrence R. Rabiner},
@@ -6304,7 +6713,7 @@ interviews took place between 18th May and 1st June 2015.},
 @InProceedings{rahayu2012,
   Title                    = {Learning to Be Energy-Wise: Discriminative Methods for Load Disaggregation},
   Author                   = {Rahayu, Dwi and Narayanaswamy, Balakrishnan and Krishnaswamy, Shonali and Labbé, Cyril and Seetharam, Deva P},
-  Booktitle                = {3rd International Conference on Future Energy Systems: Where Energy, Computing and Communication Meet},
+  Booktitle                = {3rd International Conference on Future Energy Systems},
   Date                     = {2012-05},
   Doi                      = {10.1145/2208828.2208838},
   Location                 = {Madrid, Spain},
@@ -6312,9 +6721,30 @@ interviews took place between 18th May and 1st June 2015.},
   Series                   = {e-Energy},
   Abstract                 = {In this paper we describe an ongoing project which develops an automated residential Demand Response (DR) system that attempts to manage residential loads in accordance with DR signals. In this early stage of the project, we propose an approach for identifying individual appliance consumption from the aggregate load and discuss the effectiveness of load disaggregation techniques when total load data also includes appliances that are unmonitored even during the training phase. We show that simple discriminative methods can directly predict the appliance states (e.g. on, off, standby) and the predicted state can be used to calculate energy consumed by the appliances. We also show that these methods perform substantially better than the generative models of energy consumption that are commonly used. We evaluated the proposed approach using publicly available REDD data set, and our experimental evaluation demonstrates the improvement in accuracy.},
   File                     = {rahayu2012.pdf:rahayu2012.pdf:PDF},
-  Keywords                 = {energy, NILM},
+  Keywords                 = {energy, NILM, demand response},
   Owner                    = {jack},
   Timestamp                = {2015.12.01}
+}
+
+@InProceedings{ratliff2014incentive,
+  Title                    = {Energy Efficiency via Incentive Design and Utility Learning},
+  Author                   = {Ratliff, Lillian J. and Dong, Roy and Ohlsson, Henrik and Sastry, S. Shankar},
+  Booktitle                = {3rd International Conference on High Confidence Networked Systems},
+  Date                     = {2014},
+  Doi                      = {10.1145/2566468.2576849},
+  ISBN                     = {978-1-4503-2652-0},
+  Location                 = {Berlin, Germany},
+  Pages                    = {57--58},
+  Publisher                = {ACM},
+  Series                   = {HiCoNS},
+  Abstract                 = {Utility companies have many motivations for modifying energy consumption patterns of consumers such as revenue decoupling and demand response programs. We model the utility company-consumer interaction as a principal-agent problem and present an iterative algorithm for designing incentives while estimating the consumer's utility function.},
+  Acmid                    = {2576849},
+  Address                  = {New York, NY, USA},
+  File                     = {ratliff2014incentive.pdf:ratliff2014incentive.pdf:PDF},
+  Keywords                 = {energy, efficiency},
+  Numpages                 = {2},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @InProceedings{reddy2006,
@@ -7276,6 +7706,27 @@ Lists are included both of the program's reports and publications and of the peo
   Timestamp                = {2015.06.24}
 }
 
+@InProceedings{spiegel2014heating,
+  Title                    = {Energy Disaggregation Meets Heating Control},
+  Author                   = {Spiegel, Stephan and Albayrak, Sahin},
+  Booktitle                = {29th Annual ACM Symposium on Applied Computing},
+  Date                     = {2014},
+  Doi                      = {10.1145/2554850.2555088},
+  ISBN                     = {978-1-4503-2469-4},
+  Location                 = {Gyeongju, Republic of Korea},
+  Pages                    = {559--566},
+  Publisher                = {ACM},
+  Series                   = {SAC},
+  Abstract                 = {Heating control is of particular importance, since heating accounts for the biggest amount of total residential energy consumption. Smart heating strategies allow to reduce such energy consumption by automatically turning off the heating when the occupants are sleeping or away from home. The present context or occupancy state of a household can be deduced from the appliances that are currently in use. In this study we investigate energy disaggregation techniques to infer appliance states from an aggregated energy signal measured by a smart meter. Since most household devices have predictable energy consumption, we propose to use the changes in aggregated energy consumption as features for the appliance/occupancy state classification task. We evaluate our approach on real-life energy consumption data from several households, compare the classification accuracy of various machine learning techniques, and explain how to use the inferred appliance states to optimize heating schedules.},
+  Acmid                    = {2555088},
+  Address                  = {New York, NY, USA},
+  File                     = {spiegel2014heating.pdf:spiegel2014heating.pdf:PDF},
+  Keywords                 = {energy, NILM, heating control, occupancy},
+  Numpages                 = {8},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @Article{srinivasan2006,
   Title                    = {Neural-Network-Based Signature Recognition for Harmonic Source Identification},
   Author                   = {Srinivasan, D. and Ng, W.S. and Liew, A.C.},
@@ -7328,6 +7779,23 @@ Lists are included both of the program's reports and publications and of the peo
   Keywords                 = {climate science, temperature},
   Owner                    = {jack},
   Timestamp                = {2015.12.01}
+}
+
+@Article{suganthi2012,
+  Title                    = {Energy models for demand forecasting - A review},
+  Author                   = {L. Suganthi and Anand A. Samuel},
+  Date                     = {2012},
+  Journaltitle             = {Renewable and Sustainable Energy Reviews},
+  Doi                      = {10.1016/j.rser.2011.08.014},
+  ISSN                     = {1364-0321},
+  Number                   = {2},
+  Pages                    = {1223 - 1240},
+  Volume                   = {16},
+  Abstract                 = {Energy is vital for sustainable development of any nation – be it social, economic or environment. In the past decade energy consumption has increased exponentially globally. Energy management is crucial for the future economic prosperity and environmental security. Energy is linked to industrial production, agricultural output, health, access to water, population, education, quality of life, etc. Energy demand management is required for proper allocation of the available resources. During the last decade several new techniques are being used for energy demand management to accurately predict the future energy needs. In this paper an attempt is made to review the various energy demand forecasting models. Traditional methods such as time series, regression, econometric, ARIMA as well as soft computing techniques such as fuzzy logic, genetic algorithm, and neural networks are being extensively used for demand side management. Support vector regression, ant colony and particle swarm optimization are new techniques being adopted for energy demand forecasting. Bottom up models such as MARKAL and LEAP are also being used at the national and regional level for energy demand management.},
+  File                     = {suganthi2012.pdf:suganthi2012.pdf:PDF},
+  Keywords                 = {demand-side management, energy, review},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @Book{sugihara1986,
@@ -7448,10 +7916,27 @@ Kokichi Sugihara is Professor in the Department of Mathematical Engineering and 
   Timestamp                = {2015.09.23}
 }
 
+@InProceedings{tang2014web-service,
+  Title                    = {Smart Saver: A Consumer-Oriented Web Service for Energy Disaggregation},
+  Author                   = {Guoming Tang and Jie Chen and Cheng Chen and Kui Wu},
+  Booktitle                = {International Conference on Data Mining Workshop},
+  Date                     = {2014-12},
+  Doi                      = {10.1109/ICDMW.2014.19},
+  Pages                    = {1235-1238},
+  Publisher                = {IEEE},
+  Series                   = {ICDMW},
+  Abstract                 = {Energy disaggregation, which aims to break down the total energy consumption of household into that of individual appliances, plays an important role in energy conservation and has caught more and more attention. Realizing that current energy disaggregation approaches are hard to perform for the ordinary consumers and free and open applications/services are not generally available, we provide a consumer-oriented web service, Smart Saver, which is not only open and free to the consumers but also user-friendly and easy-to-use for energy disaggregation. Based on a simple power model, a sparse switching event recovery model is established as the core of Smart Saver. By feeding the basic power information of appliances into Smart Saver, the users will be provided with 1) online energy disaggregation and appliance monitoring if they have smart meters communicating with our service, or 2) offline energy disaggregation if they upload their aggregated power data.},
+  File                     = {tang2014web-service.pdf:tang2014web-service.pdf:PDF},
+  Keywords                 = {energy, NILM, web service, SSER},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @Article{tang2014,
   Title                    = {Plug and Play! A Simple, Universal Model for Energy Disaggregation},
   Author                   = {Tang, Guoming and Wu, Kui and Lei, Jingsheng and Tang, Jiuyang},
   Date                     = {2014-04-07},
+  Journaltitle             = {arXiv},
   Eprint                   = {1404.1884},
   Eprinttype               = {arXiv},
   Abstract                 = {Energy disaggregation is to discover the energy consumption of individual appliances from their aggregated energy values. To solve the problem, most existing approaches rely on either appliances' signatures or their state transition patterns, both hard to obtain in practice. Aiming at developing a simple, universal model that works without depending on sophisticated machine learning techniques or auxiliary equipments, we make use of easily accessible knowledge of appliances and the sparsity of the switching events to design a Sparse Switching Event Recovering (SSER) method. By minimizing the total variation (TV) of the (sparse) event matrix, SSER can effectively recover the individual energy consumption values from the aggregated ones. To speed up the process, a Parallel Local Optimization Algorithm (PLOA) is proposed to solve the problem in active epochs of appliance activities in parallel. Using real-world trace data, we compare the performance of our method with that of the state-of-the-art solutions, including Least Square Estimation (LSE) and iterative Hidden Markov Model (HMM). The results show that our approach has an overall higher detection accuracy and a smaller overhead.},
@@ -7459,6 +7944,23 @@ Kokichi Sugihara is Professor in the Department of Mathematical Engineering and 
   Keywords                 = {energy, NILM, HMM},
   Owner                    = {jack},
   Timestamp                = {2015.12.01}
+}
+
+@InProceedings{tang2014model-driven,
+  Title                    = {A Simple Model-Driven Approach to Energy Disaggregation},
+  Author                   = {Guoming Tang and Kui Wu and Jingsheng Lei and Jiuyang Tang},
+  Booktitle                = {IEEE International Conference on Smart Grid Communications},
+  Date                     = {2014},
+  Doi                      = {10.1109/SmartGridComm.2014.7007707},
+  Location                 = {Venice},
+  Pages                    = {566-571},
+  Publisher                = {IEEE},
+  Series                   = {SmartGridComm},
+  Abstract                 = {Energy disaggregation is to discover the energy consumption of individual appliances from their aggregated energy values. To solve the problem, most existing approaches rely on either appliances' signatures or their state transition patterns, both hard to obtain in practice. Aiming at developing a simple, universal model that works without depending on sophisticated machine learning techniques or auxiliary equipments, we make use of easily accessible knowledge of appliances and the sparsity of the switching events to design a Sparse Switching Event Recovering (SSER) method. By minimizing the total variation (TV) of the (sparse) event matrix, SSER can effectively recover the individual energy consumption values from the aggregated ones. To speed up the process, a Parallel Local Optimization Algorithm (PLOA) is proposed to solve the problem in active epochs of appliance activities in parallel. Using real-world trace data, we compare the performance of our method with that of the state-of-the-art solutions, including the popular Least Square Estimation (LSE) methods and a recently-developed machine learning method using iterative Hidden Markov Model (HMM). The results show that our approach has an overall better performance in both detection accuracy and overhead.},
+  File                     = {tang2014model-driven.pdf:tang2014model-driven.pdf:PDF},
+  Keywords                 = {energy, NILM, SSER},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @InProceedings{tang2014appliance,
@@ -7476,6 +7978,21 @@ Kokichi Sugihara is Professor in the Department of Mathematical Engineering and 
   Keywords                 = {energy, electricity, data cleaning},
   Owner                    = {Jack},
   Timestamp                = {2016.01.06}
+}
+
+@Article{tang2015outlier,
+  Title                    = {Outlier Detection in Energy Disaggregation Using Subspace Learning and Gaussian Mixture Model},
+  Author                   = {Tang, Xiu-ming and Yuan, Rong-xiang and Chen, Jun},
+  Date                     = {2015},
+  Journaltitle             = {International Journal of Control and Automation},
+  Doi                      = {10.14257/ijca.2015.8.8.17},
+  Number                   = {8},
+  Pages                    = {161--170},
+  Volume                   = {8},
+  File                     = {tang2015outlier.pdf:tang2015outlier.pdf:PDF},
+  Keywords                 = {energy, NILM, GMM},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @Book{tanguiane1993,
@@ -7825,6 +8342,22 @@ error of 0.885mm on the MNGU0 test dataset.},
   Keywords                 = {machine learning, HMM, speech},
   Owner                    = {Jack},
   Timestamp                = {2015.11.23}
+}
+
+@Article{vega2015modeling,
+  Title                    = {Modeling for home electric energy management: A review},
+  Author                   = {A.M. Vega and F. Santamaria and E. Rivas},
+  Journaltitle             = {Renewable and Sustainable Energy Reviews},
+  Doi                      = {10.1016/j.rser.2015.07.023},
+  ISSN                     = {1364-0321},
+  Pages                    = {948 - 959},
+  Volume                   = {52},
+  Year                     = {2015},
+  Abstract                 = {In recent decades researchers and companies around the world have developed proposals related to Home Energy Management Systems. This paper presents a review of the most relevant literature published on that subject focused on infrastructure, communication media - protocols, variables managed by the system, software and the role of the end user. For this research, around seventy energy management models were studied, and their main advances and contributions were analyzed. In addition, based on this review and the empties observed on existing home energy management models, a preliminary model is proposed. In the proposal, the main elements of the studied models are grouped and the new model is combined with external variables, which influence the implementation of the management system, to give the end-user its proper role as an active part of the electricity value chain, as a strategy to contribute with home energy efficiency providing new demand patterns.},
+  File                     = {vega2015modeling.pdf:vega2015modeling.pdf:PDF},
+  Keywords                 = {energy, review, electricity},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @Article{vermeer2009,
@@ -8269,6 +8802,27 @@ This reference will be an invaluable resource for researchers, developers, engin
   Timestamp                = {2015.12.02}
 }
 
+@InProceedings{wu2012state-sensing,
+  Title                    = {Low-cost Appliance State Sensing for Energy Disaggregation},
+  Author                   = {Wu, Tianji and Srivastava, Mani},
+  Booktitle                = {4th ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings},
+  Date                     = {2012},
+  Doi                      = {10.1145/2422531.2422542},
+  ISBN                     = {978-1-4503-1170-0},
+  Location                 = {Toronto, Ontario, Canada},
+  Pages                    = {53--55},
+  Publisher                = {ACM},
+  Series                   = {BuildSys},
+  Abstract                 = {Reliable detection of appliance state change is a barrier to the scalability of Non Intrusive Load Monitoring (NILM) beyond a small number of sufficiently distinct and large loads. We advocate a hybrid approach where a NILM algorithm is assisted by ultra-low-cost outlet-level sensors optimized for detecting appliance state change and communicating the event on a best-effort basis to a central entity for opportunistic fusion with the state change detection mechanism within NILM. In support of such an approach we present the implementation of an appliance power state sensor which achieves low cost via design choices such as a transmit-only radio. We also present results from a study where the sensors tracked power states of tens of appliances with high accuracy.},
+  Acmid                    = {2422542},
+  Address                  = {New York, NY, USA},
+  File                     = {wu2012state-sensing.pdf:wu2012state-sensing.pdf:PDF},
+  Keywords                 = {energy, NILM, side-channel},
+  Numpages                 = {3},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
+}
+
 @Article{wu2013,
   Title                    = {Online training algorithms based single multiplicative neuron model for energy consumption forecasting},
   Author                   = {Xuedong Wu and Jianxu Mao and Zhaoping Du and Yanchao Chang},
@@ -8317,8 +8871,25 @@ This reference will be an invaluable resource for researchers, developers, engin
   Series                   = {AAAI},
   Abstract                 = {We propose a new framework for single-channel source separation that liesbetween the fully supervised and unsupervised setting. Instead of supervision,we provide input features for each source signal and use convex methods toestimate the correlations between these features and the unobserved signaldecomposition. Contextually supervised source separation is a natural fit fordomains with large amounts of data but no explicit supervision; our motivatingapplication is energy disaggregation of hourly smart meter data (the separationof whole-home power signals into different energy uses). Here contextualsupervision allows us to provide itemized energy usage for thousands homes, a taskpreviously impossible due to the need for specialized data collection hardware.On smaller datasets which include labels, we demonstrate that contextualsupervision improves significantly over a reasonable baseline and existingunsupervised methods for source separation. Finally, we analyze the case of ℓ₂ loss theoretically and show that recovery of the signal componentsdepends only on cross-correlation between features for different signals, not oncorrelations between features for the same signal.},
   File                     = {wytock2014.pdf:wytock2014.pdf:PDF},
+  Keywords                 = {NILM, energy},
   Owner                    = {jack},
   Timestamp                = {2015.12.02}
+}
+
+@Article{yan2012simplified,
+  Title                    = {A simplified energy performance assessment method for existing buildings based on energy bill disaggregation},
+  Author                   = {Chengchu Yan and Shengwei Wang and Fu Xiao},
+  Date                     = {2012},
+  Journaltitle             = {Energy and Buildings},
+  Doi                      = {10.1016/j.enbuild.2012.09.043},
+  ISSN                     = {0378-7788},
+  Pages                    = {563 - 574},
+  Volume                   = {55},
+  Abstract                 = {This paper presents a simplified energy performance assessment method for existing buildings in cooling season, which is based on energy bill disaggregation and energy performance analysis. This method requests very limited building energy data and can effectively assess the energy performance at building and system levels, and disaggregate the whole-building consumption into consumptions of three groups of end-uses. This method is based on two basic energy balance principles, i.e., the electricity consumption balances at building level and the cooling energy balances between demand side and supply side of HVAC systems. An optimization algorithm is developed to establish best possible cooling energy balances by minimizing the balance residuals and therefore to disaggregate the energy consumption of different users. The performance of the proposed method was validated in two existing buildings in Hong Kong and Beijing. The results, including the disaggregated energy consumptions and the key energy performance indicators of HVAC system, agreed well with the “measured” data in mechanical cooling months.},
+  File                     = {yan2012simplified.pdf:yan2012simplified.pdf:PDF},
+  Keywords                 = {energy, NILM, heating, air conditioning, building management},
+  Owner                    = {Jack},
+  Timestamp                = {2016.01.08}
 }
 
 @InProceedings{yang2007neural-net-nilm,
