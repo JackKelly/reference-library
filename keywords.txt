@@ -11,6 +11,7 @@ metrics
 use cases
 water
 apportionment (i.e. deciding which individual(s) consumed what energy)
+appliance recognition (i.e. not disaggregation)
 
 side-channel
 ------------
@@ -27,6 +28,8 @@ If a specific sample frequency (in Hz) or sample period (in
 seconds) is found in the paper then this is put into a
 separate biblatex field, e.g. `samplefrequency = {1}` means 1Hz whilst
 `sampleperiod = {3600}` means hourly.
+
+dataset = {BLUED|REDD|UK-DALE}
 
 machine learning
 ----------------
