@@ -115,6 +115,8 @@ mains frequency
 demand-side management
 demand response
 air conditioning
+electric vehicle
+lighting
 
 climate change
 --------------
@@ -148,6 +150,7 @@ smart cities
 dashboard
 modelling
 data cleaning
+limits (theoretical limits)
 
 misc
 ----
