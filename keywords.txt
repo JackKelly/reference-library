@@ -12,6 +12,7 @@ use cases
 water
 apportionment (i.e. deciding which individual(s) consumed what energy)
 appliance recognition (i.e. not disaggregation)
+hart-like (an algorithm which sounds pretty similar to George Hart's work)
 
 side-channel
 ------------
@@ -154,7 +155,7 @@ limits (theoretical limits)
 
 misc
 ----
-building management
+building management (also use building management for home automation)
 occupancy
 activity detection (NILM use case)
 physics
