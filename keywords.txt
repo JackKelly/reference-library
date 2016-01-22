@@ -153,6 +153,7 @@ dashboard
 modelling
 data cleaning
 limits (theoretical limits)
+granularity (sample rate)
 
 misc
 ----
@@ -176,4 +177,3 @@ paywall (cannot be download without paying money)
 behaviour
 ---------
 rebound
-

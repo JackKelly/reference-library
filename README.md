@@ -24,6 +24,8 @@ submit an issue or a pull request if you find any errors!!
 
 #### Conventions
 
+Based on [John Owen's "Common errors in bibliographies"](http://web.ece.ucdavis.edu/~jowens/biberrors.html).
+
 ##### `title` capitalisation
 
 I try to use the capitalisation scheme used in the PDF version of the
