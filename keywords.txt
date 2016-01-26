@@ -160,15 +160,18 @@ granularity (sample rate)
 misc
 ----
 building management (also use building management for home automation)
+performance gap (when buildings don't perform as modelled)
 occupancy
 activity detection (NILM use case)
 physics
 entropy
 shipping
 forecasting
+short-term load forecasting (STFL - predicting what the grid will do)
 intelligence
 legislation
 government
+health
 
 paper type
 ----------
