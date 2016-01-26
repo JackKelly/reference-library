@@ -1028,6 +1028,20 @@ recurrent neural networks.},
   timestamp =   {2015.11.19}
 }
 
+@Article{batra2015neighbourhood,
+  author =       {Nipun Batra and Amarjeet Singh and Kamin Whitehouse},
+  title =        {Neighbourhood NILM: A Big-data Approach to Household Energy Disaggregation},
+  journaltitle = {arXiv},
+  date =         {2015-10-26},
+  eprint =       {1511.02900},
+  eprinttype =   {arXiv},
+  abstract =     {In this paper, we investigate whether "big-data" is more valuable than "precise" data for the problem of energy disaggregation: the process of breaking down aggregate energy usage on a per-appliance basis. Existing techniques for disaggregation rely on energy metering at a resolution of 1 minute or higher, but most power meters today only provide a reading once per month, and at most once every 15 minutes. In this paper, we propose a new technique called Neighbourhood NILM that leverages data from 'neighbouring' homes to disaggregate energy given only a single energy reading per month. The key intuition behind our approach is that 'similar' homes have 'similar' energy consumption on a per-appliance basis. Neighbourhood NILM matches every home with a set of 'neighbours' that have direct submetering infrastructure, i.e. power meters on individual circuits or loads. Many such homes already exist. Then, it estimates the appliance-level energy consumption of the target home to be the average of its K neighbours. We evaluate this approach using 25 homes and results show that our approach gives comparable or better disaggregation in comparison to state-of-the-art accuracy reported in the literature that depend on manual model training, high frequency power metering, or both. Results show that Neighbourhood NILM can achieve 83% and 79% accuracy disaggregating fridge and heating/cooling loads, compared to 74% and 73% for a technique called FHMM. Furthermore, it achieves up to 64% accuracy on washing machine, dryer, dishwasher, and lighting loads, which is higher than previously reported results. Many existing techniques are not able to disaggregate these loads at all. These results indicate a potentially substantial advantage to installing submetering infrastructure in a select few homes rather than installing new high-frequency smart metering infrastructure in all homes.},
+  file =         {batra2015neighbourhood.pdf:batra2015neighbourhood.pdf:PDF},
+  keywords =     {energy, NILM},
+  owner =        {jack},
+  timestamp =    {2016.01.26}
+}
+
 @InProceedings{batra2015value,
   title                    = {If You Measure It, Can You Improve It?: Exploring The Value of Energy Disaggregation},
   author                   = {Batra, Nipun and Singh, Amarjeet and Whitehouse, Kamin},
@@ -3358,6 +3372,22 @@ digitalized. DIGITALEUROPE believes in the equation of Smart is Digital and Digi
   timestamp                = {2016.01.12}
 }
 
+@InProceedings{elafoudi2014,
+  author =    {Elafoudi, Georgia and Stankovic, Lina and Stankovic, Vladimir},
+  title =     {Power disaggregation of domestic smart meter readings using dynamic time warping},
+  booktitle = {6th International Symposium on Communications, Control and Signal Processing},
+  date =      {2014-05},
+  series =    {ISCCSP},
+  location =  {Athens},
+  pages =     {36--39},
+  doi =       {10.1109/ISCCSP.2014.6877810},
+  abstract =  {Non-intrusive appliance load monitoring (NALM), also called load disaggregation, is a method for isolating the energy consumption of individual appliances from an overall household energy consumption. Traditionally, NALM techniques are based on measuring several electrical parameters at high sampling rates, which increases the meter cost and communications and storage overhead. In this paper, we propose a low-complexity disaggregation method based on Dynamic Time Warping algorithm that uses only active power aggregate smart meter data, captured at a low frequency, for training and disaggregation. Experimental results are provided for three households using data collected during two months, showing which individual appliances were used and when. Average recognition accuracy of 85% was obtained.},
+  file =      {elafoudi2014.pdf:elafoudi2014.pdf:PDF},
+  keywords =  {energy, NILM, dynamic time warping, active power},
+  owner =     {jack},
+  timestamp = {2016.01.26}
+}
+
 @InProceedings{vanelburg2015,
   author =    {Henk van Elburg},
   title =     {USmartConsumer: real-time smart meter feedback to kick-start consumer interest},
@@ -4928,6 +4958,21 @@ This report describes the makeup and operation of this Load Monitor, emphasizing
   timestamp                = {2015.03.25}
 }
 
+@Article{hewitt2016,
+  author =       {Elizabeth L. Hewitt and Clinton J. Andrews and Jennifer A. Senick and Richard E. Wener and Uta Krogmann and MaryAnn Sorensen Allacci},
+  title =        {Distinguishing between green building occupants’ reasoned and unplanned behaviours},
+  journaltitle = {Building Research \& Information},
+  date =         {2016},
+  volume =       {44},
+  number =       {2},
+  pages =        {119--134},
+  doi =          {10.1080/09613218.2015.1015854},
+  abstract =     {Several frameworks incorporate social and psychological elements of environmentally significant behaviour, and most assume cognitive and deliberate decision-making. Household energy consumption behaviours, however, span a spectrum from reasoned and deliberate to unplanned and automatic. The aim of this paper is to advance knowledge of reasoned and unplanned behaviours in the context of pro-environmental action. Using results of a survey administered to occupants of an urban residential green building, this study explores five household consumption behaviours and tests the hypothesis that unplanned behaviours will be poorly predicted by a reasoned, values-based behavioural framework. Using path analyses, variables in a values-based framework are used to predict surveyed behaviours. Findings indicate that behaviours hypothesized to be unplanned were not well predicted by the values-based framework. The framework successfully predicted what was hypothesized to be a fully reasoned behaviour. Three potential reasons are discussed for the lack of prediction of some behaviours. A deeper understanding of how unplanned, automatic or habitual behaviours intervene in conservation intentions can help policy-makers and building designers better respond to influences of occupant behaviour on building performance.},
+  keywords =     {paywall, behavior, energy},
+  owner =        {jack},
+  timestamp =    {2016.01.26}
+}
+
 @Article{hinton2012,
   title                    = {Deep Neural Networks for Acoustic Modeling in Speech Recognition},
   author                   = {Hinton, Geoffrey and Deng, Li and Yu, Dong and Dahl, George and Mohamed, Abdel-rahman and Jaitly, Navdeep and Senior, Andrew and Vanhoucke, Vincent and Nguyen, Patrick and Sainath, Tara and Kingsbury, Brian},
@@ -5570,6 +5615,42 @@ In this paper we introduce the explicit-duration Hierarchical Dirichlet Process 
   owner                    = {Jack},
   publisher                = {Kluwer Academic Publishers},
   timestamp                = {2015.11.30}
+}
+
+@InProceedings{jung2015,
+  author =    {Jung, Deokwoo and Nguyen, Hoang Hai and Yau, David K. Y.},
+  title =     {Tracking Appliance Usage Information Using Harmonic Signature Sensing},
+  booktitle = {International Conference on Smart Grid Communications},
+  date =      {2015-11},
+  series =    {SmartGridComm},
+  location =  {Miami, FL},
+  url =       {https://www.cs.purdue.edu/homes/lans/20061129/publications/jung2015sgc.pdf},
+  abstract =  {Real-time usage of individual electrical appliances
+is a key enabler of important advanced services for smart grids.
+With wide deployments of smart meters, there is a growing
+interest in using Non-Intrusive Load Monitoring (NILM) to
+acquire this information from the meter measurements. However,
+electrical signatures extracted from utility-side smart meters are
+often unreliable for NILM due to their large sampling intervals.
+This paper presents a new approach of using high-frequency
+current waveforms sampled periodically at a main branch to
+track reliably the on/off states of appliances in real-time. We
+develop an incremental training algorithm and a robust detection
+algorithm for the harmonic signatures, based on semi-supervised
+learning and a hidden Markov model, respectively. We evaluate
+the performance of the training and detection algorithms using
+simulations and a proof-of-concept testbed with five appliances.
+The simulation results show that our state detection algorithm
+is highly robust against noisy harmonic signatures – up to 16
+times more robust than a baseline algorithm without the hidden
+Markov model. The experimental results show that the proposed
+algorithms can successfully learn most harmonic signatures using
+only 10% of label information. They can detect the on/off states
+with less than 4 % errors.},
+  file =      {jung2015.pdf:jung2015.pdf:PDF},
+  keywords =  {energy, NILM, harmonics, high freq},
+  owner =     {jack},
+  timestamp = {2016.01.26}
 }
 
 @InProceedings{jung2012,
@@ -6491,6 +6572,22 @@ Our penalty term also prevents the exponential growth of IRNN's activations outs
   timestamp                = {2015.12.01}
 }
 
+@Article{kuusela2015,
+  author =       {P. Kuusela and I. Norros and R. Weiss and T. Sorasalmi},
+  title =        {Practical lognormal framework for household energy consumption modeling},
+  journaltitle = {Energy and Buildings},
+  date =         {2015},
+  volume =       {108},
+  pages =        {223--235},
+  issn =         {0378-7788},
+  doi =          {10.1016/j.enbuild.2015.09.008},
+  abstract =     {Substantial variability of household energy consumption is essential to recognize. In particular the variability occurs towards large magnitudes. This work focuses on modeling the distribution of household annual energy consumptions and promoting a practical modeling framework resulting to explicit models. Lognormal distributions describe well energy consumption of households that do not use electricity for heating. We model at city district level how consumption distributions depend on district housing characteristics. At individual household level, the joint distribution of the annual electricity consumption and key household characteristic (number of persons, floor area, number of bedrooms), is well approximated by multivariate lognormal distributions. This work utilizes numerous data sources: household annual electricity consumption data for city districts, city summary data on housing and people, data on sold apartments, and Irish Automatic Meter Reading (AMR) data with test survey information. We also demonstrate a process for adjusting the models when data relating individual household energy consumption with other characteristics are not available.},
+  file =         {kuusela2015.pdf:kuusela2015.pdf:PDF},
+  keywords =     {energy, modelling},
+  owner =        {jack},
+  timestamp =    {2016.01.26}
+}
+
 @InProceedings{lai2012,
   title                    = {Database Establishment for Machine Learning in NILM},
   author                   = {Lai, Po-hsiang and Trayer, Mark and Ramakrishna, Sudhir and Li, Ying},
@@ -6905,6 +7002,23 @@ training schemes for NILM.},
   keywords                 = {energy, signatures, NILM, artificial neural network},
   owner                    = {jack},
   timestamp                = {2015.12.01}
+}
+
+@InProceedings{liao2014low-res,
+  author =    {Jing Liao and Elafoudi, Georgia and Stankovic, Lina and Stankovic, Vladimir},
+  title =     {Non-intrusive appliance load monitoring using low-resolution smart meter data},
+  booktitle = {International Conference on Smart Grid Communications},
+  date =      {2014-11},
+  series =    {SmartGridComm},
+  publisher = {IEEE},
+  location =  {Venice},
+  pages =     {535--540},
+  doi =       {10.1109/SmartGridComm.2014.7007702},
+  abstract =  {We propose two algorithms for power load disaggregation at low-sampling rates (greater than 1sec): a low-complexity, supervised approach based on Decision Trees and an unsupervised method based on Dynamic Time Warping. Both proposed algorithms share common pre-classification steps. We provide reproducible algorithmic description and benchmark the proposed methods with a state-of-the-art Hidden Markov Model (HMM)-based approach. Experimental results using three US and three UK households, show that both proposed methods outperform the HMM-based approach and are capable of disaggregating a range of domestic loads even when the training period is very short.},
+  file =      {liao2014low-res.pdf:liao2014low-res.pdf:PDF},
+  keywords =  {energy, NILM, medium freq, decision tree, dynamic time warping},
+  owner =     {jack},
+  timestamp = {2016.01.26}
 }
 
 @InProceedings{liao2014,
@@ -7814,7 +7928,7 @@ The problem as we stated can also be considered as an unsupervised classificatio
   title =         {REFIT: Electrical Load Measurements},
   date =          {2015},
   doi =           {10.15129/31da3ece-f902-4e95-a093-e0a9536983c4},
-  __markedentry = {[jack:6]},
+  __markedentry = {[jack:]},
   abstract =      {The REFIT Electrical Load Measurements dataset includes electrical consumption data in Watts for 20 households at aggregate and appliance level, timestamped and sampled at 6-8 second intervals. This dataset is intended to be used for consumption statistics, load disaggregation algorithm development and testing, time and energy use profiles and time use statistics. Please refer to the linked paper below for more details. 
 This work has been carried out as part of the REFIT project (`Personalised Retrofit Decision Support Tools for UK Homes using Smart Home Technology', Grant Reference EP/K002368/1/1). REFIT is a consortium of three universities - Loughborough, Strathclyde and East Anglia - and ten industry stakeholders funded by the Engineering and Physical Sciences Research Council (EPSRC) under the Transforming Energy Demand in Buildings through Digital Innovation (BuildTEDDI) funding programme.},
   keywords =      {data, energy, NILM},
@@ -9107,6 +9221,22 @@ contributing technologies are examined.},
   timestamp                = {2015.12.01}
 }
 
+@Article{raimi2016,
+  author =       {Kaitlin T. Raimi and Amanda R. Carrico},
+  title =        {Understanding and beliefs about smart energy technology},
+  journaltitle = {Energy Research \& Social Science},
+  date =         {2016-02},
+  volume =       {12},
+  pages =        {68--74},
+  issn =         {2214-6296},
+  doi =          {10.1016/j.erss.2015.12.018},
+  abstract =     {The smart grid has been hailed for its potential to address a wide range of problems with current electricity infrastructure, with improvements expected in consumer awareness of energy use, energy efficiency, renewable energy distribution, and reliability of service. Some estimates suggest that the smart grid could reduce global carbon dioxide emissions by more than 2%. However, a vocal minority has expressed concerns about the health, privacy, and cost impacts of the smart grid. Here we use a convenience sample of online respondents to quantitatively examine the American lay public's level of knowledge about smart meters and the smart grid and show that a majority of respondents are wholly unfamiliar with smart energy technology. Furthermore, we demonstrate that, in contrast to information-deficit model expectations, knowledge of and exposure to smart meters do not necessarily lead to acceptance. On the contrary, knowledge and exposure is associated with increased concerns about negative impacts of these technologies. Implications for smart grid policy interventions are discussed.},
+  file =         {raimi2016.pdf:raimi2016.pdf:PDF},
+  keywords =     {energy, smart meters, behavior},
+  owner =        {jack},
+  timestamp =    {2016.01.26}
+}
+
 @InProceedings{rajagopal2013,
   author =    {Rajagopal, Niranjini and Giri, Suman and Berges, Mario and Rowe, Anthony},
   title =     {A Magnetic Field-based Appliance Metering System},
@@ -10294,6 +10424,25 @@ devices},
   timestamp                = {2015.11.23}
 }
 
+@InProceedings{simpson2015,
+  author =    {Simpson, Andrew J. R. and Roma, Gerard and Plumbley, Mark D.},
+  title =     {Deep Karaoke: Extracting Vocals from Musical Mixtures Using a Convolutional Deep Neural Network},
+  booktitle = {12th International Conference on Latent Variable Analysis and Signal Separation},
+  date =      {2015-08},
+  editor =    {Vincent, Emmanuel and Yeredor, Arie and Koldovský, Zbyněk and Tichavský, Petr},
+  series =    {LVA/ICA},
+  publisher = {Springer International Publishing},
+  location =  {Liberec, Czech Republic},
+  isbn =      {978-3-319-22482-4},
+  pages =     {429--436},
+  doi =       {10.1007/978-3-319-22482-4_50},
+  abstract =  {Identification and extraction of singing voice from within musical mixtures is a key challenge in source separation and machine audition. Recently, deep neural networks (DNN) have been used to estimate ‘ideal’ binary masks for carefully controlled cocktail party speech separation problems. However, it is not yet known whether these methods are capable of generalizing to the discrimination of voice and non-voice in the context of musical mixtures. Here, we trained a convolutional DNN (of around a billion parameters) to provide probabilistic estimates of the ideal binary mask for separation of vocal sounds from real-world musical mixtures. We contrast our DNN results with more traditional linear methods. Our approach may be useful for automatic removal of vocal sounds from musical mixtures for ‘karaoke’ type applications.},
+  file =      {simpson2015.pdf:simpson2015.pdf:PDF},
+  keywords =  {deep neural network, CNN},
+  owner =     {jack},
+  timestamp = {2016.01.26}
+}
+
 @TechReport{smart-meter-design-group2011,
   title                    = {Industry's Draft Technical Specifications (IDTS)},
   author                   = {{Smart Meter Design Group (SMDG), GB Smart Metering Implementation Programme (SMIP)}},
@@ -11326,6 +11475,22 @@ error of 0.885mm on the MNGU0 test dataset.},
   pii                      = {S2152-2650(14)00171-2},
   pmid                     = {25486960},
   timestamp                = {2016.01.18}
+}
+
+@InCollection{valera2015,
+  author =    {Valera, Isabel and Ruiz, Francisco and Svensson, Lennart and Perez-Cruz, Fernando},
+  title =     {Infinite Factorial Dynamical Model},
+  booktitle = {Advances in Neural Information Processing Systems 28},
+  date =      {2015},
+  editor =    {C. Cortes and N.D. Lawrence and D.D. Lee and M. Sugiyama and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  pages =     {1657--1665},
+  url =       {http://papers.nips.cc/paper/5667-infinite-factorial-dynamical-model.pdf},
+  abstract =  {We propose the infinite factorial dynamic model (iFDM), a general Bayesian nonparametric model for source separation. Our model builds on the Markov Indian buffet process to consider a potentially unbounded number of hidden Markov chains (sources) that evolve independently according to some dynamics, in which the state space can be either discrete or continuous. For posterior inference, we develop an algorithm based on particle Gibbs with ancestor sampling that can be efficiently applied to a wide range of source separation problems. We evaluate the performance of our iFDM on four well-known applications: multitarget tracking, cocktail party, power disaggregation, and multiuser detection. Our experimental results show that our approach for source separation does not only outperform previous approaches, but it can also handle problems that were computationally intractable for existing approaches.},
+  file =      {valera2015.pdf:valera2015.pdf:PDF},
+  keywords =  {energy, NILM, Bayesian},
+  owner =     {jack},
+  timestamp = {2016.01.26}
 }
 
 @Article{vaseghi1995,
