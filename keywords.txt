@@ -69,6 +69,7 @@ transcription
 feature extraction
 Cox process
 agent-based
+naive Bayes
 
 ML approaches used in NILM:
 ---------------------------
@@ -95,6 +96,7 @@ clustering
 maximum likelihood
 SSER (Sparse Switching Event Recovering)
 CRF
+dynamic time warping
 
 energy
 ------
@@ -157,6 +159,7 @@ modelling
 data cleaning
 limits (theoretical limits)
 granularity (sample rate)
+social (as in any type of social comparison or gaming)
 
 misc
 ----
