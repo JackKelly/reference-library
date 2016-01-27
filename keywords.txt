@@ -99,6 +99,7 @@ maximum likelihood
 SSER (Sparse Switching Event Recovering)
 CRF
 dynamic time warping
+ant colony
 
 energy
 ------
