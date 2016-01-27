@@ -15,6 +15,7 @@ appliance recognition (i.e. not disaggregation)
 hart-like (an algorithm which sounds pretty similar to George Hart's
 work)
 fault detection
+online (i.e. gives disag feedback almost instantly)
 
 side-channel
 ------------
@@ -41,6 +42,7 @@ machine learning
 changepoint detection
 dynamic programming
 integer programming
+quadratic programming
 dynamical system
 speech
 vision

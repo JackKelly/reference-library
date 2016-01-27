@@ -31,6 +31,23 @@
   timestamp                = {2015.11.19}
 }
 
+@Article{aiad2016,
+  author =       {Misbah Aiad and Peng Hin Lee},
+  title =        {Unsupervised approach for load disaggregation with devices interactions},
+  journaltitle = {Energy and Buildings},
+  date =         {2016},
+  volume =       {116},
+  pages =        {96--103},
+  issn =         {0378-7788},
+  doi =          {10.1016/j.enbuild.2015.12.043},
+  abstract =     {Energy savings is one of the hottest issues and concerns nowadays due to high oil prices and global warming as a result of CO2 emissions. Non-intrusive appliances load monitoring (NIALM) is a methodology that aims to breakdown the total power consumption measured by the smart meter in each household into the power consumed by the individual appliances. These detailed information on individual appliances consumptions can influence the users to follow better energy usage profiles so as to achieve energy savings. We introduce a novel energy disaggregation model that considers mutual devices interactions and embeds the information on devices interactions into the Factorial Hidden Markov Model (FHMM) representations of the aggregated data. The hidden states in the FHMM were inferred by means of the Viterbi algorithm. Devices’ interaction is a power quality issue that affects the measured power consumed by a device when there are other devices connected to the network. We tested our model using a selected house from the REDD public data set. Our proposed approach showed enhanced results when compared with the standard FHMM. Devices interactions, when observed, enabled us to disaggregate and assign energy consumption for individual devices more accurately.},
+  dataset =      {REDD},
+  file =         {aiad2016.pdf:aiad2016.pdf:PDF},
+  keywords =     {Energy, NILM, HMM, unsupervised learning, Viterbi},
+  owner =        {jack},
+  timestamp =    {2016.01.27}
+}
+
 @Article{akbari1995disaggregate-hourly,
   title                    = {Validation of an algorithm to disaggregate whole-building hourly electrical load into end uses},
   author                   = {Akbari, Hashem},
@@ -156,6 +173,23 @@
   owner                    = {jack},
   publisher                = {IEEE},
   timestamp                = {2016.01.12}
+}
+
+@Article{amenta2015,
+  author =       {Valeria Amenta and Giuseppe Marco Tina},
+  title =        {Load Demand Disaggregation Based on Simple Load Signature and User's Feedback},
+  journaltitle = {Energy Procedia},
+  date =         {2015},
+  volume =       {83},
+  pages =        {380--388},
+  note =         {Sustainability in Energy and Buildings: Proceedings of the 7th International Conference SEB-15},
+  issn =         {1876-6102},
+  doi =          {10.1016/j.egypro.2015.12.213},
+  abstract =     {A detailed and on-line knowledge of the electrical load demand by the users is a critical issue for an effective and responsive deployment of home/building energy management. An approach based on the application of Non Intrusive Appliance Load Monitoring (NIALM) techniques copes with the goal of disaggregating composite loads; but to get a high level of precision, NIALM algorithms need a complete load signature and complex optimization algorithms to find the right combination of single loads that fits the real electrical measurements. On the other hand, it is practically impossible to get the detailed signature of all appliances inside a house/building and sophisticated optimization algorithm are not suitable for on-line applications. To overcome such problems a straightforward NIALM algorithm is proposed, it is based on both a simple load signature, rated active and reactive power and a heuristic disaggregation algorithm. Of course, it is expected that on real applications, this approach cannot reach very high performances; this is the reason why an active involvement of users is considered. The users’ feedback aims to: correct the load signatures, reduce the error of disaggregation algorithm and increase the active participation of users in saving energy politics. The NIALM algorithm has been accurately tested numerically using as input load curves generated randomly but under given constraints. In this way, the causes of inefficiency of the proposed approach are quantitatively analyzed both separately and in different combinations. Finally, the increase of the efficiency of the NIALM algorithm due to the application of different feedback actions is evaluated and discussed.},
+  file =         {amenta2015.pdf:amenta2015.pdf:PDF},
+  keywords =     {energy, NILM, reactive power, active power, online},
+  owner =        {jack},
+  timestamp =    {2016.01.27}
 }
 
 @InProceedings{amirach2014feature-extraction,
@@ -2146,6 +2180,22 @@ policies that open up real time data access from Smart Meters. Millions of these
   timestamp                = {2015.07.23}
 }
 
+@InProceedings{chang2015,
+  author =    {Hsueh-Hsien Chang and Meng-Chien Lee and Nanming Chen and Chao-Lin Chien and Wei-Jen Lee},
+  title =     {Feature Extraction Based Hellinger Distance Algorithm for Non-Intrusive Aging Load Identification in Residential Buildings},
+  booktitle = {Industry Applications Society Annual Meeting},
+  date =      {2015-10},
+  publisher = {IEEE},
+  location =  {Addison, TX},
+  pages =     {1--8},
+  doi =       {10.1109/IAS.2015.7356778},
+  abstract =  {Although steady-state power features such as real power (P), reactive power (Q), and total voltage/current harmonic distortions (VTHD/ITHD) may contain sufficient information, adopting them directly for non-intrusive aging load monitoring (NIALM) identification process requires longer computation time and larger memory. To effectively reduce the number of steady-state power features representing load aging signals without degrading performance, a Hellinger distance (HD) algorithm for extracting the power features of NIALM is proposed and presented in this paper. To minimize the training time and improve recognition accuracy, a Particle Swarm Optimization (PSO) is adopted in this paper to optimize parameters of training algorithm in Artificial Neural Networks (ANNs). The proposed methods are used to analyze and identify the load characteristics of aging loads in residential buildings. The recognition result shows that the accuracy can be improved by using the proposed method.},
+  file =      {chang2015.pdf:chang2015.pdf:PDF},
+  keywords =  {energy, NILM, artificial neural network},
+  owner =     {jack},
+  timestamp = {2016.01.27}
+}
+
 @InProceedings{chang2010,
   title                    = {Load Identification in Nonintrusive Load Monitoring Using Steady-State and Turn-on Transient Energy Algorithms},
   author                   = {Hsueh-Hsien Chang and Ching-Lung Lin and Lee, Jin-Kwei},
@@ -2200,6 +2250,22 @@ policies that open up real time data access from Smart Meters. Millions of these
   owner =        {jack},
   publisher =    {IEEE},
   timestamp =    {2016.01.22}
+}
+
+@InProceedings{chen2015,
+  author =    {Yi-Cheng Chen and Hsiu-Chieh Hung and Bing-Yang Chiang and Sheng-Yuan Peng and Peng-Jun Chen},
+  title =     {Incrementally Mining Usage Correlations among Appliances in Smart Homes},
+  booktitle = {18th International Conference on Network-Based Information Systems},
+  date =      {2015-09},
+  series =    {NBiS},
+  publisher = {IEEE},
+  pages =     {273--279},
+  doi =       {10.1109/NBiS.2015.43},
+  abstract =  {Recently, due to the great advent of sensor technology, residents can collect household appliance usage data easily. However, in general, usage data are generated progressively, visualizing how appliances are used from huge amount of data is challenging. Thus, an algorithm is needed to incrementally discover appliance usage patterns. Prior studies on usage pattern discovery are mainly focused on mining patterns while ignoring the incremental maintenance of mined results. In this paper, a novel method, Dynamic Correlation Miner (DCMiner), is developed to incrementally capture and maintain the usage correlations among appliances in a smart home environment. Furthermore, several optimization techniques are proposed to effectively reduce the search space. Experimental results indicate that the proposed method is efficient in execution time and possesses great scalability. Subsequent application of DCMiner on a real dataset also demonstrates its practicability.},
+  file =      {chen2015.pdf:chen2015.pdf:PDF},
+  keywords =  {energy, appliances, activity detection},
+  owner =     {jack},
+  timestamp = {2016.01.27}
 }
 
 @Article{cheng2011,
@@ -3231,6 +3297,23 @@ digitalized. DIGITALEUROPE believes in the equation of Smart is Digital and Digi
   timestamp                = {2015.11.24}
 }
 
+@Article{doyle2015,
+  author =       {Frank Doyle and Maria-Jose Rivas Duarte and John Cosgrove},
+  title =        {Design of an Embedded Sensor Network for Application in Energy Monitoring of Commercial and Industrial Facilities},
+  journaltitle = {Energy Procedia},
+  date =         {2015},
+  volume =       {83},
+  pages =        {504--514},
+  note =         {Sustainability in Energy and Buildings: Proceedings of the 7th International Conference SEB-15},
+  issn =         {1876-6102},
+  doi =          {10.1016/j.egypro.2015.12.170},
+  abstract =     {The deployment of energy monitoring systems is well established for industrial facilities and commercial buildings, however these systems are insufficient where large variations in activity level (production variation, one-off events) are common. In such cases, accurate analysis of energy usage requires the deployment of a flexible embedded sensor network that can capture data at the required level of accuracy and granularity and can associate the energy usage data with the context and activity that has caused it. This research proposes an approach and a set of hardware and software tools for the monitoring of energy usage in technical building services and the association of that data with real-time production information in advanced manufacturing facilities. The system developed incorporates an embedded controller with sensors to monitor the physical environment, an integrated energy analyser to monitor electricity consumption and a visualisation interface that associate events in the physical world with the actual energy consumption recorded. The creation of a detailed time-stamped energy profile for the process can then be used in the identification of energy saving opportunities. A case study from a pharmaceutical facility was used to validate the operation of the system.},
+  file =         {doyle2015.pdf:doyle2015.pdf:PDF},
+  keywords =     {energy, smart meters, commercial, open-source, software},
+  owner =        {jack},
+  timestamp =    {2016.01.27}
+}
+
 @Article{drenker1999,
   title                    = {Nonintrusive Monitoring of Electric Loads},
   author                   = {Drenker, Steven and Kader, Ab},
@@ -3538,6 +3621,23 @@ on the readiness of the market in the Netherlands to kick-start consumer interes
   keywords                 = {energy, NILM, sparse coding},
   owner                    = {Jack},
   timestamp                = {2016.01.08}
+}
+
+@Article{engel2015,
+  author =       {Engel, Dominik and Eibl, Günther},
+  title =        {Wavelet-Based Multiresolution Smart Meter Privacy},
+  journaltitle = {IEEE Transactions on Smart Grid},
+  date =         {2015-00},
+  volume =       {PP},
+  number =       {99},
+  issn =         {1949-3053},
+  doi =          {10.1109/TSG.2015.2504395},
+  abstract =     {The availability of individual load curves per household in the smart grid end-user domain combined with nonintrusive load monitoring (NILM) to infer personal data from these load curves has led to privacy concerns. Based on insights of the interrelation of load profile resolution and accuracy of NILM techniques, we propose the use of the wavelet transform to represent load data in multiple resolutions. Each resolution is encrypted with a different key using an appropriate cipher and a hierarchical keying scheme. End-to-end security ensures access control. To meet requirements of low computational complexity in low-cost smart meters, the lifting implementation of the wavelet transform is used to generate multiple resolutions. It is shown that the multiresolution approach is compatible with other privacy-enhancing technologies, such as secure signal processing. This allows adding new degrees of freedom to these methods by introducing the dimension of multiple resolutions. The proposed approach is evaluated based on the provided level of privacy and security, computational demands, and feasibility in an economic sense.},
+  file =         {engel2015.pdf:engel2015.pdf:PDF},
+  keywords =     {energy, NILM, privacy, smart meters},
+  owner =        {jack},
+  publisher =    {IEEE},
+  timestamp =    {2016.01.27}
 }
 
 @InProceedings{englert2013auto-configure,
@@ -5407,6 +5507,23 @@ Promoting and expanding energy efficiency markets is a worldwide phenomenon, and
   timestamp                = {2016.01.14}
 }
 
+@Article{iwayemi2015,
+  author =       {Iwayemi, A. and Zhou, C.},
+  title =        {SARAA: Semi-Supervised Learning for Automated Residential Appliance Annotation},
+  journaltitle = {IEEE Transactions on Smart Grid},
+  date =         {2015-00},
+  volume =       {PP},
+  number =       {99},
+  issn =         {1949-3053},
+  doi =          {10.1109/TSG.2015.2498642},
+  abstract =     {Non-intrusive load monitoring (NILM) provides homeowners with detailed feedback on their electricity usage, but an open area is appliance labeling and generalizable appliance models that can be trained in one home and deployed in another. We therefore propose a semi-supervised learning appliance annotation scheme for home appliance signatures (SARAA). SARAA utilizes time series of appliance turn on and turn off events to tune generic appliance classifiers to appliances in the target home using a mixture of labeled and unlabeled data. Achieving this goal requires the development of a stopping criterion for semi-supervised learning, and we propose and evaluate a stopping heuristic for one-nearest neighbor semi-supervised learning of appliance signature time series. Starting with only a single labeled instance in the target home, SARAA produces classifiers with median F1 scores only 14.8% lower than benchmark classifiers trained on the fully labeled ground truth data in the target home, outperforming classifiers trained only on data from other homes, which have a median F1 score that is 51.23% poorer than the benchmark. The results of this paper will help develop NILM systems, which can automatically learn appliance signatures without user input and facilitate wider adoption of NILM technologies.},
+  file =         {iwayemi2015.pdf:iwayemi2015.pdf:PDF},
+  keywords =     {energy, NILM, semi-supervised},
+  owner =        {jack},
+  publisher =    {IEEE},
+  timestamp =    {2016.01.27}
+}
+
 @InProceedings{iyappan2015,
   author =    {Iyappan, P. and Venkatesan, V. Prasanna and Madhusudanan, J. and Rajkumar, R. and Krishnan, S. Kumara and Sudarshan, M.},
   title =     {Enhanced Dynamic Power Scheduling Interoperable System for Smart Home Environment},
@@ -5744,6 +5861,23 @@ In this paper we introduce the explicit-duration Hierarchical Dirichlet Process 
   owner                    = {Jack},
   publisher                = {Kluwer Academic Publishers},
   timestamp                = {2015.11.30}
+}
+
+@InProceedings{jung2014demand-response,
+  author =    {Deokwoo Jung and Krishna, V.B. and Temple, W.G. and Yau, D.K.Y.},
+  title =     {Data-Driven Evaluation of Building Demand Response Capacity},
+  booktitle = {International Conference on Smart Grid Communications},
+  date =      {2014-11},
+  series =    {SmartGridComm},
+  publisher = {IEEE},
+  location =  {Venice},
+  pages =     {541--547},
+  doi =       {10.1109/SmartGridComm.2014.7007703},
+  abstract =  {Before a building can participate in a demand response program, its facility managers must characterize the site's ability to reduce load. Today, this is often done through manual audit processes and prototypical control strategies. In this paper, we propose a new approach to estimate a building's demand response capacity using detailed data from various sensors installed in a building. We derive a formula for a probabilistic measure that characterizes various tradeoffs between the available demand response capacity and the confidence level associated with that curtailment under the constraints of building occupant comfort level (or utility). Then, we develop a data-driven framework to associate observed or projected building energy consumption with a particular set of rules learned from a large sensor dataset. We apply this methodology using testbeds in two buildings in Singapore: a unique net-zero energy building and a modern commercial office building. Our experimental results identify key control parameters and provide insight into the available demand response strategies at each site.},
+  file =      {jung2014demand-response.pdf:jung2014demand-response.pdf:PDF},
+  keywords =  {energy, demand response},
+  owner =     {jack},
+  timestamp = {2016.01.27}
 }
 
 @InProceedings{jung2015,
@@ -7194,6 +7328,22 @@ training schemes for NILM.},
   timestamp                = {2016.01.08}
 }
 
+@Article{lin2016quadratic,
+  author =       {Shunfu Lin and Lunjia Zhao and Fangxing Li and Qingqiang Liu and Dongdong Li and Yang Fu},
+  title =        {A nonintrusive load identification method for residential applications based on quadratic programming},
+  journaltitle = {Electric Power Systems Research},
+  date =         {2016},
+  volume =       {133},
+  pages =        {241--248},
+  issn =         {0378-7796},
+  doi =          {10.1016/j.epsr.2015.12.014},
+  abstract =     {The decomposition of household power consumption is highly desired for scheduling household appliances and reducing home energy consumption. This paper presents a novel nonintrusive load identification method based on quadratic programming. Extensive simulation and laboratory tests have demonstrated that the proposed technique can provide adequate load identification accuracy for residential energy monitoring such that it is suitable for nonintrusive load monitoring (NILM) systems in residential and commercial buildings.},
+  file =         {lin2016quadratic.pdf:lin2016quadratic.pdf:PDF},
+  keywords =     {energy, NILM, quadratic programming},
+  owner =        {jack},
+  timestamp =    {2016.01.27}
+}
+
 @InProceedings{lin2010feature-extraction,
   title                    = {A novel feature extraction method for the development of nonintrusive load monitoring system based on {BP-ANN}},
   author                   = {Lin, Yu-Hsiu and Tsai, Men-Shen},
@@ -7475,6 +7625,23 @@ captured from a typical building on the University of California, Berkeley campu
   keywords                 = {machine learning},
   owner                    = {jack},
   timestamp                = {2015.12.01}
+}
+
+@Article{mahendra2015,
+  author =       {Singh Mahendra and Ploix Stéphane and Wurtz Frederic},
+  title =        {Modeling for Reactive Building Energy Management},
+  journaltitle = {Energy Procedia},
+  date =         {2015},
+  volume =       {83},
+  pages =        {207--215},
+  note =         {Sustainability in Energy and Buildings: Proceedings of the 7th International Conference SEB-15},
+  issn =         {1876-6102},
+  doi =          {10.1016/j.egypro.2015.12.175},
+  abstract =     {This paper discusses the development of modeling approach for reactive energy management. The objective of reactive energy management is to adopt the long-term anticipated performance to actual situation, preserving the occupant's comfort and energy expenses. It performs continuous performance monitoring of whole building, taking into account unplanned events and system failures. Reactive energy management mechanism uses fast dynamics models with short-time simulation, able to manage the real-time observations from sensor data. This work emphasizes the development of low-order resistance-capacitance (R-C) thermal model with their equivalent state-space representation. At the end, a case study demonstrates the significance of fast dynamics reactive models to detect the discrepancies from reality.},
+  file =         {mahendra2015.pdf:mahendra2015.pdf:PDF},
+  keywords =     {energy, building management},
+  owner =        {jack},
+  timestamp =    {2016.01.27}
 }
 
 @Patent{majewski2014,
@@ -11141,6 +11308,19 @@ Kokichi Sugihara is Professor in the Department of Mathematical Engineering and 
   keywords                 = {energy, NILM},
   owner                    = {jack},
   timestamp                = {2016.01.22}
+}
+
+@Article{tang2016,
+  author =       {Guoming Tang and Kui Wu and Jingsheng Lei and Weidong Xiao},
+  title =        {SHARK: sparse human action recovery with knowledge of appliances and load curve data},
+  journaltitle = {Cyber-Physical Systems},
+  date =         {2016},
+  doi =          {10.1080/23335777.2015.1114526},
+  abstract =     {Occupancy detection can greatly facilitate heating, ventilation and cooling and lightning control for building energy saving. Sensor-based occupancy detection is usually costly and may suffer from high false positive rates. As such, occupancy detection using load curve data has been proposed. Such methods, however, normally (i) rely on tedious and nontrivial model training process and (ii) do not consider the influence of corrupted data in load curve. To overcome these pitfalls, we develop a practical, robust non-intrusive occupancy detection approach that does not require model training and data cleansing. Only using load curve data and readily available appliance knowledge, the method achieves occupancy detection by three main steps: (i) the appliances’ mode states are firstly decoded via a carefully designed robust sparse switching event recovering model; (ii) the human actions are recovered with a priori knowledge of human-activated switching events; (iii) the occupancy states are then inferred based on the recovered human actions along with empirical strategies and association rules. We evaluate our approach and compare it with existing methods with real-world data. The results show that our approach can achieve similar performance to those using supervised machine learning.},
+  file =         {tang2016.pdf:tang2016.pdf:PDF},
+  keywords =     {energy, appliances, activity detection, occupancy},
+  owner =        {jack},
+  timestamp =    {2016.01.27}
 }
 
 @InProceedings{tang2014appliance,
