@@ -16,6 +16,10 @@ hart-like (an algorithm which sounds pretty similar to George Hart's
 work)
 fault detection
 online (i.e. gives disag feedback almost instantly)
+single appliance NILM
+event detection
+time of day (algorithm uses time of day usage as a prior)
+intrusive (as in 'intrusive load monitoring')
 
 side-channel
 ------------
@@ -34,7 +38,7 @@ separate biblatex field, e.g. `samplefrequency = {1}` means 1Hz whilst
 `sampleperiod = {3600}` means hourly.  If multiple freqs or periods
 are used in the paper then comma separate them.
 
-dataset = {BLUED|REDD|UK-DALE}
+dataset = {BLUED|REDD|UK-DALE|DRED|Dataport|Tracebase}
 
 machine learning
 ----------------
@@ -100,6 +104,7 @@ SSER (Sparse Switching Event Recovering)
 CRF
 dynamic time warping
 ant colony
+Markov random fields
 
 energy
 ------
@@ -116,11 +121,14 @@ electrical
 thermal efficiency
 heating control
 fuel poverty
+metering
 smart meters
 active power
 reactive power
 power factor
 voltage
+current
+three-phase
 mains frequency
 demand-side management
 demand response
@@ -163,6 +171,7 @@ data cleaning
 limits (theoretical limits)
 granularity (sample rate)
 social (as in any type of social comparison or gaming)
+compression
 
 misc
 ----
@@ -179,6 +188,7 @@ intelligence
 legislation
 government
 health
+hardware
 
 paper type
 ----------
