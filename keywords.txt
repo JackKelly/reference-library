@@ -109,6 +109,7 @@ Markov random fields
 
 energy
 ------
+renewable production
 wind turbines
 appliances
 signatures

@@ -2644,7 +2644,10 @@ Formal security analysis is provided to show that our scheme is secure. We furth
   series =    {GlobalSIP},
   publisher = {IEEE},
   location =  {Orlando, FL, USA},
-  keywords =  {NILM, energy, compressed sensing},
+  abstract =  {Non-intrusive  load  monitoring  (NILM)  extractsinformation  about  how  energy  is  being  used  in  a  buildingfrom  electricity  measurements  collected  at  a  single  location.Obtaining  measurements  at  only  one  location  is  attractivebecause  it  is  inexpensive  and  convenient,  but  it  can  result  inlarge  amounts  of  data  from  high  frequency  electrical  mea-surements.  Different  ways  to  compress  or  selectively  measurethis data are therefore required for practical implementationsof NILM. We explore the use of random filtering and randomdemodulation, techniques that are closely related to compressedsensing, to offer a computationally simple way of compressingthe electrical data. We show how these techniques can allow oneto  reduce  the  sampling  rate  of  the  electricity  measurements,while   requiring   only   one   sampling   channel   and   allowingaccurate  NILM  performance.  Our  tests  are  performed  usingreal measurements of electrical signals from a public data set,thus  demonstrating  their  effectiveness  on  real  appliances  andallowing  for  reproducibility  and  comparison  with  other  datamanagement strategies for NILM.},
+  comment =   {The content of this paper is covered in chapter 4 of her thesis: clark2015thesis},
+  file =      {clark2015compressive.pdf:clark2015compressive.pdf:PDF},
+  keywords =  {NILM, energy, compressed sensing, compression},
   owner =     {jack},
   timestamp = {2016.01.28}
 }
@@ -8441,16 +8444,20 @@ solutions that can identify and track electricity use by the most important load
 }
 
 @InProceedings{mauch2015,
-  author =    {Lukas Mauch and Bin Yang},
-  title =     {A new approach for supervised power disaggregation by using a deep recurrent LSTM network},
-  booktitle = {Global Conference on Signal and Information Processing},
-  date =      {2015-12-14/2015-12-17},
-  series =    {GlobalSIP},
-  publisher = {IEEE},
-  location =  {Orlando, FL, USA},
-  keywords =  {NILM, energy, deep neural network, RNN, LSTM},
-  owner =     {jack},
-  timestamp = {2016.01.28}
+  author =       {Lukas Mauch and Bin Yang},
+  title =        {A new approach for supervised power disaggregation by using a deep recurrent LSTM network},
+  booktitle =    {Global Conference on Signal and Information Processing},
+  date =         {2015-12-14/2015-12-17},
+  series =       {GlobalSIP},
+  publisher =    {IEEE},
+  location =     {Orlando, FL, USA},
+  abstract =     {This paper presents a new approach for supervised power dis-aggregation by using a deep recurrent long short term memorynetwork. It is useful to extract the power signal of one dom-inant appliance or any subcircuit from the aggregate powersignal. To train the network, a measurement of the power sig-nal of the target appliance in addition to the total power signalduring the same time period is required. The method is super-vised, but less restrictive in practice since submetering of animportant appliance or a subcircuit for a short time is feasi-ble. The main advantages of this approach are: a) It is alsoapplicable to variable load and not restricted to on-offandmulti-state appliances. b) It does not require hand-engineeredevent detection and feature extraction. c) By using multiplenetworks, it is possible to disaggregate multiple appliances orsubcircuits at the same time. d) It also works with a low costpower meter as shown in the experiments with the ReferenceEnergy Disaggregation (REDD) dataset (1/3Hz sampling fre-quency, only real power).},
+  dataset =      {REDD},
+  file =         {mauch2015.pdf:mauch2015.pdf:PDF},
+  keywords =     {NILM, energy, deep neural network, RNN, LSTM, active power, medium freq},
+  owner =        {jack},
+  sampleperiod = {3},
+  timestamp =    {2016.01.28}
 }
 
 @InProceedings{may2012,
@@ -9072,6 +9079,28 @@ Other risks that the NAO has highlighted are that there is very little contingen
   file =      {nisi2011.pdf:nisi2011.pdf:PDF},
   keywords =  {energy, feedback, NILM, activity detection},
   numpages =  {2},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
+@InProceedings{nisi2013fanal,
+  author =    {Nisi, Valentina and Nunes, Nuno Jardim and Quintal, Filipe and Barreto, Mary},
+  title =     {SINAIS from Fanal: Design and Evaluation of an Art-inspired Eco-feedback System},
+  booktitle = {Biannual Conference of the Italian Chapter of SIGCHI},
+  date =      {2013-09-16/2013-09-20},
+  series =    {CHItaly},
+  publisher = {ACM},
+  location =  {Trento, Italy},
+  isbn =      {978-1-4503-2061-0},
+  pages =     {3:1--3:10},
+  doi =       {10.1145/2499149.2499151},
+  abstract =  {In this paper we present the challenges exposed during the designing, implementing and assessment of a novel eco-feedback system resulting from the intersection of human-computer interaction (HCI), and Digital Art. We explore how a digital art mode of inquiry can contribute to expose existing challenges in eco-feedback technology. Our new art inspired eco-feedback visualization, maps electricity consumption to effects on natural elements of the local natural landscape. The feedback was piloted with eight local families for four weeks. Reactions of the users were assessed through interviews and quantitative measures. Our findings showed that users found the mapping of the eco-feedback to artistic representations of elements of the natural environment somehow compelling, despite lacking of clear quantitative information. In conclusion, the conducted study provide useful findings and insights into future deployment of eco-feedback using artistic visualizations, information visualization and motivating behavior change.},
+  acmid =     {2499151},
+  address =   {New York, NY, USA},
+  articleno = {3},
+  file =      {nisi2013fanal.pdf:nisi2013fanal.pdf:PDF},
+  keywords =  {energy, feedback, energy efficiency},
+  numpages =  {10},
   owner =     {jack},
   timestamp = {2016.01.28}
 }
@@ -9829,14 +9858,30 @@ performance metrics and consumption data.},
   timestamp = {2016.01.28}
 }
 
+@InProceedings{pereira2015labeling,
+  author =    {Pereira, Lucas and Nunes, Nuno J.},
+  title =     {Semi-automatic labeling for public non-intrusive load monitoring datasets},
+  booktitle = {Sustainable Internet and ICT for Sustainability},
+  date =      {2015-04},
+  series =    {SustainIT},
+  publisher = {IEEE},
+  location =  {Madrid},
+  doi =       {10.1109/SustainIT.2015.7101378},
+  abstract =  {In this paper we present and evaluate a semiautomatic labeling prototype to enable the creation of fully labeled energy disaggregation datasets from sub-metered data. Our results advocate in favor of our approach and show that it is possible to extract individual appliance transitions with considerable precision, as long as the individual appliance information is present in the sub-metered data, and its resolution is high enough.},
+  file =      {pereira2015labeling.pdf:pereira2015labeling.pdf:PDF},
+  keywords =  {energy, NILM, data, metadata},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
 @InProceedings{pereira2015openEDF,
   author =    {Pereira, Lucas and Nunes, Nuno J},
   title =     {Towards Systematic Performance Evaluation of Non-Intrusive Load Monitoring Algorithms and Systems},
   booktitle = {Sustainable Internet and ICT for Sustainability},
-  date =      {2015},
+  date =      {2015-04-14/2015-04-15},
   series =    {SustainIT},
   publisher = {IEEE},
-  pages =     {1--3},
+  doi =       {10.1109/SustainIT.2015.7101373},
   abstract =  {In this paper we present our approach to create an end-to-end software platform to enable the creation of meaningful and systematic, cross-dataset performance evaluations and benchmarks of Non-Intrusive Load Monitoring technology. We specifically propose a new file format to represent public datasets, a software framework to implement algorithms and metrics as well as the application of ceiling analysis to evaluate the overall performance of NILM systems.},
   file =      {pereira2015openEDF.pdf:pereira2015openEDF.pdf:PDF},
   keywords =  {NILM, open-source, file format, energy, metrics, energy},
@@ -10199,6 +10244,22 @@ contributing technologies are examined.},
   keywords =  {feedback, energy, energy efficiency, NILM, visualisation}
 }
 
+@InProceedings{quintal2015exploring,
+  author =    {Quintal, Filipe and Nunes, Nuno J. and Nisi, Valentina},
+  title =     {Exploring the Dimensions of Eco-feedback in the Wild},
+  booktitle = {Sustainable Internet and ICT for Sustainability},
+  date =      {2015-04-14/2015-04-15},
+  series =    {SustainIT},
+  publisher = {IEEE},
+  location =  {Madrid},
+  doi =       {10.1109/SustainIT.2015.7101374},
+  abstract =  {This paper presents our efforts in understanding the long-term effects of eco-feedback devices. Our work argues that lack of long term in the wild studies is a missed opportunity to understand how these devices are used after the novelty wears off. We build on previous work that showed a significant decrease in user awareness after a short period with a relapse in consumption, with the presented studies we aimed to investigate if new forms of feedback could overcome this issue, maintaining the users awareness for longer periods of time.},
+  file =      {quintal2015exploring.pdf:quintal2015exploring.pdf:PDF},
+  keywords =  {energy, feedback},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
 @InProceedings{quintal2010,
   author =    {Quintal, Filipe and Nunes, Nuno J. and Ocneanu, Adrian and Bergés, Mario},
   title =     {SINAIS: Home Consumption Package: A Low-cost Eco-feedback Energy-monitoring Research Platform},
@@ -10218,6 +10279,58 @@ contributing technologies are examined.},
   timestamp = {2016.01.28}
 }
 
+@InProceedings{quintal2015EnerSpectrum,
+  author =    {Quintal, F. and Pereira, L. and Jorge, C. and Nunes, N.J.},
+  title =     {EnerSpectrum: exposing the source of energy through plug-level eco-feedack},
+  booktitle = {Sustainable Internet and ICT for Sustainability},
+  date =      {2015-04},
+  series =    {SustainIT},
+  publisher = {IEEE},
+  location =  {Madrid},
+  doi =       {10.1109/SustainIT.2015.7101379},
+  abstract =  {This paper presents EnerSpectrum a standard wall electricity socket redesigned to present how much of the electricity being consumed is sourced from a renewable energy source. We build on studies that report an increase in consumer energy awareness and literacy when presented with the source of their electricity. The prototype was evaluated by 10 users using interviews, which found the concept interesting and valuable. We conclude this paper with an outline of the future work necessary to evaluate the EnerSpectrum in real live conditions.},
+  file =      {quintal2015EnerSpectrum.pdf:quintal2015EnerSpectrum.pdf:PDF},
+  keywords =  {energy, feedback, intrusive, metering, renewable production},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
+@InProceedings{quintal2015What-a-Watt,
+  author =    {Quintal, F. and Pereira, L. and Nunes, N.J. and Nisi, V.},
+  title =     {What-a-Watt: Exploring Electricity Production Literacy Through a Long Term Eco-Feedback Study},
+  booktitle = {IFIP Sustainable Internet and ICT for Sustainability},
+  date =      {2015-04},
+  series =    {SustainIT},
+  publisher = {IEEE},
+  location =  {Madrid},
+  doi =       {10.1109/SustainIT.2015.7101365},
+  abstract =  {This paper presents the design, implementation and evaluation of an eco-feedback system capable of providing detailed household consumption information and also real-time production breakdown per energy source. We build on recent studies reporting an increased awareness generated by ecofeedback systems that also integrate micro-production information, taking advantage of a closed grid production network on an island with a high concentration of renewables, we deployed the What-a-Watt system in a building with 9 households for a period of 34 consecutive weeks. Results show that all the participating families have shown increased awareness of the production and distribution of electricity, thus becoming more familiarized with concepts such as the different sources of energy and how their availability relates to external variables such as weather conditions and time of day. Furthermore, our results also show, that the families using our system have managed to reduce their overall consumption. This research is a first attempt to provide more effective eco-feedback systems to consumers by integrating complex Smartgrid information in the feedback.},
+  file =      {quintal2015What-a-Watt.pdf:quintal2015What-a-Watt.pdf:PDF},
+  keywords =  {energy, feedback, online, renewable production},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
+@InProceedings{quintal2013mailbox,
+  author =    {Quintal, Filipe and Pereira, Lucas and Nunes, Nuno and Nisi, Valentina and Barreto, Mary},
+  title =     {WattsBurning on My Mailbox: A Tangible Art Inspired Eco-feedback Visualization for Sharing Energy Consumption},
+  booktitle = {14th IFIP TC 13 International Conference on Human-Computer Interaction},
+  date =      {2013-09-02/2013-09-06},
+  editor =    {Kotzé, Paula and Marsden, Gary and Lindgaard, Gitte and Wesson, Janet and Winckler, Marco},
+  volume =    {8120},
+  series =    {INTERACT},
+  publisher = {Springer Berlin Heidelberg},
+  location =  {Cape Town, South Africa},
+  isbn =      {978-3-642-40483-2},
+  pages =     {133-140},
+  doi =       {10.1007/978-3-642-40498-6_10},
+  abstract =  {This paper describes a novel art-inspired tangible eco-feedback system. The concept emerged from a workshop with researchers, designers and artists looking at innovative ways to provide more effective eco-feedback that engages users emotionally. The tangible aspect of the system is composed of a set of magnets that users can stick on their physical mailbox outside of their apartment building according to their average energy consumption. The magnets are a total of seven pieces, one for each day of the week. Each piece has a variation of three colors, from green (low consumption) to burning red (high consumption). The magnets are to be displayed in a sequence that represents a typical panorama of local nature. In this paper we report the design and the study we conducted to gauge preliminary results on the system usage and potential. Interviews with participants revealed that none of them felt uncomfortable having their consumption displayed outside. When children were involved in the process they “took control” of the task and pressured their families to perform better.},
+  file =      {quintal2013mailbox.pdf:quintal2013mailbox.pdf:PDF},
+  keywords =  {energy, smart meters, feedback, dashboard},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
 @InProceedings{quintal2013WATTSBurning,
   author =    {Quintal, Filipe and Pereira, Lucas and Nunes, Nuno and Nisi, Valentina and Barreto, Mary},
   title =     {WATTSBurning: Design and Evaluation of an Innovative Eco-Feedback System},
@@ -10226,7 +10339,7 @@ contributing technologies are examined.},
   editor =    {Kotzé, Paula and Marsden, Gary and Lindgaard, Gitte and Wesson, Janet and Winckler, Marco},
   series =    {INTERACT},
   publisher = {Springer Berlin Heidelberg},
-  location =  {ape Town, South Africa},
+  location =  {Cape Town, South Africa},
   isbn =      {978-3-642-40483-2},
   pages =     {453--470},
   doi =       {10.1007/978-3-642-40483-2_32},
