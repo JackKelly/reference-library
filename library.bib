@@ -255,6 +255,19 @@
   timestamp                = {2015.11.19}
 }
 
+@InProceedings{anderson2015relaxation,
+  author =    {Kyle Anderson and José M.F. Moura and Mario Bergés},
+  title =     {Non-Intrusive Load Monitoring: A Power Consumption Based Relaxation},
+  booktitle = {Global Conference on Signal and Information Processing},
+  date =      {2015-12-14/2015-12-17},
+  series =    {GlobalSIP},
+  publisher = {IEEE},
+  location =  {Orlando, Florida, USA},
+  keywords =  {NILM, energy},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
 @InProceedings{anderson2012blued,
   title                    = {BLUED: A Fully Labeled Public Dataset for Event-Based Non-Intrusive Load Monitoring Research},
   author                   = {Anderson, Kyle and Ocneanu, Adrian and Benítez, Diego and Carlson, Derrick and Rowe, Anthony and Bergés, Mario},
@@ -980,6 +993,19 @@ disaggregation value of 93.41% of the total time.},
   keywords                 = {NILM, energy, unsupervised learning},
   owner                    = {Jack},
   timestamp                = {2016.01.11}
+}
+
+@InProceedings{barsim2015toward,
+  author =    {Karim Said Barsim and Bin Yang},
+  title =     {Toward a Semi-Supervised Non-Intrusive Load Monitoring System for Event-based Energy Disaggregation},
+  booktitle = {Global Conference on Signal and Information Processing},
+  date =      {2015-12-14/2015-12-17},
+  series =    {GlobalSIP},
+  publisher = {IEEE},
+  location =  {Orlando, FL, USA},
+  keywords =  {NILM, energy, semi-supervised, event detection},
+  owner =     {jack},
+  timestamp = {2016.01.28}
 }
 
 @Article{bastien2012theano,
@@ -2592,6 +2618,35 @@ Formal security analysis is provided to show that our scheme is secure. We furth
   owner                    = {jack},
   publisher                = {Nature Publishing Group, a division of Macmillan Publishers Ltd.},
   timestamp                = {2015.04.08}
+}
+
+@Thesis{clark2015thesis,
+  author =      {Clark, Michelle Susan},
+  title =       {Improving the feasibility of energy disaggregation in very high- and low-rate sampling scenarios},
+  type =        {Masters thesis},
+  institution = {University of British Columbia},
+  date =        {2015-10-24},
+  location =    {Vancouver},
+  url =         {http://hdl.handle.net/2429/54873},
+  abstract =    {Given the world's urgent need to reduce greenhouse gas emissions in order to avoid the most disastrous effects of climate change, efforts must be made to reduce these emissions in every way possible. A large share of these emissions come from the energy consumption in buildings and there are significant opportunities to reduce this consumption through energy saving measures. Energy disaggregation or non-intrusive load monitoring (NILM) is a useful tool that infers the energy consumption of individual appliances or equipment within a building from detailed measurements of the building's total energy consumption. This method is very attractive for providing a detailed breakdown of building energy consumption because it is less expensive and more convenient than measuring the energy use of each appliance individually. A wide variety of NILM methods have been proposed and in this thesis we focus on improving the feasibility of two different classes of NILM methods. We first explore the use of random filtering and random demodulation, two methods closely related to the new and developing field of compressed sensing (CS), to acquire and manage very-high-rate electrical measurements used for NILM. We show that these methods allow us to reduce the required sampling rate and volume of data collected while retaining valuable signal information required for NILM. Second, we switch to the analysis of very-low-rate data for NILM and develop a method to detect interesting patterns in the very-low-rate aggregate consumption signal. These patterns are shown to be responsible for a significant share of the total energy consumption in some buildings and are also related to the outdoor air temperature in some cases. Taken together, the two parts of this thesis allow us to contribute to the field of NILM by improving its feasibility and helping to facilitate its widespread use.},
+  comment =     {advisor: Dr. Lutz Lampe},
+  file =        {clark2015thesis.pdf:clark2015thesis.pdf:PDF},
+  keywords =    {energy, NILM, compressed sensing, high freq, very low freq},
+  owner =       {jack},
+  timestamp =   {2016.01.28}
+}
+
+@InProceedings{clark2015compressive,
+  author =    {Clark, Michelle Susan and Lutz Lampe},
+  title =     {Single-Channel Compressive Sampling of Electrical Data for Non-Intrusive Load Monitoring},
+  booktitle = {Global Conference on Signal and Information Processing},
+  date =      {2015-12-14/2015-12-17},
+  series =    {GlobalSIP},
+  publisher = {IEEE},
+  location =  {Orlando, FL, USA},
+  keywords =  {NILM, energy, compressed sensing},
+  owner =     {jack},
+  timestamp = {2016.01.28}
 }
 
 @Thesis{coakley2014,
@@ -4513,6 +4568,21 @@ aspects of energy consumption and behavioral motivations that could be explored 
   timestamp                = {2015.11.23}
 }
 
+@InProceedings{gao2015plug-load,
+  author =    {Jingkun Gao and Emre C. Kara and Suman Giri and Mario Bergés},
+  title =     {A feasibility study of automated plug-load identification from high-frequency measurements},
+  booktitle = {Global Conference on Signal and Information Processing},
+  date =      {2015-12-14/2015-12-17},
+  series =    {GlobalSIP},
+  publisher = {IEEE},
+  location =  {Orlando, Florida, USA},
+  abstract =  {Plug-meters benefit many grid and building-level energy management applications like automated load control and load scheduling. However, installing and maintaining large and/or long term deployments of such meters requires assignment and updating of the identity (labels) of electrical loads connected to them. Although the literature on electricity disaggregation and appliance identification is extensive, there is no consensus on the generalizability of the proposed solutions, especially with respect to the features that are extracted from voltage and current measurements. In this paper, we begin to address this problem by comparing the discriminative power of commonly used features. Specifically, we carry out tests on PLAID, a publicly available high-frequency dataset of hundreds of residential appliances. By examining how the classification accuracy changes with sampling frequency, we also explore the computational complexity of these techniques to understand the feasibility and design of a hardware setup that can perform these calculations in near real-time.},
+  dataset =   {PLAID},
+  keywords =  {NILM, energy, high freq, appliance recognition},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
 @InProceedings{gascoyne2011,
   title                    = {Unconventional Gas and Implications for the LNG Market - FACTS Global Energy},
   author                   = {Chris Gascoyne and Alexis Aik},
@@ -5213,6 +5283,28 @@ Unfortunately, the current state of development of the instrument is inadequate 
   owner                    = {Jack},
   publisher                = {Nature Publishing Group, a division of Macmillan Publishers Ltd.},
   timestamp                = {2015.11.30}
+}
+
+@Article{harris2015timing,
+  author =       {A. R. Harris and Michelle Marinich Rogers and Carol J. Miller and Shawn P. McElmurry and Caisheng Wang},
+  title =        {Residential emissions reductions through variable timing of electricity consumption},
+  journaltitle = {Applied Energy},
+  date =         {2015},
+  volume =       {158},
+  pages =        {484--489},
+  issn =         {0306-2619},
+  doi =          {10.1016/j.apenergy.2015.08.042},
+  abstract =     {A real-time electricity emissions estimating tool, the Locational Marginal Price Emissions Estimation Method (LEEM), is assessed for its ability to reduce emissions of sulfur dioxide (SO2), nitrogen oxides (NOx), global warming potential measured as carbon dioxide equivalent (CO2e), mercury (Hg), and lead (Pb) on a residential scale. Through LEEM, residential electricity use can be shifted to low emissions times of day. In the study area of Michigan, USA emissions from five types of appliances (hot water heater, refrigerator defrost, dishwasher, clothes washer, and clothes dryer) were calculated to be theoretically reduced by 21–35% annually through a “best-case” application of LEEM. Annual emissions of the five pollutants, SO2, NOx, CO2e, Hg, and Pb, can be reduced across the state by 429,000, 110,000, 87,240,000, 2.21, and 4.53 pounds, respectively - all without a reduction in the electricity used in the period of study. Despite different fuel mixes, similar emissions reductions were calculated for other regions of the country, as well.
+
+Highlights
+• Residential emissions reduced through shifted timing of appliance use.
+• Locational marginal prices are used to predict changes in emissions from electricity generation.
+• Reductions in emissions of SO2, NOx, CO2e, Hg, and Pb from residential consumers of 12–26%.
+• Significant emissions reductions are possible with a variety of fuel mixes.},
+  file =         {harris2015timing.pdf:harris2015timing.pdf:PDF},
+  keywords =     {energy, demand response, demand-side management, carbon dioxide, climate change},
+  owner =        {jack},
+  timestamp =    {2016.01.28}
 }
 
 @TechReport{hart1984,
@@ -8348,6 +8440,19 @@ solutions that can identify and track electricity use by the most important load
   timestamp                = {2015.12.01}
 }
 
+@InProceedings{mauch2015,
+  author =    {Lukas Mauch and Bin Yang},
+  title =     {A new approach for supervised power disaggregation by using a deep recurrent LSTM network},
+  booktitle = {Global Conference on Signal and Information Processing},
+  date =      {2015-12-14/2015-12-17},
+  series =    {GlobalSIP},
+  publisher = {IEEE},
+  location =  {Orlando, FL, USA},
+  keywords =  {NILM, energy, deep neural network, RNN, LSTM},
+  owner =     {jack},
+  timestamp = {2016.01.28}
+}
+
 @InProceedings{may2012,
   title                    = {Data in the Wild},
   author                   = {Scott May and Luke Fishback and Daniel Arneman and John Cunningham and Mandar Jog},
@@ -9453,19 +9558,20 @@ A new physically-windowed sensor architecture for improving the dynamic range of
 }
 
 @InProceedings{parson2015dataport,
-  title                    = {Dataport and NILMTK: A building data set designed for non-intrusive load monitoring},
-  author                   = {Parson, Oliver and Fisher, Grant and Hersey, April and Batra, Nipun and Kelly, Jack and Singh, Amarjeet and Knottenbelt, William and Rogers, Alex},
-  booktitle                = {1st International Symposium on Signal Processing Applications in Smart Buildings at 3rd Global Conference on Signal \& Information Processing},
-  date                     = {2015-12-14},
-  location                 = {Orlando, Florida, USA},
-  publisher                = {IEEE},
-  series                   = {GlobalSIP},
-  url                      = {http://eprints.soton.ac.uk/381304/},
-  abstract                 = {Non-intrusive load monitoring (NILM), or energy disaggregation, is the process of using signal processing and machine learning to separate the energy consumption of a building into individual appliances. In recent years, a number of data sets have been released in order to evaluate such approaches, which contain both building-level and appliance-level energy data. However, these data sets typically cover less than 10 households due to the financial cost of such deployments, and are not released in a format which allows the data sets to be easily used by energy disaggregation researchers. To this end, the Dataport database was created by Pecan Street Inc, which contains 1 minute circuit-level and building-level electricity data from 722 households. Furthermore, the non-intrusive load monitoring toolkit (NILMTK) was released in 2014, which provides software infrastructure to support energy disaggregation research, such as data set parsers, benchmark disaggregation algorithms and accuracy metrics. This paper describes the release of a subset of the Dataport database in NILMTK format, containing one month of electricity data from 669 households. Through the release of this Dataport data in NILMTK format, we pose a challenge to the signal processing community to produce energy disaggregation algorithms which are both accurate and scalable.},
-  file                     = {parson2015dataport.pdf:parson2015dataport.pdf:PDF},
-  keywords                 = {energy, NILM, NILMTK, data},
-  owner                    = {Jack},
-  timestamp                = {2015.11.19}
+  author =    {Parson, Oliver and Fisher, Grant and Hersey, April and Batra, Nipun and Kelly, Jack and Singh, Amarjeet and Knottenbelt, William and Rogers, Alex},
+  title =     {Dataport and NILMTK: A building data set designed for non-intrusive load monitoring},
+  booktitle = {1st International Symposium on Signal Processing Applications in Smart Buildings at 3rd Global Conference on Signal \& Information Processing},
+  date =      {2015-12-14/2015-12-17},
+  series =    {GlobalSIP},
+  publisher = {IEEE},
+  location =  {Orlando, Florida, USA},
+  url =       {http://eprints.soton.ac.uk/381304/},
+  abstract =  {Non-intrusive load monitoring (NILM), or energy disaggregation, is the process of using signal processing and machine learning to separate the energy consumption of a building into individual appliances. In recent years, a number of data sets have been released in order to evaluate such approaches, which contain both building-level and appliance-level energy data. However, these data sets typically cover less than 10 households due to the financial cost of such deployments, and are not released in a format which allows the data sets to be easily used by energy disaggregation researchers. To this end, the Dataport database was created by Pecan Street Inc, which contains 1 minute circuit-level and building-level electricity data from 722 households. Furthermore, the non-intrusive load monitoring toolkit (NILMTK) was released in 2014, which provides software infrastructure to support energy disaggregation research, such as data set parsers, benchmark disaggregation algorithms and accuracy metrics. This paper describes the release of a subset of the Dataport database in NILMTK format, containing one month of electricity data from 669 households. Through the release of this Dataport data in NILMTK format, we pose a challenge to the signal processing community to produce energy disaggregation algorithms which are both accurate and scalable.},
+  dataset =   {Dataport},
+  file =      {parson2015dataport.pdf:parson2015dataport.pdf:PDF},
+  keywords =  {energy, NILM, NILMTK, data},
+  owner =     {Jack},
+  timestamp = {2015.11.19}
 }
 
 @InProceedings{parson2011,
@@ -9639,29 +9745,29 @@ A new physically-windowed sensor architecture for improving the dynamic range of
 
 @InProceedings{pereira2013towards,
   author =    {Pereira, Lucas},
-  title =     {Towards automated non-intrusive load monitoring performance evaluation},
-  booktitle = {1st International Conference on Information and Communication Technologies for Sustainability},
+  title =     {Towards Automating the Performance Evaluation of NonIntrusive Load Monitoring Systems},
+  booktitle = {PhD Students' Workshop at the 1st International Conference on Information and Communication Technologies for Sustainability},
   date =      {2013-02-14/2013-02-16},
   editor =    {Lorenz M. Hilty and Bernard Aebischer and Göran Andersson and Wolfgang Lohmann},
   series =    {ICT4S},
   location =  {ETH Zürich},
-  pages =     {14--16},
+  pages =     {271--275},
   doi =       {10.3929/ethz-a-007337628},
-  url =       {http://www.m-iti.org/uploads/u117/Pereira-PhDWorkshop-ICT4S-2012.pdf},
-  abstract =  {In the past couple of years Non-Intrusive Load Monitoring has
-been gaining special attention from the research community
-playing an important role in the solution of problems related to
-energy sustainability and smart-grids.
-However despite its notoriety, until recently no efforts were made
-towards having formal methods for evaluating its performance. In
-this paper we present our hardware-software framework for
-creating extensive fully labeled datasets for non-intrusive load
-monitoring evaluation where raw Current and Voltage waveforms
-are stored in audio files and a commercial sub-metering solution is
-used to collect appliance level ground-truth data.
-Towards the end we present our insights on what should be the
-future of NILM performance evaluation and present a four-step
-approach towards the automation of this process.},
+  abstract =  {Non-Intrusive Load Monitoring (NILM) is one of the most wellknown
+techniques used to identify and monitor the energy
+consumption of individual appliances that co-exist in a building’s
+electrical circuit. However the lack of formal methods to evaluate
+its performance in realistic scenarios has been delaying the
+emergence of commercial products. In this paper we discuss the
+problem and challenges of correctly accessing the performance of
+these systems and present our hardware-software platform for
+creating extensive fully labeled datasets for NILM algorithms
+training, testing and validation where raw electric power
+consumption and ground-truth consumption data are combined in
+audio files using the well-known wave formant. Towards the end
+we present our envisioned online framework for enabling the
+automatic evaluation of NILM algorithms under common sets of
+performance metrics and consumption data.},
   file =      {pereira2013towards.pdf:pereira2013towards.pdf:PDF},
   keywords =  {NILM, energy, metrics, data, software, hardware, intrusive, metering, current, voltage},
   owner =     {jack},
@@ -9724,18 +9830,18 @@ approach towards the automation of this process.},
 }
 
 @InProceedings{pereira2015openEDF,
-  title                    = {Towards Systematic Performance Evaluation of Non-Intrusive Load Monitoring Algorithms and Systems},
-  author                   = {Pereira, Lucas and Nunes, Nuno J},
-  booktitle                = {Sustainable Internet and ICT for Sustainability},
-  date                     = {2015},
-  pages                    = {1--3},
-  publisher                = {IEEE},
-  series                   = {SustainIT},
-  abstract                 = {In this paper we present our approach to create an end-to-end software platform to enable the creation of meaningful and systematic, cross-dataset performance evaluations and benchmarks of Non-Intrusive Load Monitoring technology. We specifically propose a new file format to represent public datasets, a software framework to implement algorithms and metrics as well as the application of ceiling analysis to evaluate the overall performance of NILM systems.},
-  file                     = {pereira2015openEDF.pdf:pereira2015openEDF.pdf:PDF},
-  keywords                 = {NILM, open-source, file format, energy},
-  owner                    = {Jack},
-  timestamp                = {2015.05.13}
+  author =    {Pereira, Lucas and Nunes, Nuno J},
+  title =     {Towards Systematic Performance Evaluation of Non-Intrusive Load Monitoring Algorithms and Systems},
+  booktitle = {Sustainable Internet and ICT for Sustainability},
+  date =      {2015},
+  series =    {SustainIT},
+  publisher = {IEEE},
+  pages =     {1--3},
+  abstract =  {In this paper we present our approach to create an end-to-end software platform to enable the creation of meaningful and systematic, cross-dataset performance evaluations and benchmarks of Non-Intrusive Load Monitoring technology. We specifically propose a new file format to represent public datasets, a software framework to implement algorithms and metrics as well as the application of ceiling analysis to evaluate the overall performance of NILM systems.},
+  file =      {pereira2015openEDF.pdf:pereira2015openEDF.pdf:PDF},
+  keywords =  {NILM, open-source, file format, energy, metrics, energy},
+  owner =     {Jack},
+  timestamp = {2015.05.13}
 }
 
 @InCollection{pereira2013limitations,
@@ -10162,6 +10268,19 @@ contributing technologies are examined.},
   keywords                 = {energy, NILM, demand response},
   owner                    = {jack},
   timestamp                = {2015.12.01}
+}
+
+@InProceedings{rahimpour2015,
+  author =    {Alireza Rahimpour and Hairong Qi},
+  title =     {Non-Intrusive Load Monitoring of HVAC Components using Signal Unmixing},
+  booktitle = {Global Conference on Signal and Information Processing},
+  date =      {2015-12-14/2015-12-17},
+  series =    {GlobalSIP},
+  publisher = {IEEE},
+  location =  {Orlando, Florida, USA},
+  keywords =  {NILM, energy, air conditioning},
+  owner =     {jack},
+  timestamp = {2016.01.28}
 }
 
 @Article{raimi2016,
@@ -13803,6 +13922,23 @@ Our paper presents overviews and test results for two novel NIALM approaches we 
   owner                    = {jack},
   sampleperiod             = {60},
   timestamp                = {2016.01.12}
+}
+
+@InProceedings{zhao2015,
+  author =       {Bochao Zhao and Vladimir Stankovic and Lina Stankovic},
+  title =        {Blind Non-intrusive Appliance Load Monitoring using Graph-based Signal Processing},
+  booktitle =    {Global Conference on Signal and Information Processing},
+  date =         {2015-12-14/2015-12-17},
+  series =       {GlobalSIP},
+  publisher =    {IEEE},
+  location =     {Orlando, FL, USA},
+  url =          {https://pure.strath.ac.uk/portal/en/publications/blind-nonintrusive-appliance-load-monitoring-using-graphbased-signal-processing(3a3cabda-b299-4047-b83a-5b75dce45144).html},
+  abstract =     {With ongoing massive smart energy metering deployments, disaggregation of household's total energy consumption down to individual appliances using purely software tools, aka. non-intrusive appliance load monitoring (NALM), has generated increased interest. However, despite the fact that NALM was proposed over 30 years ago, there are still many open challenges. Indeed, the majority of approaches require training and are sensitive to appliance changes requiring regular re-training. In this paper, we tackle this challenge by proposing a 'blind' NALM approach that does not require any training. The main idea is to build upon an emerging field of graph-based signal processing to perform adaptive threshold-ing, signal clustering and feature matching. Using two datasets of active power measurements with 1min and 8sec resolution, we demonstrate the effectiveness of the proposed method using a state-of-the-art NALM approaches as benchmarks.},
+  file =         {zhao2015.pdf:zhao2015.pdf:PDF},
+  keywords =     {NILM, energy, graphical model, active power, medium freq},
+  owner =        {jack},
+  sampleperiod = {8, 60},
+  timestamp =    {2016.01.28}
 }
 
 @InCollection{zhong2015LBM,

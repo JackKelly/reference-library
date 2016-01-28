@@ -31,6 +31,7 @@ Sample rate keywords
 'low freq' (1 min >= x < 15 mins)
 'medium freq' (1Hz >= x < 1min)
 'high freq' (faster than  1Hz)
+'compressed sensing'
 
 If a specific sample frequency (in Hz) or sample period (in
 seconds) is found in the paper then this is put into a
