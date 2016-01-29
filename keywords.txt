@@ -106,6 +106,7 @@ CRF
 dynamic time warping
 ant colony
 Markov random fields
+segmentation
 
 energy
 ------
