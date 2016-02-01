@@ -126,6 +126,7 @@ heating control
 fuel poverty
 metering
 smart meters
+smart grids
 active power
 reactive power
 power factor
@@ -153,6 +154,7 @@ ice
 
 computing
 ---------
+cloud computing
 software
 open-source
 visualisation
