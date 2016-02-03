@@ -97,7 +97,7 @@ KNN
 k-means
 genetic algorithm
 particle filter
-GMM
+GMM (Gaussian mixture models)
 thresholding
 clustering
 maximum likelihood
@@ -127,6 +127,7 @@ fuel poverty
 metering
 smart meters
 smart grids
+smart homes
 active power
 reactive power
 power factor
