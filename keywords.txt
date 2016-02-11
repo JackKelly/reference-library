@@ -27,11 +27,12 @@ EMF
 
 Sample rate keywords
 --------------------
-'very low freq' (15 minutes or slower)
-'low freq' (1 min >= x < 15 mins)
-'medium freq' (1Hz >= x < 1min)
-'high freq' (faster than  1Hz)
-'compressed sensing'
+
+very high freq: f > 10 kHz
+high freq: 100 Hz < f ≤ 10 kHz
+medium freq: 0.01 seconds ≤ T < 1 minute
+low freq: 1 minute ≤ T < 1 hour
+very low freq: T ≥ 1 hour
 
 If a specific sample frequency (in Hz) or sample period (in
 seconds) is found in the paper then this is put into a

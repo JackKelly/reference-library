@@ -1360,6 +1360,32 @@ future.},
   file =      {batra2016neighbourhood.pdf:batra2016neighbourhood.pdf:PDF},
   keywords =  {energy, NILM, very low freq},
   owner =     {jack},
+  review =    {"if a city has a blackout, then all
+the neighbours for a test home will consume lesser energy
+that day and the information about blackout does not need
+to incorporated explicitly for predicting the per-appliance
+usage of the test home."
+
+but only if the 'neighbours' selected by KNN are actually geographically close (in the same city)?  Supposedly, depending on your dataset and the features you select, KNN could pick 'neighbours' which are in different countries (but have similar number of occupants, demographics etc.)?
+
+"the monthly energy consumption
+is often dominated by heating/cooling loads"
+
+not in the UK (and most of Europe, I suspect).  The UK uses natural gas for heating.  And we have very little A/C in domestic dwellings.
+
+But France uses a lot of elec for heating (using night storage heaters)
+
+"Static household characteristics such as area, number of occupants"
+
+ number of occupants isn't necessarily static (our house has gone from having 2 occupants to having 4 occupants!)  And our pattern of energy usage has changed dramatically since having kids!  I'd think that identifying which homes have young kids would be a very informative feature for deciding on similarity!
+
+Limitations: I would suggest that a limitation of N-NILM is that - if I've understood correctly - it cannot find appliances which are anomalous.  i.e. one of the most convincing use-cases for NILM is to be able to identify appliances or behaviours which are consuming way more energy than the average (e.g. "your fridge is using 30% more than the average; perhaps check your door seal" or "your water heater is on constantly: check the thermostat").
+
+Also, as you hint to in "limitation 3", N-NILM cannot track changes (either up or down) in energy demand for a specific house.  Again, I find this to be a convincing use-case for NILM: i.e. using NILM to answer the question "did the intervention actually result in a reduction in energy demand?"
+
+Confusions left in my mind after reading the paper
+
+I think you do touch on these things during your paper but it might be worth emphasising / repeating them!  Basically, I'm a little confused about exactly what the input to your algorithm is at test time.  Do you give the algorithm only the aggregate data for the test home?  Or do you also provide some metadata about the home (number of occupants etc?)  Or are all those features inferred from the aggregate data?  I assume they are inferred?   Also, do you need to give the algorithm a list of appliances in the test home?  If not, is there a reasonably high risk that N-NILM will make mistakes when it lists the appliances in the test home (e.g. it will either leave off some appliances or will include appliances which aren't in the test home) - and it's these sort of errors which would be very easy for users to pick up on and complain about!},
   timestamp = {2016.02.09}
 }
 
@@ -1775,6 +1801,35 @@ CPU and between 6.5× and 44× faster when compiled for the GPU. This paper illu
   owner                    = {jack},
   publisher                = {American Society of Hematology},
   timestamp                = {2016.01.18}
+}
+
+@Online{bidgely2015,
+  author =    {Bidgely},
+  title =     {PG\&E Pilot Yields 7.7\% Energy Savings},
+  date =      {2015-04-14},
+  url =       {http://www.bidgely.com/blog/pge-pilot-yields-7-7-energy-savings/},
+  abstract =  {Nearly 850 PG&E customers participated in the Bidgely pilot from August 2nd through December 31st, 2014. Participants were either PG&E SmartRate™ or time-of-use (TOU) customers. The key to energy savings under the SmartRate program is the awareness of upcoming or current SmartDay™ rates, where the customer can alter their behavior during certain peak times to cut back on electricity usage and avoid high rate charges.
+
+Bidgely HomeBeat Web & Mobile was deployed to the pilot group to facilitate engagement with PG&E beyond the utility’s existing customer portal. Connected to an in-home ZigBee-based energy monitor, the Bidgely solution offered a personalized view of home energy usage and cost down to the appliance level. Pilot participants were able to view this information, as well as daily summaries of their bill to-date and bill forecasts, 24/7 from any internet-connected device, like their mobile phones. In addition, the Bidgely dashboard featured banner alerts of upcoming SmartDay events, and events in progress, to further drive savings for participants. Finally, current (real-time) rate information was displayed, including the reflection of surcharges.},
+  file =      {bidgely2015.html:bidgely2015.html:URL},
+  keywords =  {energy, NILM, feedback},
+  owner =     {Jack},
+  review =    {On 10th Feb 2016, I asked these questions on Bidgely's blog:
+
+Did the trial have a control group who did not receive disaggregated energy data? Or did all 850 users receive disaggregated data?
+
+The trial ran from August to December. In the absence of any intervention, would we expect to see a reduction in energy use over that time period in San Francisco due to, for example, a reduction in the requirement for air conditioning? (Although, according to WikiPedia*, the average high temperature is only 20.1°C in August and 13.9°C in December in San Fran, so maybe we'd actually expect an *increase* in energy demand in the absence of any intervention?!) Did the study factor out seasonal effects?
+
+Do you have a more detailed report available, please?
+
+* https://en.wikipedia.org/wiki/San_Francisco#Climate
+
+Some other things to mention about this trial:
+
+* not peer reviewed?
+* Bidgely have a commercial interest, of course (that doesn't make the trial wrong, of course)
+* is 5 months (the trial duration) too short to see a rebound effect?},
+  timestamp = {2016.02.10}
 }
 
 @InProceedings{bijker2009,
@@ -3116,7 +3171,7 @@ On the basis of a report by the Comptroller and Auditor General, we took evidenc
 
 @TechReport{CTA2014,
   author =    {{Consumer Technology Association}},
-  title =     {CE Energy Usage Information (CE-EUI)},
+  title =     {CE Energy Usage Information (CE-EUI) ANSI/CTA-2047},
   date =      {2014-08-04},
   url =       {https://www.cta.tech/Standards/Standard-Listings/R7-8-Modular-Communication-Interface-for-Energy-Ma/ANSI-CEA-2047.aspx},
   abstract =  {This standard will enable consumer electronic devices to communicate their energy usage information for example over a home network as well as optionally respond to basic demand/response commands. The usage data may be a measured or estimated value or may use other methods to indicate energy usage. This standard should enable mapping to/from the NAESB/PAP10 EUI model as well as utilize ANSI/CTA-2045 Modular Communications Interface for Energy Management messaging where possible.},
@@ -8525,6 +8580,20 @@ training schemes for NILM.},
   timestamp                = {2015.12.01}
 }
 
+@InProceedings{linnenberg2015,
+  author =    {Tobias Linnenberg and Alexander Fay and Michael Kaisers},
+  title =     {Bottom-Up Demand Response by Following Local Energy Generation Voluntarily},
+  booktitle = {AAAI Conference on Artificial Intelligence},
+  date =      {2015},
+  url =       {http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9539},
+  abstract =  {We present an open-source low-budget hardware and software prototype of a smart plug, and the principles behind its capability to align power demand with a reference signal, e.g. from local renewable energy generation. We envision its use in conjunction with a platform that combines social-media and gamification elements with energy networks.},
+  comment =   {Apparently the idea presented in this paper has been implemented as this startup: http://www.oeex.org/en/ - "OPEN ENERGY EXCHANGE - Open Energy Exchange enables you to use renewable power from producers in your neighborhood"},
+  file =      {linnenberg2015.pdf:linnenberg2015.pdf:PDF},
+  keywords =  {energy, demand response, metering, open-source, software, hardware, appliances, renewable generation},
+  owner =     {Jack},
+  timestamp = {2016.02.10}
+}
+
 @Article{liu2014functional,
   author =    {Jing-Jie Liu and Lei Nie},
   title =     {A Functional Sensing Model and a Case Study in Household Electricity Usage Sensing},
@@ -8976,7 +9045,9 @@ captured from a typical building on the University of California, Berkeley campu
   isbn =      {978-3-319-26860-6},
   pages =     {79--95},
   doi =       {10.1007/978-3-319-26860-6_5},
-  abstract =  {The current, widespread introduction of smart electricity meters is resulting in large datasets’ becoming available, but there is as yet little in the way of advanced data analytics and visualization tools, or recommendation software for changes in contracts or user behaviour, which use this data. In this paper we present an integrated tool which combines the use of abstract argumentation theory with linear optimization algorithms, to achieve some of these ends.}
+  abstract =  {The current, widespread introduction of smart electricity meters is resulting in large datasets’ becoming available, but there is as yet little in the way of advanced data analytics and visualization tools, or recommendation software for changes in contracts or user behaviour, which use this data. In this paper we present an integrated tool which combines the use of abstract argumentation theory with linear optimization algorithms, to achieve some of these ends.},
+  file =      {makriyiannis2016.pdf:makriyiannis2016.pdf:PDF},
+  keywords =  {energy, feedback}
 }
 
 @InProceedings{makriyiannis2014argumentation,
@@ -9967,6 +10038,7 @@ This report presents an overview of Energy Reporting technologies and deployment
   institution = {Internet Engineering Task Force (IETF)},
   date =        {2014-04-24},
   type =        {Internet-Draft},
+  doi =         {Apparently UPnP put the Classification list into one of their standards.  That is now part of OIC},
   url =         {https://datatracker.ietf.org/doc/draft-nordman-eman-er-framework/},
   abstract =    {Managing energy consumption of devices presents new challenges and issues. The EMAN Requirements draft identifies essential capabilities needed to accomplish this. This draft describes how an energy management system can use EMAN to gather and interpret data from individual devices, and how some of the Requirements are implemented in the model. This document focuses on Energy Reporting, though acknowledges and fully includes the limited control functions specified in the Requirements draft. Topics addressed in detail include the topology of power distribution, reporting mechanisms, and the various roles of devices, power interfaces, and components.},
   file =        {nordman2014energy-reporting-framework.html:nordman2014energy-reporting-framework.html:URL},
@@ -10550,6 +10622,30 @@ A new physically-windowed sensor architecture for improving the dynamic range of
   keywords                 = {energy, NILM, data},
   owner                    = {jack},
   timestamp                = {2015.12.01}
+}
+
+@Thesis{parson2014phd,
+  author =      {Parson, Oliver},
+  title =       {Unsupervised Training Methods for Non-intrusive Appliance Load Monitoring from Smart Meter Data},
+  type =        {PhD},
+  institution = {University of Southampton, Electronics and Computer Science},
+  date =        {2014-04},
+  url =         {http://eprints.soton.ac.uk/364263/},
+  abstract =    {Non-intrusive appliance load monitoring (NIALM) is the process of disaggregating a household’s total electricity consumption into its contributing appliances. Smart meters are currently being deployed on national scales, providing a platform to collect aggregate household electricity consumption data. Existing approaches to NIALM require a manual training phase in which either sub-metered appliance data is collected or appliance usage is manually labelled. This training data is used to build models of the house- hold appliances, which are subsequently used to disaggregate the household’s electricity data. Due to the requirement of such a training phase, existing approaches do not scale automatically to the national scales of smart meter data currently being collected.
+
+In this thesis we propose an unsupervised training method which, unlike existing approaches, does not require a manual training phase. Instead, our approach combines general appliance knowledge with just aggregate smart meter data from the household to perform disaggregation. To do so, we address the following three problems: (i) how to generalise the behaviour of multiple appliances of the same type, (ii) how to tune general knowledge of appliances to the specific appliances within a single household using only smart meter data, and (iii) how to provide actionable energy saving advice based on the tuned appliance knowledge.
+
+First, we propose an approach to the appliance generalisation problem, which uses the Tracebase data set to build probabilistic models of household appliances. We take a Bayesian approach to modelling appliances using hidden Markov models, and empirically evaluate the extent to which they generalise to previously unseen appliances through cross validation. We show that learning using multiple appliances vastly outperforms learning from a single appliance by 61–99% when attempting to generalise to a previously unseen appliance, and furthermore that such general models can be learned from only 2–6 appliances.
+
+Second, we propose an unsupervised solution to the model tuning problem, which uses only smart meter data to learn the behaviour of the specific appliances in a given house-hold. Our approach uses general appliance models to extract appliance signatures from ￼a household’s smart meter data, which are then used to refine the general appliance models. We evaluate the benefit of this process using the Reference Energy Disaggregation Data set, and show that the tuned appliance models more accurately represent the energy consumption behaviour of a given household’s appliances compared to when general appliance models are used, and furthermore that such general models can per- form comparably to when sub-metered data is used for model training. We also show that our tuning approach outperforms the current state of the art, which uses a factorial hidden Markov model to tune the general appliance models.
+
+Third, we apply both of these approaches to infer the energy efficiency of refrigerators and freezers in a data set of 117 households. We evaluate the accuracy of our approach, and show that it is able to successfully infer the energy efficiency of combined fridge freezers. We then propose an extension to our model tuning process using factorial hidden semi-Markov models to model households with a separate fridge and freezer. Finally, we show that through this extension our approach is able to simultaneously tune the appliance models of both appliances.
+
+The above contributions provide a solution which satisfies the requirements of a NIALM training method which is both unsupervised (no manual interaction required during training) and uses only smart meter data (no installation of additional hardware is required). When combined, the contributions presented in this thesis represent an advancement in the state of the art in the field of non-intrusive appliance load monitoring, and a step towards increasing the efficiency of energy consumption within households.},
+  file =        {parson2014phd.pdf:parson2014phd.pdf:PDF},
+  keywords =    {energy, NILM, HMM, unsupervised learning},
+  owner =       {Jack},
+  timestamp =   {2016.02.11}
 }
 
 @InProceedings{parson2015dataport,
