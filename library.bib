@@ -1310,52 +1310,38 @@ recurrent neural networks.},
 
 @InProceedings{batra2016neighbourhood,
   author =    {Nipun Batra and Amarjeet Singh and Kamin Whitehouse},
-  title =     {Neighbourhood NILM: Household energy disaggregation using monthly electricity bill},
+  title =     {Gemello: Creating a Detailed Energy Breakdown from just the Monthly Electricity Bill},
+  booktitle = {KDD},
   date =      {2016},
-  abstract =  {Residential buildings, across the world, contribute signifi-
-cantly to the overall energy consumption. Such consumers
-are typically provided with monthly billing information at
-the aggregate level which gives no clue of how to conserve
-energy and save cost. Over the past two decades, consider-
-able work has been done in the data modelling and analytics
-domain to provide these consumers with useful information
-by disaggregating the main meter consumption into per ap-
-pliance usage, often termed as Non-Intrusive Load Monitor-
-ing (NILM). Existing NILM techniques use high resolution
-meter data (often 1 minute or higher resolution) and use fea-
-tures that correspond to electrical signatures of each appli-
-ance for disaggregation. However, in a real world scenario,
-one only has access to either a monthly reading (used for
-billing purposes where there are no smart meters) or a 15-
-minute resolution, which is a standard norm for places that
-have advanced metering infrastructure (AMI). The electri-
-cal signatures used in such modelling techniques are lost at
-such resolution resulting in almost zero adoption of NILM
-techniques by power distribution utilities across the world.
-In this paper, we propose a new technique called Neigh-
-bourhood NILM (N-NILM) that leverages high resolution
-(per appliance) data from a small set of ‘neighbouring’ homes
-to disaggregate energy for other (large set of) homes in the
-community using only their monthly information. The key
-intuition behind our approach is that ‘similar’ homes have
-‘similar’ energy consumption on a per-appliance basis. N-
-NILM matches every home with a set of ‘neighbours’ that
-have direct submetering infrastructure, i.e. power meters on
-individual circuits or loads. Many such homes already exist.
-Then, it estimates the appliance-level energy consumption
-of the target home to be the average of its K neighbours. We
-evaluate this approach using 57 homes and results show that
-N-NILM gives significantly better disaggregation accuracy
-in comparison to state-of-the-art NILM techniques reported
-in the literature that depend on manual model tuning, high
-frequency power metering, or both. Our evaluation shows
-that with as less as 7 submetered homes, we can disaggregate
-loads with a better accuracy than state-of-the-art methods.
-Our results indicate that N-NILM can be a highly scalable
-and accurate approach leveraging minimal data collection to
-still provide useful information to consumers that can help
-them conserve energy and contribute to a more sustainable
-future.},
+  pubstate =  {submitted},
+  abstract =  {The first step to saving energy in the home is often to cre-
+ate an energy breakdown: the amount of energy used by
+
+each individual appliance in the home. Unfortunately, cur-
+rent techniques that produce an energy breakdown are not
+
+scalable: they require hardware to be installed in each and
+
+every home. In this paper, we propose a more scalable so-
+lution called Gemello that estimates the energy breakdown
+
+for one home by matching it with similar homes for which
+
+the breakdown is already known. This matching requires
+
+only the monthly energy bill and household characteristics
+
+such as square footage of the home and the size of the house-
+hold. We evaluate this approach using 57 homes and results
+
+indicate that the accuracy of Gemello is comparable to or
+
+better than existing techniques that use sensing infrastruc-
+ture in each home. The information required by Gemello is
+
+often publicly available and, as such, it can be immediately
+
+applied to many homes around the world.},
   comment =   {related: batra2015neighbourhood},
   file =      {batra2016neighbourhood.pdf:batra2016neighbourhood.pdf:PDF},
   keywords =  {energy, NILM, very low freq},
@@ -2520,21 +2506,29 @@ operating in the same or adjacent},
 }
 
 @InProceedings{chakravarty2013,
-  title                    = {Impact of Energy Disaggregation on Consumer Behavior},
-  author                   = {Chakravarty, Prateek and Gupta, Abahy},
-  booktitle                = {Behavior, Energy and Climate Change Conference},
-  date                     = {2013-11-19},
-  location                 = {Sacramento CA},
-  organization             = {UC Berkeley},
-  series                   = {BECC},
-  url                      = {http://escholarship.org/uc/item/62d3456p},
-  abstract                 = {Energy Disaggregation is called the Holy Grail of energy efficiency. You cannot improve what
+  author =       {Chakravarty, Prateek and Gupta, Abhay},
+  title =        {Impact of Energy Disaggregation on Consumer Behavior},
+  booktitle =    {Behavior, Energy and Climate Change Conference},
+  date =         {2013-11-19},
+  series =       {BECC},
+  organization = {UC Berkeley},
+  location =     {Sacramento CA},
+  url =          {http://escholarship.org/uc/item/62d3456p},
+  abstract =     {Energy Disaggregation is called the Holy Grail of energy efficiency. You cannot improve what
 you cannot measure. Energy Disaggregation allows us to measure how much energy goes into each major appliance, which can be further analyzed to identify and eliminate inefficiencies. This disaggregated information has two major impacts: increased consumer engagement and reduced energy usage. This paper highlights results from two case studies conducted in real life – one in California and other international. The study in California, using an experimental design, shows a statistical proof of average 14% energy reduction in users exposed to Bidgely’s Energy Disaggregation-based solution with a maximum of 24% and a minimum of 3.5%. The international study shows high levels of consumer engagement, favorable consumer reaction and an 80% approval from users on making this solution available to all. These studies aim to support the introduction of
 policies that open up real time data access from Smart Meters. Millions of these Smart Meters installed in field are already equipped with the right hardware but have not been enabled to deliver the above benefits.},
-  file                     = {chakravarty2013.pdf:chakravarty2013.pdf:PDF},
-  keywords                 = {energy, NILM, behaviour},
-  owner                    = {jack},
-  timestamp                = {2015.11.24}
+  file =         {chakravarty2013.pdf:chakravarty2013.pdf:PDF},
+  keywords =     {energy, NILM, behaviour},
+  owner =        {jack},
+  review =       {Issues:
+
+* They selected (cherry-picked?!) one month of data (Sept 2013) to show a difference between the control group and treatment groups.  But in Oct 2013 there is no difference between control and treatment groups (see fig 3).
+* All participants were self-selecting (i.e. people signed themselves up to Bidgely).
+* The control group isn't a real control group.    For example, if a user signs up in September 2013 then their previous three months of data (July, August, Sept) was used as the 'control' group to compare with people who had already signed up.  To quote their paper: "Instead of assigning users to a standalone control group, historical consumption data for treatment group was used as the control condition. For example, for users signing up and joining the treatment group in September, the previous 3 months of consumption data - July, August and September - was used as the control group data."
+* They don't compare energy reductions *across time* (which is, ultimately, what we're interested in).  Instead they performed an absolute comparison between the treatment and control groups on a month-by-month basis.
+* They assume the distributions of energy consumption are normally distributed but give no evidence to support this assumption (they don't even mention it).
+* Conflict of interest!},
+  timestamp =    {2015.11.24}
 }
 
 @InProceedings{chalmers2010,
@@ -3287,6 +3281,36 @@ energy reduction targets will be met without changes to occupant lifestyle},
   keywords                 = {energy, NILM, transients},
   owner                    = {Jack},
   timestamp                = {2015.11.23}
+}
+
+@TechReport{crawford2013,
+  author =      {Tabitha Crawford and Martha Amram},
+  title =       {Switch for good community program - Final Scientific Technical Report},
+  institution = {Balfour Beatty Military Housing Management LLC, WattsOn Inc.},
+  date =        {2013},
+  number =      {DE-FOA-0000612},
+  url =         {http://www.osti.gov/scitech/servlets/purl/1123876},
+  abstract =    {Switch4Good is an energy-savings program that helps residents reduce consumption from behavior
+changes; it was co-developed by Balfour Beatty Military Housing Management (BB) and WattzOn in
+Phase I of this grant. The program was offered at 11 Navy bases. Three customer engagement strategies
+were evaluated, and it was found that Digital Nudges (a combination of monthly consumption
+statements with frequent messaging via text or email) was most cost-effective. The program was
+delivered on-time and on-budget, and its success is based on the teamwork of local BB staff and the
+WattzOn team. The following graphic shows Switch4Good “by the numbers”, e.g. the scale of
+operations achieved during Phase I.
+
+Based on the success of Phase I, we propose to expand to 16 military communities and up to 8 cities in
+Phase II, leveraging our experience with on-base communities to the broader residential market. As
+smart meter installations grow to a projected 65 million homes by the end of 2015, and as Green Button
+interface standards are more broadly available, behavior-based savings become more easily accessible
+by consumers. Our innovative “house vs. habits” reports, based on 15-minute smart meter data are
+already useful to property managers. Switch4Good has proven to be a scalable and successful program
+that can be implemented across a variety of geographic and utility regions, and is poised to take
+advantage of national trends in consumer energy management.},
+  file =        {crawford2013.pdf:crawford2013.pdf:PDF},
+  keywords =    {energy, feedback, energy efficiency},
+  owner =       {Jack},
+  timestamp =   {2016.02.15}
 }
 
 @Article{crispim2014,
@@ -4232,10 +4256,12 @@ loads.},
   institution = {American Council for an Energy-Efficient Economy (ACEEE)},
   date =        {2010-06-26},
   number =      {E105},
+  url =         {http://aceee.org/research-report/e105},
   abstract =    {A variety of new feedback initiatives – including real-time Web-based or in-home feedback devices and enhanced billing approaches – are making energy resources visible to residential consumers throughout the United States (and many other developed countries). These initiatives are opening the door to potential energy savings that, on average, have reduced individual household electricity consumption 4 to 12% across our multi-continent sample. In so doing, feedback is proving a critical first step in engaging and empowering consumers to thoughtfully manage their energy resources. On a national scale, our estimates indicate that feedback programs for the residential sector might generate electricity savings that range from as little as 0.4% to more than 6% of total residential electricity consumption. If broadly implemented throughout the United States using well-designed programs, residential sector feedback programs could provide the equivalent of 100 billion kilowatt-hours of electricity savings annually by 2030.  At this scale, such tools will enable aggregate residential sector energy savings that, in turn, provide a substantial contribution to U.S. energy security and climate goals as well as consumer pocketbook savings.},
   address =     {Washington, D.C.},
+  comment =     {They have an entire section on 'disaggregated, real-time feedback' (starting on PDF page 60)},
   file =        {ACEEE2010.pdf:ACEEE2010.pdf:PDF},
-  keywords =    {energy, smart meters, smart grids, feedback, review, demand response},
+  keywords =    {energy, smart meters, smart grids, feedback, review, demand response, NILM},
   owner =       {jack},
   timestamp =   {2016.02.02}
 }
@@ -4858,6 +4884,20 @@ consumption of individual appliances.},
   timestamp                = {2015.11.23}
 }
 
+@TechReport{foster2012,
+  author =      {Ben Foster and Susan Mazur-Stommen},
+  title =       {Results from Recent Real-Time Feedback Studies},
+  institution = {American Council for an Energy-Efficient Economy (ACEEE)},
+  date =        {2012-02-23},
+  number =      {B122},
+  url =         {http://aceee.org/research-report/b122},
+  abstract =    {This report summarizes the results of recent, large-scale real-time feedback pilots and experiments in the U.S., U.K., and Ireland.  It builds upon a previous meta-review by ACEEE of small residential feedback pilot studies, and was undertaken to further investigate the range of savings found in the earlier report in light of recent large-scale pilots conducted in the U.S. and Europe.  The studies reviewed here tested various combinations of interventions, but we have limited our discussion to savings from interventions providing direct, real-time feedback on residential electricity consumption and prices through in-home displays, web interfaces, and prepayment meters.   Residential electricity savings from real-time feedback in the nine pilots reviewed here ranged from 0 to 19.5%, with average savings across the pilots of 3.8%. The largest savings came from the replacement of pre-existing prepayment meters in Northern Irish homes with new prepayment meters having a real-time display.  The smallest savings were observed in two pilots, which found no aggregate effect of real-time feedback on overall electricity consumption. One of the most promising results is that a small percentage of households in several of the pilots had large savings of up to 25%.  We propose calling this group the cybernetically sensitive, because they seem to respond more readily to feedback.},
+  file =        {foster2012.pdf:foster2012.pdf:PDF},
+  keywords =    {feedback, energy},
+  owner =       {Jack},
+  timestamp =   {2016.02.15}
+}
+
 @InProceedings{frank2011,
   title                    = {Extracting Operating Modes from Building Electrical Load Data},
   author                   = {Stephen Frank and Luigi Gentile Polese and Emily Rader and Michael Sheppy and Jeff Smith},
@@ -5167,6 +5207,17 @@ limited, particularly as it relates to induced innovation and productivity growt
   owner =        {Jack},
   publisher =    {IEEE},
   timestamp =    {2016.01.25}
+}
+
+@Online{giri2013building-up,
+  author =    {Suman Giri},
+  title =     {Building up the motivation for Non-Intrusive Load Monitoring},
+  date =      {2013-02-24},
+  url =       {http://suman.inferlab.org/building-up-the-motivation-for-non-intrusive-load-monitoring/},
+  file =      {giri2013building-up.html:giri2013building-up.html:URL},
+  keywords =  {feedback, energy, NILM},
+  owner =     {Jack},
+  timestamp = {2016.02.15}
 }
 
 @InProceedings{giri2012,
@@ -5602,7 +5653,7 @@ The subsectors chosen for bottom-up studies were:
 }
 
 @Patent{gupta2013,
-  author =    {Gupta, A. and Garud, V. and Rodney, U. and Bapat, S.},
+  author =    {Gupta, Abhay and Garud, V. and Rodney, U. and Bapat, S.},
   title =     {Systems and methods for improving the accuracy of appliance level disaggregation in non-intrusive appliance load monitoring techniques},
   number =    {US20130110621 A1},
   date =      {2013-05},
@@ -8116,6 +8167,22 @@ developing machine learning methods is also discussed.},
   keywords                 = {machine learning, changepoint detection, Bayesian},
   owner                    = {jack},
   timestamp                = {2015.12.01}
+}
+
+@TechReport{laitnet2012,
+  author =      {John A. `Skip' Laitner},
+  title =       {The Economy-Wide Impact of Feedback-Induced Behaviors that Drive Residential Electricity Savings},
+  institution = {American Council for an Energy-Efficient Economy (ACEEE)},
+  date =        {2012-08-16},
+  number =      {E12B},
+  url =         {http://aceee.org/research-report/e12b},
+  abstract =    {Advanced utility meters (so-called “smart meters”) coupled with in-home displays or feedback devices provide the means by which residential energy consumers can become more knowledgeable about their energy consumption practices. Such devices, in effect, enable consumers to become active managers of their own energy resource use, or in this case their home electricity usage patterns. Indeed, one extensive ACEEE meta-review of 57 different feedback programs indicates a 4 to 12 percent range of residential electricity savings on average across an international sample – depending on the technologies employed, the characteristics of the program, and other relevant factors.
+
+At the same time, however, few studies have explored the scale of investment or larger impacts that might accompany the growth and successful implementation of feedback programs. Nor have they examined the economy-wide benefits that might accrue from the systematic integration of feedback-induced energy savings over time. This report provides some initial estimates of the larger macroeconomic outcomes of feedback programs. In effect, it asks the question: what might the success of these programs imply for the larger economy as a whole?  Using a Monte Carlo modeling exercise to evaluate five different scenarios, the analysis finds feedback programs to be highly cost-effective with a net savings of $2-3 for every dollar expended.  Depending on the range of assumptions, the program expenditures and residential electricity bill savings are shown to support an average annual increase of 6,000 to 56,000 net jobs over the period 2012 through 2050.},
+  file =        {laitnet2012.pdf:laitnet2012.pdf:PDF},
+  keywords =    {feedback, energy, review},
+  owner =       {Jack},
+  timestamp =   {2016.02.15}
 }
 
 @Article{lam2007,
