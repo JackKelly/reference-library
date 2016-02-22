@@ -19,7 +19,13 @@ online (i.e. gives disag feedback almost instantly)
 single appliance NILM
 event detection
 time of day (algorithm uses time of day usage as a prior)
-intrusive (as in 'intrusive load monitoring')
+intrusive load monitoring
+performance
+
+Some common combinations
+------------------------
+energy, ILM, feedback, performance - studies which show how well NILM
+   feedback performs at reducing energy consumption
 
 side-channel
 ------------
