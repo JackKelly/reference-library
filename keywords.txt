@@ -24,7 +24,7 @@ performance
 
 Some common combinations
 ------------------------
-energy, ILM, feedback, performance - studies which show how well NILM
+energy, intrusive load monitoring, feedback, performance - studies which show how well disag energy
    feedback performs at reducing energy consumption
 
 side-channel
