@@ -2668,7 +2668,7 @@ policies that open up real time data access from Smart Meters. Millions of these
 * All participants were self-selecting (i.e. people signed themselves up to Bidgely).
 * The control group isn't a real control group.    For example, if a user signs up in September 2013 then their previous three months of data (July, August, Sept) was used as the 'control' group to compare with people who had already signed up.  To quote their paper: "Instead of assigning users to a standalone control group, historical consumption data for treatment group was used as the control condition. For example, for users signing up and joining the treatment group in September, the previous 3 months of consumption data - July, August and September - was used as the control group data."
 * They don't compare energy reductions *across time* (which is, ultimately, what we're interested in).  Instead they performed an absolute comparison between the treatment and control groups on a month-by-month basis.
-* They assume the distributions of energy consumption are normally distributed but give no evidence to support this assumption (they don't even mention it).
+* They assume the distributions of energy consumption are normally distributed but give no evidence to support this assumption (they don't even mention it).  Although apparently normality isn't essential, especially if N is big: http://thestatsgeek.com/2013/09/28/the-t-test-and-robustness-to-non-normality/
 * Conflict of interest!},
   timestamp =    {2015.11.24}
 }
@@ -6109,6 +6109,19 @@ The subsectors chosen for bottom-up studies were:
   keywords =     {energy, commercial, building management, behavior, feedback, appliances},
   owner =        {Jack},
   timestamp =    {2016.01.26}
+}
+
+@TechReport{gupta2014,
+  author =      {Abhay Gupta and Prateek Chakravarty},
+  title =       {White Paper: Impact of Energy Disaggregation on Consumer Behavior},
+  institution = {Bidgely},
+  date =        {2014-01-29},
+  url =         {http://www.bidgely.com/resource-files/White_Paper_Savings_&_Engagement_v2_Case_Study.pdf},
+  comment =     {Almost idential to chakravarty2013 but with a few data points thrown away which gives them a more significant difference (P=0.0001) but a smaller difference (6%)},
+  file =        {gupta2014.pdf:gupta2014.pdf:PDF},
+  keywords =    {energy, NILM, feedback, performance},
+  owner =       {jack},
+  timestamp =   {2016.03.11}
 }
 
 @Patent{gupta2013,
@@ -16007,6 +16020,30 @@ Energy efficiency in Brazil, China, the E.U., Mexico, and the U.S. can reduce th
   keywords =    {energy},
   owner =       {Jack},
   timestamp =   {2015.12.07}
+}
+
+@Article{walton2015,
+  author =       {Robert Walton},
+  title =        {How the home energy management market is reinventing itself},
+  journaltitle = {Utility DIVE},
+  date =         {2015-01-28},
+  url =          {http://www.utilitydive.com/news/how-the-home-energy-management-market-is-reinventing-itself},
+  abstract =     {Specific gadgets are out. Integrated HEM services are in.},
+  keywords =     {energy},
+  owner =        {jack},
+  timestamp =    {2016.03.11}
+}
+
+@Article{walton2015bidgely,
+  author =       {Robert Walton},
+  title =        {How customer empowerment is helping utilities cut `energy fat'},
+  journaltitle = {Utility DIVE},
+  date =         {2015-03-26},
+  url =          {http://www.utilitydive.com/news/how-customer-empowerment-is-helping-utilities-cut-energy-fat},
+  abstract =     {A partnership between PG&E and Bidgely hints at what's next for DSM},
+  keywords =     {energy},
+  owner =        {jack},
+  timestamp =    {2016.03.11}
 }
 
 @InProceedings{wang2012water,
