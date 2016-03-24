@@ -147,6 +147,9 @@ demand response
 air conditioning
 electric vehicle
 lighting
+retrofit
+housing
+IHD
 
 climate change
 --------------
