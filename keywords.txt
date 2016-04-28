@@ -208,6 +208,7 @@ hardware
 families
 community
 older people
+low income
 
 paper type
 ----------
