@@ -84,6 +84,7 @@ feature extraction
 Cox process
 agent-based
 naive Bayes
+active learning
 
 ML approaches used in NILM:
 ---------------------------
@@ -94,6 +95,7 @@ wavelet
 sparse coding
 SVM
 decision tree
+random forest
 RBF network
 artificial neural network
 LSTM
