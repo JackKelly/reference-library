@@ -277,19 +277,19 @@
 }
 
 @InProceedings{amirach2014feature-extraction,
-  author =    {Amirach, Nabil and Xerri, Bernard and Borloz, Bruno and Jauffret, Claude},
-  title =     {A new approach for event detection and feature extraction for NILM},
+  author    = {Amirach, Nabil and Xerri, Bernard and Borloz, Bruno and Jauffret, Claude},
+  title     = {A new approach for event detection and feature extraction for NILM},
   booktitle = {21st International Conference on Electronics, Circuits and Systems},
-  date =      {2014},
-  series =    {ICECS},
+  date      = {2014},
+  series    = {ICECS},
   publisher = {IEEE},
-  pages =     {287--290},
-  doi =       {0.1109/ICECS.2014.7049978},
-  abstract =  {The method proposed in this paper aims both to detect the events occurring in overall current measurement and to estimate the features of the electric load underlying these events. This method is within the scope of the non-intrusive approach consisting of extraction of information from electric consumption measured only at the electrical switchboard.},
-  file =      {amirach2014feature-extraction.pdf:amirach2014feature-extraction.pdf:PDF},
-  keywords =  {NILM, feature extraction, energy},
-  owner =     {Jack},
-  timestamp = {2015.07.23}
+  pages     = {287--290},
+  doi       = {10.1109/ICECS.2014.7049978},
+  abstract  = {The method proposed in this paper aims both to detect the events occurring in overall current measurement and to estimate the features of the electric load underlying these events. This method is within the scope of the non-intrusive approach consisting of extraction of information from electric consumption measured only at the electrical switchboard.},
+  file      = {amirach2014feature-extraction.pdf:amirach2014feature-extraction.pdf:PDF},
+  keywords  = {NILM, feature extraction, energy},
+  owner     = {Jack},
+  timestamp = {2015.07.23},
 }
 
 @Patent{amram2014historical,
@@ -8376,13 +8376,25 @@ because the drier has very rapid state transitions.},
 }
 
 @PhdThesis{kelly2016thesis,
-  author =      {Jack Kelly},
-  title =       {Electricity disaggregation for smart meter data},
+  author      = {Jack Kelly},
+  title       = {Disaggregation of Domestic Smart Meter Energy Data},
   institution = {Imperial College London},
-  date =        {2016},
-  pubstate =    {inpreparation},
-  owner =       {jack},
-  timestamp =   {2016.03.16}
+  date        = {2016},
+  pubstate    = {submitted},
+  url         = {https://www.dropbox.com/s/0ifdshqu99l0zcz/thesis-complete.pdf?dl=0},
+  abstract    = {Many countries are rolling out smart electricity meters. A smart meter measures the aggregate energy consumption of an entire building. However, appliance-by-appliance energy consumption information may be more valuable than aggregate data for a variety of uses including reducing energy demand and improving load forecasting for the electricity grid.  Electricity disaggregation algorithms, which are the focus of this thesis, estimate appliance-by-appliance electricity demand from aggregate electricity demand.
+
+This thesis has three main goals: 1) to develop tools to enable rigorous disaggregation research; 2) to advance the state of the art in disaggregation algorithms; and 3) to critically evaluate the benefits of energy disaggregation. 
+
+The first part of this thesis describes three tools and one dataset developed to enable disaggregation research.  The first of these tools is a novel, low-cost data collection system, which records appliance-by-appliance electricity demand every six seconds and records the whole-home voltage and current at 16 kHz. This system enabled us to collect the UK’s first and only high-frequency (kHz) electricity dataset, the UK Disaggregated Appliance-Level Electricity dataset (UK-DALE). Next, to help the disaggregation community to conduct open, rigorous, repeatable research, we collaborated with other researchers to build the first open-source disaggregation framework, NILMTK. NILMTK has gained significant traction in the community, both in terms of contributed code and in terms of users. The third tool described in this thesis is a metadata schema for disaggregated energy data. This schema was developed to make iteasier for researchers to describe their own datasets and to reduce the effort required to import datasets.
+
+The second part of this thesis describes an effort to advance the state of the art in disaggregation algorithms. Three disaggregation approaches based on deep learning are discussed: 1) a form of recurrent neural network called ‘long short-term memory’ (LSTM); 2) denoising autoencoders; and 3) a neural network which regresses the start time, end time and average power demand of each appliance activation. The disaggregation performance was measured using seven metrics and compared to two ‘benchmark’ algorithms from NILMTK: combinatorial optimisation and factorial hidden Markov models. To explore how well the algorithms generalise to unseen houses, the performance of the algorithms was measured in two separate scenarios: one using test data from a house not seen during training and a second scenario using test data from houses which were seen during training. All three neural nets achieve better F1 scores (averaged over all five appliances) than either benchmark algorithm. The neural net algorithms also generalise well to unseen houses.
+
+The final part of this thesis explores whether disaggregated energy feedback helps domestic users to reduce energy consumption.  Evidence is collected, summarised and aggregated by means of a critical, systematic review of the literature. Multiple uses for disaggregated data are discussed. This review finds no robust evidence to support the hypothesis that current forms of disaggregated energy feedback are more effective than aggregate energy feedback at reducing energy consumption in the general population. But the absence of evidence does not necessarily imply the absence of any beneficial effect of disaggregated feedback. The review ends with a discussion of ways in which the effectiveness of disaggregated feedback may be increased and a discussion of opportunities for new research into the effectiveness of disaggregated feedback.},
+  dataset     = {UK-DALE},
+  keywords    = {NILM, energy, intrusive load monitoring, feedback, performance, metrics, use cases, medium freq, RNN, deep neural network, autoencoder, recurrent, CNN, timeseries, LSTM, appliances, signatures, energy efficiency, electrical, metering, smart meters, smart grids, smart homes, active power, reactive power, voltage, current, data, metadata, wireless sensor network, computational sustainability, review, systematic review},
+  owner       = {jack},
+  timestamp   = {2016.03.16},
 }
 
 @InProceedings{kelly2014NILMTKv02,
@@ -10791,21 +10803,20 @@ Highlights
 }
 
 @Article{mnih2015deep-reinforcement-learning,
-  author =       {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A. and Veness, Joel and Bellemare, Marc G. and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K. and Ostrovski, Georg and Petersen, Stig and Beattie, Charles and Sadik, Amir and Antonoglou, Ioannis and King, Helen and Kumaran, Dharshan and Wierstra, Daan and Legg, Shane and Hassabis, Demis},
-  title =        {Human-level control through deep reinforcement learning},
+  author       = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Rusu, Andrei A. and Veness, Joel and Bellemare, Marc G. and Graves, Alex and Riedmiller, Martin and Fidjeland, Andreas K. and Ostrovski, Georg and Petersen, Stig and Beattie, Charles and Sadik, Amir and Antonoglou, Ioannis and King, Helen and Kumaran, Dharshan and Wierstra, Daan and Legg, Shane and Hassabis, Demis},
+  title        = {Human-level control through deep reinforcement learning},
   journaltitle = {Nature},
-  date =         {2015-02-26},
-  volume =       {518},
-  number =       {7540},
-  pages =        {529--533},
-  doi =          {10.1038/nature14236},
-  abstract =     {The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks.},
-  file =         {mnih2015deep-reinforcement-learning.pdf:mnih2015deep-reinforcement-learning.pdf:PDF},
-  isbn =         {0028-0836},
-  keywords =     {machine learning, deep learning, deep reinforcement learning, DeepMind},
-  owner =        {Jack},
-  publisher =    {Nature Publishing Group, a division of Macmillan Publishers Ltd.},
-  timestamp =    {2015.07.23}
+  date         = {2015-02-26},
+  volume       = {518},
+  number       = {7540},
+  pages        = {529--533},
+  doi          = {10.1038/nature14236},
+  abstract     = {The theory of reinforcement learning provides a normative account, deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks.},
+  file         = {mnih2015deep-reinforcement-learning.pdf:mnih2015deep-reinforcement-learning.pdf:PDF},
+  keywords     = {machine learning, deep learning, deep reinforcement learning, DeepMind},
+  owner        = {Jack},
+  publisher    = {Nature Publishing Group, a division of Macmillan Publishers Ltd.},
+  timestamp    = {2015.07.23},
 }
 
 @Article{mohammad-djafari2006,
@@ -19296,24 +19307,23 @@ product types that have such modes within the traditional end uses are also list
 }
 
 @Article{parton2015moles3,
-  author        = {Graham A Parton and Steven Donegan and Stephen Pascoe and Ag Stephens and Spiros Ventouras and Bryan N Lawrence},
-  title         = {{MOLES}3: Implementing an {ISO} standards driven data catalogue},
-  journaltitle  = {International Journal of Digital Curation},
-  date          = {2015-02},
-  volume        = {10},
-  number        = {1},
-  doi           = {10.2218/ijdc.v10i1.365},
-  __markedentry = {[Jack:]},
-  abstract      = {ISO19156 Observations and Measurements (O&M) provides a standardised framework for organising information about the collection of information about the environment.  Here we describe the implementation of a specialisation of O&M for environmental data, the Metadata Objects for Linking Environmental Sciences (MOLES3).
+  author       = {Graham A Parton and Steven Donegan and Stephen Pascoe and Ag Stephens and Spiros Ventouras and Bryan N Lawrence},
+  title        = {{MOLES}3: Implementing an {ISO} standards driven data catalogue},
+  journaltitle = {International Journal of Digital Curation},
+  date         = {2015-02},
+  volume       = {10},
+  number       = {1},
+  doi          = {10.2218/ijdc.v10i1.365},
+  abstract     = {ISO19156 Observations and Measurements (O&M) provides a standardised framework for organising information about the collection of information about the environment.  Here we describe the implementation of a specialisation of O&M for environmental data, the Metadata Objects for Linking Environmental Sciences (MOLES3).
 
 MOLES3 provides support for organising information about data, and for user navigation around data holdings. The implementation described here, “CEDA-MOLES”, also supports data management functions for the Centre for Environmental Data Archival, CEDA. The previous iteration of MOLES (MOLES2) saw active use over five years, being replaced by CEDA-MOLES in late 2014. During that period important lessons were learnt both about the information needed, as well as how to design and maintain the necessary information systems. In this paper we review the problems encountered in MOLES2; how and why CEDA-MOLES was developed and engineered; the migration of information holdings from MOLES2 to CEDA-MOLES; and, finally, provide an early assessment of MOLES3 (as implemented in CEDA-MOLES) and its limitations.
 
 Key drivers for the MOLES3 development included the necessity for improved data provenance, for further structured information to support ISO19115 discovery metadata  export (for EU INSPIRE compliance), and to provide appropriate fixed landing pages for Digital Object Identifiers (DOIs) in the presence of evolving datasets. Key lessons learned included the importance of minimising information structure in free text fields, and the necessity to support as much agility in the information infrastructure as possible without compromising on maintainability both by those using the systems internally and externally (e.g. citing in to the information infrastructure), and those responsible for the systems themselves. The migration itself needed to ensure continuity of service and traceability of archived assets.},
-  file          = {parton2015moles3.pdf:parton2015moles3.pdf:PDF},
-  keywords      = {metadata},
-  owner         = {Jack},
-  publisher     = {Edinburgh University Library},
-  timestamp     = {2016.08.30},
+  file         = {parton2015moles3.pdf:parton2015moles3.pdf:PDF},
+  keywords     = {metadata},
+  owner        = {Jack},
+  publisher    = {Edinburgh University Library},
+  timestamp    = {2016.08.30},
 }
 
 @MastersThesis{nascimento2016,
@@ -19419,6 +19429,95 @@ different architectures for both. Real data is used to validate the models.},
   url       = {https://twitter.com/c8ters/status/699701086656077825},
   owner     = {Jack},
   timestamp = {2016.08.31},
+}
+
+@Article{dahl2011,
+  author       = {Timothy Dahl},
+  title        = {GE Introduces Their Smart Home Technologies at CES},
+  journaltitle = {Charles Hudson},
+  date         = {2011-01-06},
+  url          = {http://charlesandhudson.com/ge_introduces_their_smart_home_technologies_at_ces/},
+  owner        = {jack},
+  timestamp    = {2016.09.13},
+}
+
+@Article{paatero2006,
+  author        = {Jukka V. Paatero and Peter D. Lund},
+  title         = {A model for generating household electricity load profiles},
+  year          = {2006},
+  volume        = {30},
+  number        = {5},
+  pages         = {273--290},
+  doi           = {10.1002/er.1136},
+  url           = {http://dx.doi.org/10.1002/er.1136},
+  __markedentry = {[jack:]},
+  file          = {paatero2006.pdf:paatero2006.pdf:PDF},
+  journal       = {International Journal of Energy Research},
+  keywords      = {simulation},
+  owner         = {jack},
+  publisher     = {Wiley-Blackwell},
+  timestamp     = {2016.10.21},
+}
+
+@Article{stankovic2016,
+  author        = {L. Stankovic and V. Stankovic and J. Liao and C. Wilson},
+  title         = {Measuring the energy intensity of domestic activities from smart meter data},
+  year          = {2016},
+  volume        = {183},
+  month         = {dec},
+  pages         = {1565--1580},
+  doi           = {10.1016/j.apenergy.2016.09.087},
+  __markedentry = {[jack:6]},
+  abstract      = {Household electricity consumption can be broken down to appliance end-use through a variety of methods such as modelling, sub-metering, load disaggregation or non-intrusive appliance load monitoring (NILM). We advance and complement this important field of energy research through an innovative methodology that characterises the energy consumption of domestic life by making the linkages between appliance end-use and activities through an ontology built from qualitative data about the household and NILM data. We use activities as a descriptive term for the common ways households spend their time at home. These activities, such as cooking or laundering, are meaningful to households’ own lived experience. Thus, besides strictly technical algorithmic approaches for processing quantitative smart meter data, we also draw on social science time use approaches and interview and ethnography data. Our method disaggregates a households total electricity load down to appliance level and provides the start time, duration, and total electricity consumption for each occurrence of appliance usage. We then make inferences about activities occurring in the home by combining these disaggregated data with an ontology that formally specifies the relationships between electricity-using appliances and activities. We also propose two novel standardised metrics to enable easy quantifiable comparison within and across households of the energy intensity and routine of activities of interest. Finally, we demonstrate our results over a sample of ten households with an in-depth analysis of which activities can be inferred with the qualitative and quantitative data available for each household at any time, and the level of accuracy with which each activity can be inferred, unique to each household. This work has important applications from providing meaningful energy feedback to households to comparing the energy efficiency of households’ daily activities, and exploring the potential to shift the timing of activities for demand management.
+
+Highlights
+• Innovative method linking appliance usage and energy use with domestic activities.
+• Inferring the energy and time use profile of activities based on smart meter data.
+• Standardised metrics quantifying energy intensity + temporal routines of activities.
+• Insights from analysing electricity consumption through the lens of activities.},
+  file          = {stankovic2016.pdf:stankovic2016.pdf:PDF},
+  journal       = {Applied Energy},
+  keywords      = {energy, NILM, behavior, apportionment, feedback, activity detection},
+  owner         = {jack},
+  publisher     = {Elsevier {BV}},
+  timestamp     = {2016.10.25},
+}
+
+@InProceedings{chen2016smartsim,
+  author    = {Chen, Dong and Irwin, David and Shenoy, Prashant},
+  title     = {SmartSim: A Device-Accurate Smart Home Simulator for Energy Analytics},
+  booktitle = {IEEE International Conference on Smart Grid Communications},
+  date      = {2016-11},
+  series    = {SmartGridComm},
+  location  = {Sydney, Australia},
+  url       = {https://people.umass.edu/~dongchen/smartgridcomm16.pdf},
+  abstract  = {Utilities have deployed tens of millions of smart
+meters, which record and transmit home energy usage at finegrained
+intervals. These deployments are motivating researchers
+to develop new energy analytics that mine smart meter data
+to learn insights into home energy usage and behavior. Unfortunately,
+a significant barrier to evaluating energy analytics is
+the overhead of instrumenting homes to collect aggregate energy
+usage data and data from each device. As a result, researchers
+typically evaluate their analytics on only a small number of
+homes, and cannot rigorously vary a home’s characteristics to
+determine what attributes of its energy usage affect accuracy. To
+address the problem, we develop SmartSim, a publicly-available
+device-accurate smart home energy trace generator. SmartSim
+generates energy usage traces for devices by combining a device
+energy model, which captures its pattern of energy usage when
+active, with a device usage model, which specifies its frequency,
+duration, and time of activity. SmartSim then generates aggregate
+energy data for a simulated home by combining the data from
+each device. We integrate SmartSim with NILM-TK, a publiclyavailable
+toolkit for Non-Intrusive Load Monitoring (NILM), and
+compare its synthetically generated traces with traces from a
+real home to show they yield similar quantitative and qualitative
+results for representative energy analytics.},
+  file      = {chen2016smartsim.pdf:chen2016smartsim.pdf:PDF},
+  keywords  = {NILM, energy, simulation},
+  owner     = {jack},
+  timestamp = {2016.10.25},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
